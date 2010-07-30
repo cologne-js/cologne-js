@@ -1,13 +1,24 @@
-h1= title
-p Welcome to #{title} – Javascript Meetup
+header
+  h1= title
+  p Welcome to #{title} – Javascript Meetup
 
-h2 Next Meetup – 10th of August 2010
+article
+  h2 Next Meetup – 10th of August 2010
 
-ul 
-  li "Test-driven Widget Developement" – Jörn (jQuery UI und QUnit) 
-  li "Getting started with the Dojo Toolkit" – Thomas 
+  ul
+    li "Test-driven Widget Developement" – Jörn (jQuery UI und QUnit)
+    li "Getting started with the Dojo Toolkit" – Thomas
 
-.footer Build with 
+  h2 Location
+  address
+    a(href: 'http://coworkingcologne.posterous.com/') Cowoco
+    br
+    | Deutz-Mülheimer Straße 129
+    br
+    | 51063 Köln
+
+footer Build with&nbsp;
   a(href: 'http://nodejs.org') Node
   |  and
   a(href: 'http://expressjs.com') Express
+
