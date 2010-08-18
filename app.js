@@ -39,7 +39,7 @@ app.get('/', function(req, res){
     });
 });
 
-app.listen(3333);
+app.listen(parseInt(process.env.PORT || 3333), null);
 
 process.on('uncaughtException', function (err) {
     console.log('Caught exception: ' + err);
