@@ -4,8 +4,9 @@
   "version" : "0.0.2",
   "main" : "app.js",
   "dependencies" : 
-    { "vows" : ">=0.5.1" },
-  "link" :
-    { "vows" : "./vendor/lib/vows" }
-    
+    { "vows" : ">=0.5.1",
+      "express" : "",
+      "jade" : "",
+      "sass" : ""
+    }
 }
