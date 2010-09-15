@@ -1,0 +1,11 @@
+{
+  "name": "Cologne.JS",
+  "description": "Cologne.JS website on node",
+  "version" : "0.0.2",
+  "main" : "app.js",
+  "dependencies" : 
+    { "vows" : ">=0.5.1" },
+  "link" :
+    { "vows" : "./vendor/lib/vows" }
+    
+}
