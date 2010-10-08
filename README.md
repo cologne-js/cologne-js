@@ -6,3 +6,6 @@ This is the website for the javascript meetup in cologne.
   * Express
   * Jade
   * Sass
+
+## Install
+  * npm bundle ./vendor/lib/
