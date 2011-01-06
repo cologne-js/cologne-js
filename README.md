@@ -9,3 +9,6 @@ This is the website for the javascript meetup in cologne.
 
 ## Install
   * npm bundle ./vendor/lib/
+  
+## Run
+  * node server.js
