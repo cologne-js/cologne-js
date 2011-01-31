@@ -1,12 +1,18 @@
 {
   "name": "Cologne.JS",
   "description": "Cologne.JS website on node",
-  "version" : "0.0.2",
+  "version" : "0.0.2-2",
   "main" : "app.js",
+  "author": "Timo Derstappen <teemow@gmail.com>",
+  "contributors": [
+    {"name": "Timo Derstappen", "email": "timo.derstappen@gmail.com"},
+    {"name": "Matthias Lübken", "email": "matthias.luebken@gmail.com"}
+  ],
   "dependencies" : 
-    { "vows" : ">=0.5.1",
-      "express" : "",
-      "jade" : "",
-      "sass" : ""
+    { "vows": ">=0.5.1",
+      "express": ">= 1.0.0rc2",
+      "connect": ">= 0.2.4",
+      "jade": ">= 0.3.0",
+      "sass": ">= 0.4.3"
     }
 }

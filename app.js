@@ -40,6 +40,7 @@ app.get('/', function(req, res){
 });
 
 app.listen(parseInt(process.env.PORT || 3333), null);
+console.log("now running on http://localhost:" + (process.env.PORT || 3333));
 
 process.on('uncaughtException', function (err) {
     console.log('Caught exception: ' + err);
