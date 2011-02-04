@@ -34,7 +34,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
     res.render('index.jade', {
         locals: {
-            title: 'Cologne.js'
+            title: 'Cologne.js',
+            nodeversion: process.version
         }
     });
 });
