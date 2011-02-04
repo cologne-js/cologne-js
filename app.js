@@ -39,7 +39,8 @@ app.get('/', function(req, res){
         res.render('index.jade', {
             locals: {
                 title: 'Cologne.js',
-                dates: dates
+                dates: dates,
+                nodeversion: process.version
             }
         });        
     })
