@@ -1,10 +1,13 @@
 
+require.paths.unshift(".");
+
 /**
  * Module dependencies.
  */
 
 var express = require('express'),
-    connect = require('connect');
+    connect = require('connect'),
+    cgncal = require('cgncal');
 
 // Create and export Express app
 
@@ -32,11 +35,14 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', function(req, res){
-    res.render('index.jade', {
-        locals: {
-            title: 'Cologne.js'
-        }
-    });
+    cgncal.fetchDates(function(dates) {
+        res.render('index.jade', {
+            locals: {
+                title: 'Cologne.js',
+                dates: dates
+            }
+        });        
+    })
 });
 
 app.listen(parseInt(process.env.PORT || 3333), null);

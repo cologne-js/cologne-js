@@ -3,7 +3,7 @@ header
   p Welcome to #{title} – Javascript Meetup
 
 article
-  h2 Next Meetup - 8th of February 2011
+  h2 Next Meetup 2011.02 - 8th of February 2011
   p Doors open at 19:00. Talk starts at 19:30. 
 
   ul
@@ -30,6 +30,12 @@ article
       a(href: 'http://groups.google.com/group/cgnjs') Google Group
     li
       a(href: 'http://twitter.com/cgnjs') Twitter
+  
+  h2 Upcoming meetups
+  ul
+    - dates.forEach(function(date){
+      li= date.summary + " - " + date.datestr
+    - })
 
 footer Built with&nbsp;
   a(href: 'http://nodejs.org') Node

@@ -29,4 +29,4 @@ vows.describe('app').addBatch({
         topic: api.get('/'),
         'should respond with a 200': assertStatus(200)
     }
-}).run(); // Run it
+}).export(module);
