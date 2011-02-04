@@ -2,7 +2,6 @@ var url = '/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com
 
 //url = '?output=rss'
 var http = require('http'),
-    xml2js = require('xml2js'),
     icalendar = require('icalendar'),
     util = require('util');
 
