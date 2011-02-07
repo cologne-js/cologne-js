@@ -1,9 +1,8 @@
 var url = '/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com/public/basic.ics';
 
-//url = '?output=rss'
 var http = require('http'),
     icalendar = require('icalendar'),
-    util = require('util');
+    util = require('sys'); //Node v.0.2.2 compatibility
 
 var cgncal = {};
 

@@ -1,12 +1,13 @@
 
 require.paths.unshift(".");
+require.paths.unshift("vendor/lib");
 
 /**
  * Module dependencies.
  */
 
 var express = require('express'),
-    connect = require('connect'),
+    connect = require('connect@0.2.5'),
     cgncal = require('cgncal');
 
 // Create and export Express app
