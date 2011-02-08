@@ -7,7 +7,7 @@ require.paths.unshift("vendor/lib");
  */
 
 var express = require('express'),
-    connect = require('connect@0.2.5'),
+    connect = require('connect'),
     cgncal = require('cgncal');
 
 // Create and export Express app
