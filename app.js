@@ -1,7 +1,3 @@
-
-require.paths.unshift(".");
-require.paths.unshift("vendor/lib");
-
 /**
  * Module dependencies.
  */
@@ -26,11 +22,11 @@ app.configure(function(){
 
 app.configure('development', function(){
     app.set('reload views', 1000);
-    app.use(connect.errorHandler({ dumpExceptions: true, showStack: true })); 
+    app.use(connect.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.configure('production', function(){
-   app.use(connect.errorHandler()); 
+   app.use(connect.errorHandler());
 });
 
 // Routes
@@ -43,7 +39,7 @@ app.get('/', function(req, res){
                 dates: dates,
                 nodeversion: process.version
             }
-        });        
+        });
     })
 });
 
@@ -53,3 +49,4 @@ console.log("now running on http://localhost:" + (process.env.PORT || 3333));
 process.on('uncaughtException', function (err) {
     console.log('Caught exception: ' + err);
 });
+

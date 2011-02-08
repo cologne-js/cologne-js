@@ -1,3 +1,5 @@
-require.paths.unshift("vendor/lib")
+require.paths.unshift(__dirname + "/");
+require.paths.unshift(__dirname + "/vendor/lib")
 
-require ("./app")
+require ("app")
+
