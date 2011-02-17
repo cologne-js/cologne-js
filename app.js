@@ -1,10 +1,10 @@
 /**
  * Module dependencies.
  */
-
-var express = require('express'),
-    connect = require('connect'),
-    cgncal = require('cgncal');
+var express = require('express')
+  , connect = require('connect')
+  , cgncal = require('cgncal').create('/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com/public/basic.ics')
+  , upcoming_dates = []
 
 // Create and export Express app
 
@@ -31,17 +31,23 @@ app.configure('production', function(){
 
 // Routes
 
+// update dates every hour
+setInterval(function() {
+  cgncal.fetchDates(function(err, dates) {
+    if (err) upcoming_dates = []
+    else upcoming_dates = dates
+  })
+}, 3600000)
+
 app.get('/', function(req, res){
-    cgncal.fetchDates(function(dates) {
-        res.render('index.jade', {
-            locals: {
-                title: 'Cologne.js',
-                dates: dates,
-                nodeversion: process.version
-            }
-        });
-    })
-});
+  res.render('index.jade', {
+    locals: {
+      title: 'Cologne.js',
+      dates: upcoming_dates,
+      nodeversion: process.version
+    }
+  })
+})
 
 app.listen(parseInt(process.env.PORT || 3333), null);
 console.log("now running on http://localhost:" + (process.env.PORT || 3333));
