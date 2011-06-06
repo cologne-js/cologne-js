@@ -1,5 +1,5 @@
 var http = require('http')
-  , icalendar = require('icalendar')
+  , icalendar = require('./icalendar.js')
   , util = require('sys') //Node v.0.2.2 compatibility
 
 var cgncal = function() {}
@@ -34,7 +34,7 @@ cgncal.prototype.fetchDates = function (callback) {
     response.setEncoding('utf8');
     response.on('data', function (chunk) { data += chunk });
     response.on('end', function () {
-      cb(null, icalendar.parse(data));
+      cb(null, icalendar.parse(data, true));
     })
   })
 }

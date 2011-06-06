@@ -11,11 +11,11 @@ icalendar.date = function (line) {
     var year = line.substr(0, 4);
     var month = line.substr(4, 2);
     var day = line.substr(6, 2);
-    var hour = parseInt(line.substr(9, 2)) + 2; //GMT => CET
+    var hour = parseInt(line.substr(9, 2), 10) + 2; //GMT => CET
     var minutes = line.substr(11, 2);
     return new Date(year, month-1, day, hour, minutes);
 };
-icalendar.parse = function (data) {
+icalendar.parse = function (data, removePastEvents) {
     var lines = data.split('\n');
     var events = [];
     var currentevent;
@@ -31,6 +31,7 @@ icalendar.parse = function (data) {
         }
     });
     events.sort(function(a, b) { return a.start.getTime() > b.start.getTime(); });
+    if (removePastEvents) events = events.filter(function(element, index, array) { return element.end.getTime() > Date.now(); });
     return events;
 };
 module.exports = icalendar;

@@ -3,8 +3,8 @@
  */
 var express = require('express')
   , connect = require('connect')
-  , cgncal = require('cgncal').create('/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com/public/basic.ics')
-  , upcoming_dates = []
+  , cgncal = require('./cgncal.js').create('/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com/public/basic.ics')
+  , upcoming_dates = [];
 
 // Create and export Express app
 
