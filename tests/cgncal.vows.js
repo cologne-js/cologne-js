@@ -25,7 +25,7 @@ vows.describe('calendar').addBatch({
 			cal.fetchDates(this.callback)
 		},
 		'should parse the XML': function(err, result){
-			assert.equal(result[0].summary, 'CologneJS 2011.05');
+			assert.equal(result[0].summary, 'CologneJS 2011.06');
 		} 
 	},
 		
