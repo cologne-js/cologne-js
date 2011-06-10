@@ -31,13 +31,15 @@ app.configure('production', function(){
 
 // Routes
 
+function fetch() {
+	cgncal.fetchDates(function(err, dates) {
+  	if (err) upcoming_dates = []
+  	else upcoming_dates = dates
+	})
+}
+fetch()
 // update dates every hour
-setInterval(function() {
-  cgncal.fetchDates(function(err, dates) {
-    if (err) upcoming_dates = []
-    else upcoming_dates = dates
-  })
-}, 3600000)
+setInterval(fetch, 3600000)
 
 app.get('/', function(req, res){
   res.render('index.jade', {
