@@ -1,4 +1,5 @@
-require.paths.unshift("../vendor/lib");
+require.paths.unshift("../node_modules/");
+require.paths.unshift(".");
 
 var vows = require('vows'),
     assert = require('assert'),   
