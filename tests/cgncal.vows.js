@@ -2,9 +2,9 @@ require.paths.unshift("../node_modules/");
 require.paths.unshift(".");
 
 var vows = require('vows'),
-    assert = require('assert'),
-    util = require('util'),
-    cgncal = require('cgncal');
+		assert = require('assert'),
+		util = require('util'),
+		cgncal = require('cgncal');
 
 vows.describe('calendar').addBatch({
 	
