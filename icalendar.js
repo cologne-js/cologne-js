@@ -31,6 +31,7 @@ icalendar.parse = function (data) {
         }
     });
     events.sort(function(a, b) { return a.start.getTime() > b.start.getTime(); });
+    events = events.filter(function(element, index, array) { return element.end.getTime() > Date.now(); });
     return events;
 };
 module.exports = icalendar;
