@@ -1,14 +1,10 @@
-This is the website for the javascript meetup in cologne.
+# Cologne.js
+### This is the website for the JavaScript Meetup Cologne.
 
-## Dependencies
+Built with [NodeJS](http://nodejs.org), [CoffeeScript](http://jashkenas.github.com/coffee-script/) and [Express](http://expressjs.com).
 
-  * Node.js
-  * Express
-  * Jade
-  * Sass
 
 ## Install
-  * npm bundle ./vendor/lib/
-  
-## Run
-  * node server.js
+
+    $ npm install .
+    $ coffee app.coffee
