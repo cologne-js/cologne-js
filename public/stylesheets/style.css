@@ -1,0 +1,157 @@
+body {
+	padding: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.25;
+	color: #333;
+}
+
+
+a,
+a:link,
+a:active,
+a:hover {
+	color: #9C761A;
+}
+a:visited { color: #694f12; }
+
+ul { padding-left: 1.5em; }
+
+hgroup h1 {
+	font-size: 3.9em;
+	line-height: 1em;
+	margin: 0;
+
+	text-transform: uppercase;
+	clear: both;
+	overflow: hidden;
+
+	letter-spacing: -0.05em;
+	}
+
+	hgroup h1 span {
+		display: block;
+		float: left;
+	}
+
+	span.logo {
+		overflow: hidden;
+		text-indent: -1000px;
+
+		background: url(../images/js-logo.png) no-repeat;
+		background-size: contain;
+
+		height: 0.75em;
+		width: 0.75em;
+		margin: 0.1em 0 0 0.2em;
+	}
+
+	h2 {
+		font-size: 1.05em;
+		margin-top: 0;
+	}
+
+article {
+	max-width: 41em;
+	}
+
+	article h1 {
+		font-size: 1.45em;
+		margin-bottom: 0;
+	}
+	article h1 + p {
+		margin-top: 0;
+	}
+
+
+aside {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+
+	   -moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	        box-orient: vertical;
+	}
+
+	.box {
+		   -moz-box-flex: 1;
+		-webkit-box-flex: 1;
+		        box-flex: 1;
+
+		   -moz-box-pack: justify;
+		-webkit-box-pack: justify;
+		        box-pack: justify;
+
+		min-width: 13em;
+		max-width: 26em;
+
+		padding: 1em 1em 0;
+		margin-bottom: 1em;
+
+		border: 0.0625em solid #ccc;
+		}
+
+		.box h3 {
+			margin: -0.875em -0.875em 0;
+			padding: 0.25em 1em;
+
+			background: #f0db4f;
+		}
+
+footer {
+	margin: 2em 0;
+	font-size: 0.8em;
+	clear: both;
+}
+
+#fork { display: none; }
+
+
+/* -- Media Queries -------------------------------------------------------- */
+@media screen and (min-width: 800px) {
+	body { padding: 3em; }
+	hgroup h1 { font-size: 5em; }
+	hgroup h2 {
+		font-size: 1.45em;
+		margin: 0 0 1.45em;
+	}
+
+	aside {
+		margin-top: 3em;
+		   -moz-box-orient: horizontal;
+		-webkit-box-orient: horizontal;
+		        box-orient: horizontal;
+		}
+
+		.box {
+			max-width: 16.5em;
+			margin-right: 1em;
+		}
+		.box:last-child { margin-right: 0; }
+
+	#fork {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.img {
+		margin: 0 -1em 0;
+		height: 6em;
+		background-size: cover;
+	}
+
+	#location { background: url(../images/location.png) no-repeat; }
+	#discuss  { background: url(../images/discuss.png) no-repeat; }
+	#upcoming { background: url(../images/cowoco.jpg) no-repeat; }
+}
+
+
+/* -- IE Fixes ------------------------------------------------------------- */
+.ie .box {
+	float: left;
+	height: 13em;
+}

@@ -1,0 +1,55 @@
+hgroup
+  h1
+    span Cologne
+    span.logo .js
+  h2 Welcome to Cologne.js JavaScript Meetup
+
+article
+  h1 Next Meetup: !{nextMeetup.date}
+  p Doors open at 19:00. Talk starts at 19:30:
+  | !{nextMeetup.talks}
+  p Also have a look at the&nbsp;
+    a(href="https://github.com/teemow/Cologne.js/wiki/Talks") list of talks sofar
+    | &nbsp;on the GitHub wiki.
+
+aside
+  .box
+    h3 Location
+    .img#location
+    p
+      a(href="http://maps.google.de/maps/place?q=Gasmotorenfabrik,+Deutz-M%C3%BClheimer+Stra%C3%9Fe+129,+51063+K%C3%B6ln&hl=de&ie=UTF8&cid=3745389770344567758") Coworking Cologne
+      br
+      | Gasmotorenfabrik, 3. Etage
+      br
+      | Deutz-Mülheimerstraße 129
+      br
+      | 51063 Köln
+
+  .box
+    h3 Discuss
+    .img#discuss
+    ul
+      li
+        a(href="http://groups.google.com/group/cgnjs") Mailing List / Google Group
+      li
+        a(href="http://twitter.com/cgnjs") Twitter
+
+  .box
+    h3 Upcoming meetups
+    .img#upcoming
+    - if (futureMeetups.length)
+    ul
+      - futureMeetups.forEach(function(meetup){
+        li!= meetup.startFormatted
+      - })
+    p Subscribe to our meetups (
+      a(href="/colognejs.ics") iCal
+      | )
+
+footer Built with&nbsp;
+  a(href="http://nodejs.org") Node.js #{nodeversion}
+  | &nbsp;and
+  a(href="http://expressjs.com") Express
+
+a(id="fork", href="http://github.com/teemow/Cologne.js")
+  img(src="/images/forkme_right_gray.png", alt="Fork me on GitHub")
