@@ -141,7 +141,7 @@ footer {
 	.img {
 		margin: 0 -1em 0;
 		height: 6em;
-		background-size: cover;
+		background-position: right top !important;
 	}
 
 	#location { background: url(../images/location.png) no-repeat; }
