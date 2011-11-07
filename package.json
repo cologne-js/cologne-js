@@ -10,7 +10,7 @@
   ],
   "private": true,
   "main" : "app.coffee",
-  "scripts": { "start": "coffee app.coffee" },
+  "scripts": { "start": "NODE_ENV=production coffee app.coffee" },
   "dependencies": {
     "coffee-script": ">= 1.1.1",
     "express": "2.5.0",
