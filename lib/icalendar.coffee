@@ -68,7 +68,7 @@ exports.parse = (data, removePastEvents) ->
         # New lines start with a space.
         currentevent.description += line.replace(/(^ |\r)/, '') unless /^[A-Z]{3,}/.test(line)
       if /^END:VEVENT/.test(line)
-        currentevent.description = currentevent.description.replace(/\\n/g, '<br>')
+        currentevent.description = currentevent.description.replace(/\\n/g, "\n")
         events.push(currentevent)
         currentevent = null
 
