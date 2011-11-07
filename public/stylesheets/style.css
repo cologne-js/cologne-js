@@ -17,7 +17,7 @@ a:visited { color: #694f12; }
 ul { padding-left: 1.5em; }
 
 hgroup h1 {
-	font-size: 3.9em;
+	font-size: 3.25em;
 	line-height: 1em;
 	margin: 0;
 
@@ -42,12 +42,12 @@ hgroup h1 {
 
 		height: 0.75em;
 		width: 0.75em;
-		margin: 0.1em 0 0 0.2em;
+		margin: 0 0 0 0.2em;
 	}
 
 	h2 {
-		font-size: 1.05em;
-		margin-top: 0;
+		font-size: 0.85em;
+		margin: 0 0 1.45em;
 	}
 
 article {
@@ -55,7 +55,7 @@ article {
 	}
 
 	article h1 {
-		font-size: 1.45em;
+		font-size: 1.25em;
 		margin-bottom: 0;
 	}
 	article h1 + p {
@@ -111,10 +111,7 @@ footer {
 @media screen and (min-width: 800px) {
 	body { padding: 3em; }
 	hgroup h1 { font-size: 5em; }
-	hgroup h2 {
-		font-size: 1.45em;
-		margin: 0 0 1.45em;
-	}
+	hgroup h2 { font-size: 1.45em; }
 
 	aside {
 		margin-top: 3em;
