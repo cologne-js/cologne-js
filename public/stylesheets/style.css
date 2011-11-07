@@ -110,7 +110,10 @@ footer {
 /* -- Media Queries -------------------------------------------------------- */
 @media screen and (min-width: 800px) {
 	body { padding: 3em; }
-	hgroup h1 { font-size: 5em; }
+	hgroup h1 {
+		font-size: 5em;
+		margin-top: 0.1em;
+	}
 	hgroup h2 { font-size: 1.45em; }
 
 	aside {
@@ -152,4 +155,3 @@ footer {
 	float: left;
 	height: 13em;
 }
->>>>>>> rebrush
