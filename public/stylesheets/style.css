@@ -110,11 +110,9 @@ footer {
 /* -- Media Queries -------------------------------------------------------- */
 @media screen and (min-width: 800px) {
 	body { padding: 3em; }
-	hgroup h1 {
-		font-size: 5em;
-		margin-top: 0.1em;
-	}
+	hgroup h1 { font-size: 5em; }
 	hgroup h2 { font-size: 1.45em; }
+	span.logo { margin-top: 0.1em; }
 
 	aside {
 		margin-top: 3em;
