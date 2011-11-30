@@ -32,7 +32,9 @@ formatDate = (date) ->
 
 # iCalendar parsing
 parseValue = (line) ->
-  line = line.split(':')[1]
+  line = line.split(':')
+  shifted = line.shift()
+  line = line.join(':')
   return line.replace(/\r/, '')
 
 
@@ -66,7 +68,7 @@ exports.parse = (data, removePastEvents) ->
       if currentevent.description
         # Descriptions in Google Calendar files can spread over multiple lines.
         # New lines start with a space.
-        currentevent.description += line.replace(/(^ |\r)/, '') unless /^[A-Z]{3,}/.test(line)
+        currentevent.description += line.replace(/^ /, '').replace(/\r/, '') unless /^[A-Z]{3,}/.test(line)
       if /^END:VEVENT/.test(line)
         currentevent.description = currentevent.description.replace(/\\n/g, "\n")
         events.push(currentevent)
