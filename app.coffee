@@ -50,6 +50,14 @@ app.get '/', (req, res) ->
         # Store content in cache
         cache.set 'websiteContent', content
 
+      else
+        content =
+          nextMeetup:
+            date: '(couldn\'t retrieve calendar data)'
+            talks: '(couldn\'t retrieve calendar data)'
+          futureMeetups: []
+          nodeversion: process.version
+
       res.render 'index', content
 
 app.get '/colognejs.ics', (req, res) ->
@@ -57,4 +65,4 @@ app.get '/colognejs.ics', (req, res) ->
 
 
 app.listen 3333
-console.log "Express server listening on port #{app.address().port} in #{app.settings.env} mode"
+console.log "Express server listening in #{app.settings.env} mode at http://localhost:#{app.address().port}/"
