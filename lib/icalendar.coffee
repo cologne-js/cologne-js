@@ -87,7 +87,7 @@ exports.fromUrl = (url, callback) ->
   request { uri: url, timeout: 1000 }, (err, res, body) =>
     if (res && res.statusCode isnt 200) then err = res.statusCode
     if err
-      callback new Error 'Could not fetch dates from calendar'
+      callback new Error 'Could not fetch dates from calendar' + err
       return
     else
       callback null, @parse(body, true)
