@@ -6,22 +6,34 @@
 
 head
   meta(charset="utf-8")
-  meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-  title Cologne.js | Cologne JavaScript Meetup
-  link(rel='stylesheet', href='/stylesheets/normalize.css')
-  link(rel='stylesheet', href='/stylesheets/style.css')
-body!= body
+  title Cologne.js | Cologne JavaScript meet-up
 
-script(type='text/javascript')
-  if (location.host === "colognejs.de") {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-32245820-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  }
+  - var nextMeetupDescription = ''
+  - nextMeetupDescription = (events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 19:00' : ''
+  meta(name="description", content="Your friendly JavaScript user group from Cologne. We meet every 2nd Tuesday#{nextMeetupDescription}. Just come over …")
+  meta(name="robots",      content="index, follow")
+
+  link(rel='stylesheet', href='/stylesheets/screen.css')
+  | <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  | <!--[if lt IE 9]><script>(function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();</script><![endif]-->
+
+body
+  !{body}
+
+  footer(role="contentinfo")
+    .left
+      | Made with love in Cologne.<br>
+      | Hosted on GitHub. Go ahead, <a href="https://github.com/cologne-js/cologne-js">fork us</a>.
+    .right
+
+  script
+    if (location.host === "colognejs.de") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32245820-1'], ['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.async = true; ga.src = 'http://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
