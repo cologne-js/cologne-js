@@ -46,7 +46,7 @@ a:visited { color: darken($js-logo-color, 40%); }
 
 header {
   h1 {
-    font-size: 3.25em;
+    font-size: 5em;
     line-height: 1em;
     margin: 0;
 
@@ -63,7 +63,7 @@ header {
   }
 
   h2 {
-    font-size: 0.85em;
+    font-size: 1.45em;
     margin: 0 0 1.45em;
   }
 
@@ -76,7 +76,7 @@ header {
 
     height: 0.75em;
     width: 0.75em;
-    margin: 0 0 0 0.2em;
+    margin: 0.15em 0 0 0.2em;
   }
 }
 
@@ -104,13 +104,13 @@ article {
 
 .slot-taken,
 .slot-beerjs {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 
   @include box-shadow(
-      inset 0 0 70px 50px #FEFEFE,
-      2px 3px 1px #EEE
+      inset 0 0 70px 50px #fefefe,
+      2px 3px 1px #eee
   );
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   border-radius: 4px;
   margin-bottom: 1em;
   padding-top: 1.5em !important;
@@ -143,39 +143,32 @@ footer {
 
 
 /* -- Media Queries -------------------------------------------------------- */
-/*
-@media screen and (min-width: 800px) {
-    */
-
-    // body { padding: 3em; }
-    header {
-        h1 { font-size: 5em; }
-        h2 { font-size: 1.45em; }
-        span.logo { margin-top: 0.1em; }
-    }
-
-    // aside {
-    //  margin-top: 3em;
-    //     -moz-box-orient: horizontal;
-    //  -webkit-box-orient: horizontal;
-    //          box-orient: horizontal;
-    //  }
-
-    //  .box {
-    //      max-width: 16.5em;
-    //      margin-right: 1em;
-    //  }
-    //  .box:last-child { margin-right: 0; }
-
-/*}*/
-
-/*@media screen and (min-width: 801px) { */
-/*}*/
-
-
-/* -- IE Fixes ------------------------------------------------------------- */
-/*.ie .box {
-    float: left;
-    height: 13em;
+@media screen and (max-width: 62em) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
-*/
+
+@media screen and (max-width: 32em) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  header {
+      h1 { font-size: 3.25em; }
+      h2 { font-size: 0.85em; }
+      span.logo { margin-top: 0.15em; }
+  }
+
+  .grid-1-3 {
+    margin: 0 0 1em 0;
+    float: none;
+    width: 100%;
+  }
+
+  section .grid-1-3 { min-height: 0; }
+
+  .slot-beerjs { background-image: none; }
+}

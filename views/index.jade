@@ -52,8 +52,8 @@ aside.grid-row(role="complementary")
     h3 You want more?
     p
       - if (events[1] && events[1].date && events[2] && events[2].date)
-        span Our follow-up meetups will be on <strong>#{events[1].date}</strong> and <strong>#{events[2].date}</strong>.
-      | To be sure, you don't miss out, <a href="/colognejs.ics">subscribe to our calendar</a>!
+        | Our follow-up meetups will be on <strong>!{events[1].date}</strong> and <strong>!{events[2].date}</strong>.
+      |  To be sure, you don't miss out, <a href="/colognejs.ics">subscribe to our calendar</a>!
     p
       | You should also <a href="https://github.com/cologne-js/cologne-js/wiki/Talks">browse our talks so far</a>
       | and get in touch with the speakers.
