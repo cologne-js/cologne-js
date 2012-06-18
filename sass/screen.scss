@@ -1,0 +1,174 @@
+@import "compass/css3";
+@import "normalize";
+@import "grid";
+
+
+$background-color: #F8F8F8;
+$js-logo-color: #efd75b;
+
+
+* {
+  /* apply a natural box layout model to all elements */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+  max-width: 60em; /* = 800px */
+  margin: 1em auto 0;
+
+  text-rendering: optimizeLegibility;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+
+  color: #333;
+  background: $background-color url('../images/noise.png');
+}
+
+
+h1 { margin: 0; }
+
+
+a,
+a:link,
+a:active,
+a:hover   { color: darken($js-logo-color, 20%); }
+a:visited { color: darken($js-logo-color, 40%); }
+
+
+.next-meetup { margin-bottom: 1em; }
+
+.grid-1-3 { font-size: 0.9em; }
+
+
+header {
+  h1 {
+    font-size: 5em;
+    line-height: 1em;
+    margin: 0;
+
+    text-transform: uppercase;
+    clear: both;
+    overflow: hidden;
+
+    letter-spacing: -0.05em;
+
+    span {
+      display: block;
+      float: left;
+    }
+  }
+
+  h2 {
+    font-size: 1.45em;
+    margin: 0 0 1.45em;
+  }
+
+  span.logo {
+    overflow: hidden;
+    text-indent: -1000px;
+
+    background: url(../images/js-logo.png) no-repeat;
+    background-size: contain;
+
+    height: 0.75em;
+    width: 0.75em;
+    margin: 0.15em 0 0 0.2em;
+  }
+}
+
+
+section {
+  .grid-1-3 {
+    min-height: 300px;
+    padding: 1em;
+  }
+}
+
+
+article {
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+}
+
+
+.slot-taken,
+.slot-beerjs {
+  background-color: #f0f0f0;
+
+  @include box-shadow(
+      inset 0 0 70px 50px #fefefe,
+      2px 3px 1px #eee
+  );
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  padding-top: 1.5em !important;
+}
+
+.slot-open {
+    border: 0.5em dashed darken($background-color, 10%);
+    border-radius: 1em;
+    color: darken($background-color, 40%);
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.slot-beerjs {
+    background: url(../images/beer-js.png) center center no-repeat;
+    background-size: 50%;
+}
+
+
+aside {
+  h3 { font-size: 1.25em; }
+}
+
+
+footer {
+  clear: both;
+  overflow: hidden;
+  margin: 3em 0 2em;
+  font-size: 0.8em;
+}
+
+
+/* -- Media Queries -------------------------------------------------------- */
+@media screen and (max-width: 62em) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 32em) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  header {
+      h1 { font-size: 3.25em; }
+      h2 { font-size: 0.85em; }
+      span.logo { margin-top: 0.15em; }
+  }
+
+  .grid-1-3 {
+    margin: 0 0 1em 0;
+    float: none;
+    width: 100%;
+  }
+
+  section .grid-1-3 { min-height: 0; }
+
+  .slot-beerjs { background-image: none; }
+}

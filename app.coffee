@@ -1,8 +1,12 @@
-express  = require 'express'
+express  = require('express')
 markdown = require('node-markdown').Markdown
-ical     = require('./lib/icalendar.coffee')
+XRegExp  = require('xregexp').XRegExp;
+date     = require('./lib/date.coffee')
 
-calendar = 'https://www.google.com/calendar/ical/podoldti665gcdmmt7u72v62fc%40group.calendar.google.com/public/basic.ics'
+
+calendarId = 'podoldti665gcdmmt7u72v62fc'
+gcal       = require('./lib/googlecalendar.coffee').GoogleCalendar(calendarId)
+
 
 app = module.exports = express.createServer()
 
@@ -34,35 +38,48 @@ app.get '/', (req, res) ->
   if content
     res.render 'index', content
   else
-    # %o is custom date format, needs double escapement
-    ical.setDateFormat "%b %%o, %Y"
-    ical.fromUrl calendar, (err, events) ->
-      if events && events.length
-        [ nextEvent, futureEvents ] = [ events[0], events[1..-1] ]
+    gcalOptions =
+      'futureevents': true
+      'orderby'     : 'starttime'
+      'sortorder'   : 'ascending'
+      'fields'      : 'items(details)'
+      'max-results' : 3
+
+    gcal.getJSON gcalOptions, (err, data) ->
+      if data && data.length
+        events = []
+        for item in data
+          regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\w+)\\.? (?<year>\\d{4})')
+          parts = XRegExp.exec(item.details, regex)
+          foo = date.convert(parts.year, parts.month, parts.day)
+
+          talks = XRegExp.exec(item.details, XRegExp('Terminbeschreibung: (.*)', 's'))
+          if (talks && talks[1])
+            [talk1, talk2] = talks[1].split('---')
+          else
+            [talk1, talk2] = ['', '']
+
+          events.push
+            date: date.format(foo, "%b %%o, %Y")
+            talk1: markdown(talk1)
+            talk2: markdown(talk2)
 
         content =
-          nextMeetup:
-            date: nextEvent.startFormatted
-            talks: markdown(nextEvent.description) || 'tbd.'
-          futureMeetups: futureEvents.slice(0, 2)
-          nodeversion: process.version
+          'events': events
 
         # Store content in cache
         cache.set 'websiteContent', content
 
       else
         content =
-          nextMeetup:
-            date: '(couldn\'t retrieve calendar data)'
-            talks: '(couldn\'t retrieve calendar data)'
-          futureMeetups: []
-          nodeversion: process.version
+          'events': []
+        console.log err
 
       res.render 'index', content
 
 app.get '/colognejs.ics', (req, res) ->
-  res.redirect calendar, 301
+  res.redirect gcal.getICalUrl
 
 
 app.listen 3333
-console.log "Express server listening in #{app.settings.env} mode at http://localhost:#{app.address().port}/"
+console.log "Express server listening in #{ app.settings.env } mode at http://localhost:#{ app.address().port }/"
