@@ -2,7 +2,7 @@
 
 class exports.Pico
   constructor: (@cachingTime = 60) ->
-    if not (this instanceof Pico) then return new Pico
+    if not (this instanceof Pico) then return new Pico(@cachingTime)
     @cache = []
 
   set: (key, value) ->

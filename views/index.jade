@@ -1,49 +1,59 @@
-hgroup
-  h1
-    span Cologne
-    span.logo .js
-  h2 Welcome to Cologne.js JavaScript Meetup
+header(role="banner")
+  hgroup
+    h1
+      span Cologne
+      span.logo .js
+    h2 Welcome to Cologne.js JavaScript meet-up
 
-article
-  h1 Next Meetup: !{nextMeetup.date}
-  p Doors open at 19:00. Talk starts at 19:30:
-  | !{nextMeetup.talks}
-  p.
-    Also have a look at the <a href="https://github.com/cologne-js/cologne-js/wiki/Talks">list of talks sofar</a> on the GitHub wiki.
 
-aside
-  .box
-    h3 Location
-    .img#location
-    p.
-      <a href="http://maps.google.de/maps/place?q=Gasmotorenfabrik,+Deutz-M%C3%BClheimer+Stra%C3%9Fe+129,+51063+K%C3%B6ln&hl=de&ie=UTF8&cid=3745389770344567758"> Coworking Cologne</a><br>
-      Gasmotorenfabrik, 3. Etage<br>
-      Deutz-Mülheimer Straße 129<br>
-      51063 Köln
+section(role="main")
+  .next-meetup
+    - var nextDate = (events[0] && events[0].date) ? events[0].date : "(couldn't retrieve calendar data)"
+    h1 Next Meetup: !{nextDate}
+    | Cowoco's doors are always open, join us at 19:30, talks start at 20:00:
 
-  .box
-    h3 Discuss
-    .img#discuss
-    ul
-      li
-        a(href="http://groups.google.com/group/cgnjs") Mailing List / Google Group
-      li
-        a(href="http://twitter.com/cgnjs") Twitter
+  .grid-row
+    - if (events[0] && events[0].talk1)
+      - var talk = events[0].talk1
+      include includes/index/slot-taken
+    - else
+      include includes/index/slot-open
 
-  .box
-    h3 Upcoming meetups
-    .img#upcoming
-    - if (futureMeetups.length)
-    ul
-      - futureMeetups.forEach(function(meetup){
-        li!= meetup.startFormatted
-      - })
-    p 
-      a(href="/colognejs.ics") Subscribe to our meetups (iCal)
+    - if (events[0] && events[0].talk2)
+      - var talk = events[0].talk2
+      include includes/index/slot-taken
+    - else
+      include includes/index/slot-open
 
-footer.
-  Built with <a href="http://nodejs.org">Node.js #{nodeversion}</a> and <a href="http://expressjs.com">Express</a>
-  
+    article(class="grid-1-3 slot-beerjs")
+      h1 beer.js
+      p After our talks, stay around, have a drink and chat with the people.
 
-a(id="fork", href="http://github.com/cologne-js/cologne-js")
-  img(src="/images/forkme_right_gray.png", alt="Fork me on GitHub")
+
+aside.grid-row(role="complementary")
+  .grid-1-3
+    h3 Come over, bring friends
+    p
+      | <a href="http://maps.google.de/maps/place?q=Gasmotorenfabrik,+Deutz-M%C3%BClheimer+Stra%C3%9Fe+129,+51063+K%C3%B6ln">Coworking Cologne</a><br/>
+      | Gasmotorenfabrik, 3. Etage <br/>
+      | Deutz-Mülheimer Straße 129 <br/>
+      | 51063 Köln
+
+  .grid-1-3
+    h3 Got a question? A talk to propose?
+    p
+      | Cologne.js is organized by <a href="https://twitter.com/bassistance">Jörn Zaefferer</a> &amp;
+      | <a href="https://twitter.com/fhemberger">Frederic Hemberger</a>. You can reach us <a href="&#x006D;&#x0061;&#x0069;&#x006C;&#x0074;&#x006F;&#x003A;org&#x0040;colognejs.de">directly by email</a>.
+    p
+      | You can catch us on <a href="http://twitter.com/cgnjs">Twitter</a> or our
+      | <a href="http://groups.google.com/group/cgnjs">Mailinglist</a>.
+
+  .grid-1-3
+    h3 You want more?
+    p
+      - if (events[1] && events[1].date && events[2] && events[2].date)
+        | Our follow-up meetups will be on <strong>!{events[1].date}</strong> and <strong>!{events[2].date}</strong>.
+      |  To be sure, you don't miss out, <a href="/colognejs.ics">subscribe to our calendar</a>!
+    p
+      | You should also <a href="https://github.com/cologne-js/cologne-js/wiki/Talks">browse our talks so far</a>
+      | and get in touch with the speakers.
