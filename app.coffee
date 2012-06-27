@@ -1,3 +1,5 @@
+"use strict"
+
 express = require('express')
 routes  = require('./routes')
 
@@ -23,9 +25,9 @@ app.configure 'production', () ->
 
 # Routes
 routes.init app
-app.get  '/',             routes.index
-app.get '/colognejs.ics', routes.ical
-#app.get  '/*',      routes.e404
+app.get  '/',                       routes.index
+app.get '/colognejs.ics',           routes.ical
+app.get  '/*',                      routes.e404
 
 
 app.listen 3333

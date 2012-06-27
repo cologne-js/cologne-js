@@ -11,7 +11,7 @@ head
   title Cologne.js | Cologne JavaScript meet-up
 
   - var nextMeetupDescription = ''
-  - nextMeetupDescription = (events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 19:30' : ''
+  - nextMeetupDescription = (locals.events && events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 19:30' : ''
   meta(name="description", content="Your friendly JavaScript user group from Cologne. We meet every 2nd Tuesday#{nextMeetupDescription}. Just come over …")
   meta(name="robots",      content="index, follow")
 
@@ -20,6 +20,13 @@ head
   | <!--[if lt IE 9]><script>(function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();</script><![endif]-->
 
 body
+  header(role="banner")
+    hgroup
+      h1
+        span Cologne
+        span.logo .js
+      h2 Welcome to Cologne.js JavaScript meet-up
+
   !{body}
 
   footer(role="contentinfo")

@@ -143,6 +143,12 @@ footer {
 
 
 /* -- Media Queries -------------------------------------------------------- */
+@media screen and (min-width: 33em) {
+  *[role='main'] {
+    min-height: 15em;
+  }
+}
+
 @media screen and (max-width: 62em) {
   body {
     padding-left: 1em;
