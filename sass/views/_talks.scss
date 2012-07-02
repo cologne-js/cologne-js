@@ -7,8 +7,30 @@
   h1 {
     @include adjust-font-size-to(24px);
 
+    @media screen and (max-width: 42em) {
+        display: inline-block;
+    }
+
     @media screen and (min-width: 42em) {
         text-align: right;
+    }
+
+    .anchor {
+      font-size: 0.75em;
+      color: #ccc !important;
+      text-decoration: none;
+      margin: 0 0.5em;
+      vertical-align: top;
+      font-weight: normal;
+      visibility: hidden;
+
+      @media screen and (max-width: 42em) {
+          float: right;
+      }
+    }
+
+    &:hover .anchor {
+      visibility: visible;
     }
   }
 

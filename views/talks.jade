@@ -3,7 +3,9 @@ section.talk-list(role="main")
   each meetup in content[selectedYear]
     .grid-row
       .grid-1-3
-        h1(id="#{meetup.month.toLowercase()}-#{selectedYear}") #{meetup.month} #{selectedYear}
+        h1
+          a(class="anchor", name="#{meetup.month.toLowerCase()}-#{selectedYear}", href="##{meetup.month.toLowerCase()}-#{selectedYear}") ¶
+          | #{meetup.month} #{selectedYear}
       .grid-2-3
         each talk in meetup.talks
           article
