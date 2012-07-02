@@ -1,0 +1,57 @@
+header {
+  $logo-size: 120px;
+
+  clear: both;
+  overflow: hidden;
+  @include trailer(2);
+
+  h1 {
+    float: left;
+
+    a {
+      display: block;
+      text-indent: -99em;
+      overflow: hidden;
+      width: $logo-size;
+      height: $logo-size;
+      background: url(/images/colognejs-logo.png) no-repeat;
+    }
+  }
+
+  h2 {
+    margin-top: 1.5em;
+    margin-left: $logo-size + 20px;
+  }
+
+  nav {
+    margin-top: 3em;
+    margin-left: $logo-size + 20px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media screen and (max-width: 37em) {
+      margin-top: 1.5em;
+    }
+
+  }
+
+  ul {
+    @include horizontal-list;
+
+    li {
+      @include horizontal-list-item($padding: 0.5em);
+    }
+
+    a,
+    a:link,
+    a:active,
+    a:hover,
+    a:visited {
+      text-decoration: none;
+      color: #666;
+    }
+
+    a:hover { border-bottom: 2px solid #666; }
+  }
+}

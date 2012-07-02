@@ -1,0 +1,23 @@
+header(role="banner")
+  h1: a(href="/", title="Home") Cologne.js
+  h2 Welcome to Cologne’s JavaScript meet-up
+  - var view = locals.parentView.view
+  nav
+    ul
+      li
+        - if (view === 'index')
+          strong Home
+        - else
+          a(href="/") Home
+
+      li
+        - if (view === 'talks' && locals.selectedYear)
+          strong Talks
+          ul
+            each year in years
+              - if (year === selectedYear)
+                li: strong #{year}
+              - else
+                li: a(href="/talks/#{year}") #{year}
+        - else
+          a(href="/talks/") Talks
