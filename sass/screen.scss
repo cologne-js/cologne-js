@@ -73,7 +73,6 @@ footer {
 
 
 /* -- Media Queries -------------------------------------------------------- */
-
 @media screen and (min-width: 33em) {
   *[role='main'] {
     min-height: 15em;
@@ -93,7 +92,8 @@ footer {
     padding-right: 1em;
   }
 
-  .grid-1-3 {
+  .grid-1-3,
+  .grid-2-3 {
     margin: 0 0 1em 0;
     float: none;
     width: 100%;

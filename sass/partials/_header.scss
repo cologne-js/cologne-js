@@ -30,6 +30,13 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 
+    @media screen and (max-width: 33em) {
+      margin-left: 0;
+      padding: 1em 0;
+      clear: both;
+      overflow: hidden;
+    }
+
     @media screen and (max-width: 37em) {
       margin-top: 1.5em;
     }
