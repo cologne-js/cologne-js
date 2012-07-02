@@ -39,3 +39,6 @@ body
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     }
+
+    // Fix iOS orientationchange zoom bug (https://gist.github.com/901295/904de6b03dcfe1f9d2d100d1f5721c1ecb2746ed)
+    (function(a){function g(){f.content="width=device-width,minimum-scale="+e[0]+",maximum-scale="+e[1];a.removeEventListener(c,g,true)}var b="addEventListener",c="gesturestart",d="querySelectorAll",e=[1,1],f=d in a?a[d]("meta[name=viewport]"):[];if((f=f[f.length-1])&&b in a){g();e=[.25,1.6];a[b](c,g,true)}})(document)
