@@ -15,6 +15,7 @@ header {
       width: $logo-size;
       height: $logo-size;
       background: url(/images/colognejs-logo.png) no-repeat;
+      background-size: $logo-size;
     }
   }
 
