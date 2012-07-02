@@ -1,0 +1,50 @@
+.talk-list {
+
+  .grid-row {
+    @include leader;
+  }
+
+  h1 {
+    @include adjust-font-size-to(24px);
+
+    @media screen and (min-width: 33em) {
+        text-align: right;
+    }
+  }
+
+  h2 {
+    @include leader(0.7);
+    @include adjust-font-size-to(20px, 0);
+    @include trailer(0);
+  }
+
+  h3 {
+    @include adjust-font-size-to(14px);font-weight: normal;
+  }
+
+  article {
+    @include trailer(2);
+  }
+
+  ul {
+    clear: both;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    float: left;
+    margin-right: 0.5em;
+  }
+
+  li:before {
+    content: "|" ;
+    margin-right: 0.5em;
+  }
+
+  li:first-child:before {
+    content: "" ;
+    margin-right: 0;
+  }
+}

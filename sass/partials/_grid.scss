@@ -1,6 +1,5 @@
 @import "compass/utilities/general/clearfix";
 
-$grid-width: 750px;
 $grid-column-space: 1.5%;
 
 .clear {
@@ -14,8 +13,6 @@ $grid-column-space: 1.5%;
 .container {
 	@include clearfix;
 	clear: both;
-
-	max-width: $grid-width;
 	margin: 0 auto;
 }
 
@@ -46,6 +43,5 @@ $grid-column-space: 1.5%;
 .grid-1-2:nth-child(odd) {
 	@include clearfix;
 	clear: both;
-
 	margin-left: 0;
 }

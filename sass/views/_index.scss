@@ -1,0 +1,73 @@
+.next-meetup {
+  @include trailer;
+
+  h1 {
+    @include adjust-font-size-to(28px, 1.25);
+  }
+}
+
+
+.talk-slots {
+  @include trailer(2);
+
+  .grid-1-3 {
+    min-height: $base-font-size * 22;
+    padding-left: 1em;
+    padding-right: 1em;
+    @include padding-leader;
+    @include padding-trailer;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
+
+
+  h1 {
+    @include adjust-font-size-to(20px, 1);
+    margin-bottom: $base-line-height * 2;
+
+    & + h2 {
+      @include adjust-font-size-to(16px, 1);
+      margin-top: -($base-line-height * 2);
+      font-weight: normal;
+
+      @media screen and (max-width: 42em) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.slot-taken,
+.slot-beerjs {
+  background-color: #f0f0f0;
+
+  @include box-shadow(
+      inset 0 0 70px 50px #fefefe,
+      2px 3px 1px #eee
+  );
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.slot-open {
+  border: 0.5em dashed darken($background-color, 10%);
+  border-radius: 1em;
+  color: darken($background-color, 40%);
+  text-shadow: 0 1px 1px #FFFFFF;
+
+  h1 {
+    margin-top: -0.35em;
+  }
+}
+
+.slot-beerjs {
+  background: url(../images/beer-js.png) center center no-repeat;
+
+  @media screen and (max-width: 42em) {
+    background-image: none;
+  }
+}
+

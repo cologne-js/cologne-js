@@ -1,11 +1,15 @@
 "use strict"
+__appdir     = require('path').join(__dirname, '..')
+__contentdir = "#{__appdir}/content"
 
-calendarId = 'podoldti665gcdmmt7u72v62fc'
-gcal       = require('../lib/googlecalendar.coffee').GoogleCalendar(calendarId)
+calendarId   = 'podoldti665gcdmmt7u72v62fc'
+gcal         = require('../lib/googlecalendar.coffee').GoogleCalendar(calendarId)
 
-date       = require('../lib/date.coffee')
-XRegExp    = require('xregexp').XRegExp;
-markdown   = require('node-markdown').Markdown
+date         = require('../lib/date.coffee')
+XRegExp      = require('xregexp').XRegExp;
+markdown     = require('node-markdown').Markdown
+fs           = require('fs')
+
 
 # Content caching
 cache      = undefined
@@ -43,6 +47,31 @@ getEvents = (callback) ->
       callback new Error('Could not load events from Google Calendar')
 
 
+getContentSnippets = (view, callback) ->
+  results = []
+  dir = "#{__contentdir}/#{view}"
+  fs.readdir dir, (err, list) ->
+    if (err) then return callback(err)
+    pending = list.length;
+    if (!pending) then return callback null, results.sort()
+    list.forEach (file) ->
+      fileFullName = "#{dir}/#{file}"
+      fs.stat fileFullName, (err, stat) ->
+        if stat and stat.isFile() then results.push(file)
+        if (!--pending) then callback(null, results.sort())
+
+
+getContent = (view, callback) ->
+  getContentSnippets view, (err, result) ->
+    if (err) then callback(err)
+    content = {}
+    result.forEach (file) ->
+      try
+        content[ file.replace(/\.json/, '') ] = JSON.parse fs.readFileSync("#{__contentdir}/#{view}/#{file}", 'utf-8')
+      catch error
+    callback(null, content)
+
+
 exports.init = (app) =>
   cache = require('../lib/pico.coffee').Pico(app.settings.cacheInSeconds)
 
@@ -66,8 +95,24 @@ exports.index = (req, res) ->
       res.render 'index', content
 
 
+exports.talks = (req, res) ->
+  getContent 'talks', (err, data) ->
+    selectedYear = String( req.params[0] || (new Date()).getFullYear() )
+    if err then console.log err
+    if err or not data.hasOwnProperty(selectedYear)
+      exports.e404(req, res)
+      return
+
+    res.render 'talks', {
+      'title'       : "Talks #{selectedYear}"
+      'years'       : (String(year) for own year of data).reverse()
+      'selectedYear': selectedYear
+      'content'     : data
+    }
+
+
 exports.ical = (req, res) ->
-  res.redirect gcal.getICalUrl
+  res.redirect gcal.getICalUrl()
 
 
 exports.e404 = (req, res) ->

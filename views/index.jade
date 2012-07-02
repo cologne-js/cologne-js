@@ -1,10 +1,10 @@
 section(role="main")
   .next-meetup
-    - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn't retrieve calendar data)"
+    - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
     h1 Next Meetup: !{nextDate}
-    | Cowoco's doors are always open, join us at 19:30, talks start at 20:00:
+    | Cowoco’s doors are always open, join us at 19:30, talks start at 20:00:
 
-  .grid-row
+  .talk-slots.grid-row
     - if (locals.events && events[0] && events[0].talk1)
       - var talk = events[0].talk1
       include includes/index/slot-taken
@@ -34,10 +34,10 @@ aside.grid-row(role="complementary")
   .grid-1-3
     h3 Got a question? A talk to propose?
     p
-      | Cologne.js is organized by <a href="https://twitter.com/bassistance">Jörn Zaefferer</a> &amp;
+      | Cologne.js is organized by <a href="https://twitter.com/bassistance">Jörn Zaefferer</a> and
       | <a href="https://twitter.com/fhemberger">Frederic Hemberger</a>. You can reach us <a href="&#x006D;&#x0061;&#x0069;&#x006C;&#x0074;&#x006F;&#x003A;org&#x0040;colognejs.de">directly by email</a>.
     p
-      | You can catch us on <a href="http://twitter.com/cgnjs">Twitter</a> or our
+      | You can also catch us on <a href="http://twitter.com/cgnjs">Twitter</a> or our
       | <a href="http://groups.google.com/group/cgnjs">Mailinglist</a>.
 
   .grid-1-3
@@ -45,7 +45,7 @@ aside.grid-row(role="complementary")
     p
       - if (locals.events && events[1] && events[1].date && events[2] && events[2].date)
         | Our follow-up meetups will be on <strong>!{events[1].date}</strong> and <strong>!{events[2].date}</strong>.
-      |  To be sure, you don't miss out, <a href="/colognejs.ics">subscribe to our calendar</a>!
+      |  To be sure, you don’t miss out, <a href="/colognejs.ics">subscribe to our calendar</a>!
     p
-      | You should also <a href="https://github.com/cologne-js/cologne-js/wiki/Talks">browse our talks so far</a>
+      | You should also <a href="/talks/">browse our talks so far</a>
       | and get in touch with the speakers.
