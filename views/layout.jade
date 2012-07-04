@@ -3,7 +3,6 @@
 | <!--[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]-->
 | <!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
 | <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-
 head
   meta(charset="utf-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -16,8 +15,11 @@ head
   meta(name="robots",      content="index, follow")
 
   link(rel='stylesheet', href='/stylesheets/screen.css')
-  | <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-  | <!--[if lt IE 9]><script>(function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();</script><![endif]-->
+  //if IE
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+  //if lt IE 9
+    script (function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();
+
 
 body
   include includes/header
