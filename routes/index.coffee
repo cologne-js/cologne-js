@@ -1,6 +1,5 @@
 "use strict"
-__appdir     = require('path').join(__dirname, '..')
-__contentdir = "#{__appdir}/content"
+__contentdir = require('path').join(process.cwd(), 'content')
 
 calendarId   = 'podoldti665gcdmmt7u72v62fc'
 gcal         = require('../lib/googlecalendar.coffee').GoogleCalendar(calendarId)
