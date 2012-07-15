@@ -8,6 +8,7 @@ date         = require('../lib/date.coffee')
 XRegExp      = require('xregexp').XRegExp;
 markdown     = require('node-markdown').Markdown
 fs           = require('fs')
+yaml         = require('js-yaml')
 
 
 # Content caching
@@ -66,7 +67,7 @@ getContent = (view, callback) ->
     content = {}
     result.forEach (file) ->
       try
-        content[ file.replace(/\.json/, '') ] = JSON.parse fs.readFileSync("#{__contentdir}/#{view}/#{file}", 'utf-8')
+        content[ file.replace(/\.yml/, '') ] = yaml.load fs.readFileSync("#{__contentdir}/#{view}/#{file}", 'utf-8')
       catch error
     callback(null, content)
 

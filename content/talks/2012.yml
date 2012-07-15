@@ -1,0 +1,97 @@
+---
+-
+  month: July
+  talks:
+    -
+      title: "Functions in JavaScript"
+      description: "In this talk Norbert gives an introduction to functions in JavaScript, the most important part of the language. He presents details about scope and closures, context and whatever methods can be found on `Function.prototype`."
+      speaker:
+        name: "Norbert Hartl"
+      links:
+        Slides: "http://noha.github.com/slides-functions-in-js"
+    -
+      title: "Getting started with Canvas"
+      description: "Dushan explains the basics by creating a simple clock in Canvas and presents his current project, an animated children's book."
+      speaker:
+        name: "Dushan Wegner"
+        twitter: mehreinfach
+      links:
+        Code-Example: "https://github.com/mehreinfach/uhr"
+-
+  month: June
+  talks:
+    -
+      title: "Client-side Dependency Management with npm and ender"
+      video: "https://vimeo.com/44506562"
+      speaker:
+        name: "Tim Fischbach"
+        twitter: tfischbach
+      links:
+        Slides: "https://github.com/tf/clientside-npm-talk"
+-
+  month: May
+  talks:
+    -
+      title: "You want to do WHAT?! with JavaScript"
+      description: "Robotic JS (getUserMedia, Arduino & Kinect)"
+      video: "https://vimeo.com/43957346"
+      speaker:
+        name: "Sebastian Golasch"
+        twitter: asciidisco
+      links:
+        Slides: "http://btplay.asciidisco.com/"
+    -
+      title: Bikeshed
+      video: "https://vimeo.com/44090302"
+      speaker:
+        name: "Jens Arps"
+        twitter: jensarps
+      links:
+        Slides: "http://jensarps.github.com/cgnjs-may-2012/"
+    -
+      title: "Ascent - A Javascript WebGL Game Framework"
+      video: "https://vimeo.com/44092181"
+      speaker:
+        name: "Jens Arps"
+        twitter: jensarps
+-
+  month: April
+  talks:
+    -
+      title: AngularJS
+      description: "Held together with Tim Fischbach."
+      speaker:
+        name: "Gregor Weckbecker"
+        twitter: feinerfug
+      links:
+        Slides: "http://feinerfug.github.com/cgnjs-Angular-Slides/"
+-
+  month: March
+  talks: []
+-
+  month: February
+  talks:
+    -
+      title: "Javascript memory management"
+      description: "Held together with Vangelis Tsoumenis."
+      speaker:
+        name: "Tim Fischbach"
+        twitter: tfischbach
+      links:
+        Slides: "https://github.com/tf/javascript-memory-talk"
+-
+  month: January
+  talks:
+    -
+      title: "Pitfalls and opportunities of single-page applications"
+      speaker:
+        name: "Jörn Zaefferer"
+        twitter: bassistance
+      links:
+        Code: "https://github.com/jzaefferer/pitfalls-examples"
+    -
+      title: Smalltalk
+      speaker:
+        name: "Norbert Hartl"
+      links:
+        "Links & Discussion": "https://groups.google.com/d/topic/cgnjs/TtJMVClxZus/discussion"

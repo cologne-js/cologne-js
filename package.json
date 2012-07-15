@@ -18,7 +18,8 @@
     "node-markdown": ">= 0.1.0",
     "request": ">= 2.1.1",
     "strftime": ">=0.4.6",
-    "xregexp": "*"
+    "xregexp": "*",
+    "js-yaml": "*"
   },
   "devDependencies": {
     "vows": ">=0.5.1"
