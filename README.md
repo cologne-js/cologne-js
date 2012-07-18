@@ -6,5 +6,5 @@ Built with [NodeJS](http://nodejs.org), [CoffeeScript](http://jashkenas.github.c
 
 ## Install
 
-    $ npm install .
+    $ npm install
     $ coffee app.coffee
