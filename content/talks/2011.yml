@@ -20,9 +20,11 @@
   month: November
   talks:
     -
-      title: PCRE
+      title: "Die wunderbare Welt der Regulären Ausdrücke"
       speaker:
         name: "Thomas Weinert"
+      links:
+        Slides: "https://docs.google.com/file/d/0B46c_UZow0XCX1Ftcm5WMTdPQkk/edit"
     -
       title: "jModules (and EmbedJS)"
       speaker:
