@@ -9,7 +9,11 @@ header(role="banner")
           strong Home
         - else
           a(href="/") Home
-
+      li
+        - if (view === 'about')
+          strong About
+        - else
+          a(href="/about") About
       li
         - if (view === 'talks' && locals.selectedYear)
           strong Talks
