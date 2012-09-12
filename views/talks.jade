@@ -19,7 +19,7 @@ section.talk-list(role="main")
                     | )
 
             - if (talk.description)
-              p= talk.description
+              p !{talk.description}
 
             - if (talk.links)
               ul

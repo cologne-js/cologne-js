@@ -104,6 +104,11 @@ exports.talks = (req, res) ->
       exports.e404(req, res)
       return
 
+    for own year, months of data
+      for month in months
+        for talk in month.talks
+          talk.description = markdown(talk.description) if talk.description
+
     res.render 'talks', {
       'title'       : "Talks #{selectedYear}"
       'years'       : (String(year) for own year of data).reverse()
