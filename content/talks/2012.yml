@@ -1,5 +1,26 @@
 ---
 -
+  month: September
+  talks:
+    -
+      title: "SocketStream & Node.js for interactive single page apps"
+      description: "SocketStream is as a framework to develop highly interactive single page apps utilizing Websockets (socket.io/sock.js). It is an excellent framework to either extend existing apps using Connect/Express/pure Node with Websocket-capabilities, or develop completely new apps with support/connectors for popular MV*-frameworks like Backbone, Ember, Angular, amongst others."
+      speaker:
+        name: "Jonas Ulrich"
+        twitter: tsnmp
+      links:
+        Slides: "https://github.com/ruhmesmeile/socketstream-presentation"
+    -
+      title: "Grunting Grunt for Grunts"
+      description: "Nowadays frontend developers have to deal with topics and tools that they've never encountered before: unit testing, code linting, minification, code modularization and more.\n\n\
+        Those who've done it, know that setting everything up and maintaining it is a pain that costs hours of working time.
+        But that's not true anymore: thanks to Grunt, we now have a frontend specific build tool that eliminates most of the hard work.\n\n\
+        During this talk we will learn how to setup grunt, learn to use it in a real world project and discover it´s ecosystem of plugins."
+      speaker:
+        name: "Sebastian Golasch"
+        twitter: asciidisco
+      links:
+-
   month: August
   talks:
     -
