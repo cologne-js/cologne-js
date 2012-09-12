@@ -30,8 +30,7 @@
     "request": ">= 2.1.1",
     "strftime": ">=0.4.6",
     "xregexp": "*",
-    "js-yaml": "*",
-    "marked": "~0.2.5"
+    "js-yaml": "*"
   },
   "devDependencies": {
     "vows": ">=0.5.1"
