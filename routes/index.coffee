@@ -95,6 +95,8 @@ exports.index = (req, res) ->
 
       res.render 'index', content
 
+exports.about = (req, res) ->
+  res.render 'about'
 
 exports.talks = (req, res) ->
   getContent 'talks', (err, data) ->
