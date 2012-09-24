@@ -5,6 +5,7 @@
     -
       title: "SocketStream & Node.js for interactive single page apps"
       description: "SocketStream is as a framework to develop highly interactive single page apps utilizing Websockets (socket.io/sock.js). It is an excellent framework to either extend existing apps using Connect/Express/pure Node with Websocket-capabilities, or develop completely new apps with support/connectors for popular MV*-frameworks like Backbone, Ember, Angular, amongst others."
+      video: "https://vimeo.com/50050426"
       speaker:
         name: "Jonas Ulrich"
         twitter: tsnmp
