@@ -13,10 +13,11 @@
         Slides: "https://github.com/ruhmesmeile/socketstream-presentation"
     -
       title: "Grunting Grunt for Grunts"
-      description: "Nowadays frontend developers have to deal with topics and tools that they've never encountered before: unit testing, code linting, minification, code modularization and more.\n\n\
-        Those who've done it, know that setting everything up and maintaining it is a pain that costs hours of working time.
-        But that's not true anymore: thanks to Grunt, we now have a frontend specific build tool that eliminates most of the hard work.\n\n\
-        During this talk we will learn how to setup grunt, learn to use it in a real world project and discover it´s ecosystem of plugins."
+      description: "Nowadays frontend developers have to deal with topics and tools that they’ve never encountered before: unit testing, code linting, minification, code modularization and more.\n\n\
+        Those who’ve done it, know that setting everything up and maintaining it is a pain that costs hours of working time.
+        But that’s not true anymore: thanks to Grunt, we now have a frontend specific build tool that eliminates most of the hard work.\n\n\
+        During this talk we will learn how to setup grunt, learn to use it in a real world project and discover it’s ecosystem of plugins."
+      video: "https://vimeo.com/51235535"
       speaker:
         name: "Sebastian Golasch"
         twitter: asciidisco
