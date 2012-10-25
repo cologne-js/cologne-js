@@ -8,6 +8,8 @@
       speaker:
         name: "Julian Aubourg"
         twitter: jaubourg
+      links:
+        Slides: "http://demo.creative-area.net/cgnjs/"
     -
       title: "Accessible JavaScript - a short walkthrough"
       description: "Accessible JavaScript should be in strategic focus from the very first - unfortunately most JavaScript plugins and frameworks don’t. In a short walkthrough we test bad and good examples on accessibility, i.e. if they are usable with keyboard and screenreader. Finally we talk about the use of WAI-ARIA to get JavaScript more accessible."
@@ -15,6 +17,7 @@
         name: "Sylvia Egger"
         twitter: sprungmarkers
       links:
+        Slides: "http://de.slideshare.net/sprungmarker/accessible-javascript-beispiel-akkordeon"
 -
   month: September
   talks:
