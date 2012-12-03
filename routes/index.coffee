@@ -22,7 +22,7 @@ getEvents = (callback) ->
     'orderby'     : 'starttime'
     'sortorder'   : 'ascending'
     'fields'      : 'items(details)'
-    'max-results' : 3
+    'max-results' : 1
 
   gcal.getJSON gcalOptions, (err, data) ->
     if data && data.length
@@ -38,10 +38,22 @@ getEvents = (callback) ->
         else
           [talk1, talk2] = ['', '']
 
+        try
+          markdown_talk1 = markdown(talk1)
+        catch error
+          console.log 'Error parsing talk 1 as Markdown: \n\t' + talk1
+          markdown_talk1 = talk1
+
+        try
+          markdown_talk2 = markdown(talk2)
+        catch error
+          console.log 'Error parsing talk 2 as Markdown: \n\t' + talk2
+          markdown_talk2 = talk2
+
         events.push
           date: date.format(foo, "%b %%o, %Y")
-          talk1: markdown(talk1)
-          talk2: markdown(talk2)
+          talk1: markdown_talk1
+          talk2: markdown_talk2
 
       callback null, events
     else
