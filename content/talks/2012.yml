@@ -1,5 +1,35 @@
 ---
 -
+  month: December
+  talks:
+    -
+      title: "Unhosted & Remote Storage – freedom from the web’s monopolies"
+      description: "Web apps are a package deal: You use their app, they get your data. With the Unhosted movement we aim to protect people’s privacy, make it easier to run apps and enable you to have your data in one place. This is achieved by separating apps into client-side apps and per-user data storage, for which we define the open Remotestorage standard."
+      video: "https://vimeo.com/55616898"
+      speaker:
+        name: "Jan-Christoph Borchardt"
+        twitter: jancborchardt
+      links:
+        Unhosted: "http://unhosted.org/"
+        "Remote Storage": "http://remotestorage.io/"
+    -
+      title: "Dirty Little Helper"
+      description: "Did I leave the lights on? Is the iron burning it's way into the neighbor's flat? Familiar thoughts when going on holiday? Sebastian shows how to build a home automation and observation system in JavaScript."
+      video: "https://vimeo.com/55616901"
+      speaker:
+        name: "Sebastian Golasch"
+        twitter: asciidisco
+      links:
+    -
+      title: "Nodecopter"
+      description: "Felix shows us how to have fun with a hacked AR drone/quadcopter and Node.js, how to augment the drone with additional sensors and how to control it from within a browser."
+      video: "http://www.youtube.com/watch?v=nwGNNMJt4mE"
+      speaker:
+        name: "Felix Geisendörfer"
+        twitter: felixge
+      links:
+        Nodecopter: "http://nodecopter.com"
+-
   month: November
   talks:
     -
