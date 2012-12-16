@@ -21,16 +21,20 @@ section.talk-list(role="main")
             - if (talk.description)
               p !{talk.description}
 
-            - if (talk.links)
+            - if (talk.links || talk.video)
               ul
-                each linkUrl, linkName in talk.links
-                  li: a(href="#{linkUrl}") #{linkName}
-                - if ( talk.video )
-                  li: a(href="#{talk.video}", class="video-link") Video
+                - if (talk.links)
+                  each linkUrl, linkName in talk.links
+                    li: a(href="#{linkUrl}") #{linkName}
+                - if (talk.video)
+                  - if (talk.video.indexOf("vimeo.com") !== -1)
+                    li: a(href="#{talk.video}", class="video-link") Video
+                  - else
+                    li: a(href="#{talk.video}") Video
 
-            - if ( talk.video && (match = talk.video.match(/\d+$/)) && match[0] )
+            - if ( talk.video && (match = talk.video.match(/vimeo\.com\/(\d+)$/)) && match[1] )
               .video(style="display:none")
-                iframe(src="http://player.vimeo.com/video/#{match[0]}", width="500", height="281", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
+                iframe(src="http://player.vimeo.com/video/#{match[1]}", width="500", height="281", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
                   a(href="#{talk.video}") Watch talk on Vimeo
 
 
