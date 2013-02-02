@@ -16,6 +16,7 @@ app.configure () ->
 
 app.configure 'development', () ->
   app.set 'cacheInSeconds', 0
+  app.set 'port', 3333
   app.use express.errorHandler({ dumpExceptions: true, showStack: true })
 
 app.configure 'production', () ->
@@ -32,5 +33,5 @@ app.get  '/praguejs.ics',           routes.ical
 app.get  '/*',                      routes.e404
 
 
-app.listen 3333
+app.listen app.settings.port
 console.log "Express server listening in #{ app.settings.env } mode at http://localhost:#{ app.address().port }/"
