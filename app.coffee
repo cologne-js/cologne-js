@@ -28,7 +28,7 @@ routes.init app
 app.get  '/',                       routes.index
 app.get  '/about',                  routes.about
 app.get  /^\/talks\/?(\d{4})?\/?$/, routes.talks
-app.get '/colognejs.ics',           routes.ical
+app.get  '/praguejs.ics',           routes.ical
 app.get  '/*',                      routes.e404
 
 

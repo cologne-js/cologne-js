@@ -11,7 +11,7 @@ class exports.GoogleCalendar
     "#{ @getUrl() }.ics"
 
   getJSON: (parameters, callback) ->
-    url = "#{ @getUrl('feeds') }?#{ serializeObject(parameters) }&alt=jsonc"
+    url = "#{ @getUrl('feeds') }?#{ serializeObject(parameters) }&alt=jsonc&hl=de"
 
     request { uri: url, timeout: 2000 }, (err, res, body) =>
       if (res && res.statusCode isnt 200) then err = res.statusCode
