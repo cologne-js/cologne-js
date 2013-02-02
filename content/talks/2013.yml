@@ -3,22 +3,18 @@
   month: January
   talks:
     -
-      title: "ArangoDB"
-      description: "A JavaScript powered NoSQL database from Cologne"
+      title: "Souřadnice, projekce a šikmé snímky"
+      description: "Víte, kolika rozměrný je zemský povrch? Jak a proč se zadávají v mapě souřadnice? A jakým způsobem je (skoro) kulová plocha převedena na plochý displej monitoru? 31. ledna se v Node5 dozvíte odpovědi nejen na tyto otázky, ale také jaké je technologické pozadí šikmých snímků na mapy.cz a proč jsou naše mapové podklady nekompatibilní s ostatními JavaScriptovými API od jiných poskytovatelů."
       speaker:
-        name: "Jan Steemann"
-        twitter: steemann
+        name: "Ondřej Žára"
+        twitter: 0ndras
       links:
-        Website: "http://www.arangodb.org/"
+        Website: "http://ondras.zarovi.cz/"
     -
-      title: "Writing jQuery plug-ins with Jasmine coverage"
+      title: "ČR > svět; 3D > 2D"
+      description: "Jaké překážky nás čekají při tvoření 2D mapy pro celý svět? Jak zobrazit 2D mapu ve 3D a jaké problémy lze očekávat."
       speaker:
-        name: "Miguel Parramón"
-        twitter: mparramon
+        name: "Michal Aichinger"
+        twitter: aichinge
       links:
-        "Slides": "https://docs.google.com/presentation/d/1qSuemd0FFjOkRheXkEX836mys_NZv0QgacCz5r7gowo/pub?start=false&loop=false&delayms=3000#slide=id.p"
-    -
-      title: "Experiences in HTML5 multiplayer game development"
-      description: "I show you my turn-based strategy game written in JavaScript on client and server side. See how i manage a complex client-server application and give me your ideas for different approaches. Let´s discuss all the challenges, solutions and problems still existing."
-      speaker:
-        name: "Norman Wenk"
+        Website: "http://www.czechdesign.cz/blogs/aichi/"
