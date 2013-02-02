@@ -6,15 +6,17 @@
 head
   meta(charset="utf-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(name="google-site-verification", content="rnozA-sW2-rdUx1DITLdPbVvIeTCN05AHqaHk5Ybnr8")
 
   title #{locals.title ? (title + " « ") : ''}PragueJS | Czech JavaScript user group
 
   - var nextMeetupDescription = ''
-  - nextMeetupDescription = (locals.events && events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 19:30' : ''
+  - nextMeetupDescription = (locals.events && events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 18:00' : ''
   meta(name="description", content="Your friendly JavaScript user group from Prague. We meet every last Thursday#{nextMeetupDescription}. Just come over …")
   meta(name="robots",      content="index, follow")
 
   link(rel='stylesheet', href='/stylesheets/screen.css')
+  link(rel='shortcut icon', href='/favicon.png')
   //if IE
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
   //if lt IE 9

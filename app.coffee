@@ -20,8 +20,8 @@ app.configure 'development', () ->
 
 app.configure 'production', () ->
   app.set 'cacheInSeconds', 60 * 60
+  app.set 'port', process.env.PORT or 5000
   app.use express.errorHandler()
-
 
 # Routes
 routes.init app
