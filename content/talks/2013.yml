@@ -3,7 +3,7 @@
   month: January
   talks:
     -
-      title: "Souřadnice, projekce a šikmé snímky"
+      title: "Mapy na webu"
       description: "Víte, kolika rozměrný je zemský povrch? Jak a proč se zadávají v mapě souřadnice? A jakým způsobem je (skoro) kulová plocha převedena na plochý displej monitoru? 31. ledna se v Node5 dozvíte odpovědi nejen na tyto otázky, ale také jaké je technologické pozadí šikmých snímků na mapy.cz a proč jsou naše mapové podklady nekompatibilní s ostatními JavaScriptovými API od jiných poskytovatelů."
       speaker:
         name: "Ondřej Žára"
@@ -11,7 +11,7 @@
       links:
         Website: "http://ondras.zarovi.cz/"
     -
-      title: "ČR > svět; 3D > 2D"
+      title: "Rendering 3D maps in WebGL"
       description: "Jaké překážky nás čekají při tvoření 2D mapy pro celý svět? Jak zobrazit 2D mapu ve 3D a jaké problémy lze očekávat."
       speaker:
         name: "Michal Aichinger"
