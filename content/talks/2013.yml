@@ -5,6 +5,7 @@
     -
       title: "Mapy na webu"
       description: "Víte, kolika rozměrný je zemský povrch? Jak a proč se zadávají v mapě souřadnice? A jakým způsobem je (skoro) kulová plocha převedena na plochý displej monitoru? 31. ledna se v Node5 dozvíte odpovědi nejen na tyto otázky, ale také jaké je technologické pozadí šikmých snímků na mapy.cz a proč jsou naše mapové podklady nekompatibilní s ostatními JavaScriptovými API od jiných poskytovatelů."
+      video: "https://www.youtube.com/watch?v=YWmqfUrJH_U"
       speaker:
         name: "Ondřej Žára"
         twitter: 0ndras
@@ -13,6 +14,7 @@
     -
       title: "Rendering 3D maps in WebGL"
       description: "Jaké překážky nás čekají při tvoření 2D mapy pro celý svět? Jak zobrazit 2D mapu ve 3D a jaké problémy lze očekávat."
+      video: "http://youtu.be/rn6UrQ_Ws6k"
       speaker:
         name: "Michal Aichinger"
         twitter: aichinge
