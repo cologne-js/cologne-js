@@ -102,3 +102,27 @@ footer {
   .talk-slots .grid-1-3 { min-height: 0; }
 }
 
+
+/* -- New Location (temporary) --------------------------------------------- */
+.next-meetup { position: relative; }
+
+#newlocation {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 0;
+
+  padding: 20px;
+  background: #efd75b;
+  border: 1px solid #d0b114;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  -webkit-transform:rotate(5deg);
+     -moz-transform:rotate(5deg);
+       -o-transform:rotate(5deg);
+          transform:rotate(5deg);
+
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+          box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+}

@@ -3,6 +3,7 @@ section(role="main")
     - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
     h1 Next Meetup: !{nextDate}
     | Cowoco’s doors are always open, join us at 19:00, talks start at 19:30:
+    #newlocation New location as of February!
 
   .talk-slots.grid-row
     - if (locals.events && events[0] && events[0].talk1)
@@ -26,10 +27,9 @@ aside.grid-row(role="complementary")
   .grid-1-3
     h3 Come over, bring friends
     p
-      | <a href="http://maps.google.de/maps?q=Gasmotorenfabrik,+Deutz-M%C3%BClheimer+Stra%C3%9Fe+129,+51063+K%C3%B6ln">Coworking Cologne</a><br/>
-      | Gasmotorenfabrik, 3. Etage <br/>
-      | Deutz-Mülheimer Straße 129 <br/>
-      | 51063 Köln
+      | <a href="http://goo.gl/maps/is9rS">Coworking-Space "Bottfabrik"</a><br>
+      | An der Bottmühle 5<br>
+      | 50678 Köln<br>
 
   .grid-1-3
     h3 Got a question? A talk to propose?
