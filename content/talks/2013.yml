@@ -1,5 +1,18 @@
 ---
 -
+  month: February
+  talks:
+    -
+      title: "Rozbijte své monolitické JS aplikace! Začněte z GruntuJS jinak."
+      speaker:
+        name: "Daniel Steigerwald"
+        twitter: steida
+    -
+      title: "JavaScript a Elasticsearch: #BFF"
+      speaker:
+        name: "Karel Minařík"
+        twitter: "karmiq"  
+-        
   month: January
   talks:
     -
@@ -20,15 +33,3 @@
         twitter: aichinge
       links:
         Website: "http://www.czechdesign.cz/blogs/aichi/"
-  month: February
-  talks:
-      -
-        title: "Rozbijte své monolitické JS aplikace! Začněte z GruntuJS jinak."
-        speaker:
-          name: "Daniel Steigerwald"
-          twitter: steida
-      -
-        title: "JavaScript a Elasticsearch: #BFF"
-        speaker:
-          name: "Karel Minařík"
-          twitter: "karmiq"
