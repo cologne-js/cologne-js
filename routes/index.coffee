@@ -28,7 +28,7 @@ getEvents = (callback) ->
     if data && data.length
       events = []
       for item in data
-        regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\w+)\\.? (?<year>\\d{4})')
+        regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>.{3})\\.? (?<year>\\d{4})')
         parts = XRegExp.exec(item.details, regex)
         foo = date.convert(parts.year, parts.month, parts.day)
 
