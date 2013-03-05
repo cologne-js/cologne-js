@@ -10,7 +10,7 @@ XRegExp      = require('xregexp').XRegExp;
 markdown     = require('node-markdown').Markdown
 fs           = require('fs')
 yaml         = require('js-yaml')
-
+S            = require('string')
 
 # Content caching
 cache      = undefined
@@ -24,19 +24,28 @@ getEvents = (callback) ->
     'fields'      : 'items(details)'
     'max-results' : 1
 
-  gcal.getJSON gcalOptions, (err, data) ->
+  gcal.getJSON gcalOptions, (err, data) ->        
     if data && data.length
-      events = []
-      for item in data
+      events = []      
+      for item in data      
+        details = S(item.details).stripTags().s
+        console.log details
         regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\w+)\\.? (?<year>\\d{4})')
-        parts = XRegExp.exec(item.details, regex)
-        foo = date.convert(parts.year, parts.month, parts.day)
+        parts = XRegExp.exec(details, regex)
+        
+        console.log parts
 
-        talks = XRegExp.exec(item.details, XRegExp('Terminbeschreibung: (.*)', 's'))
+        foo = date.convert(parts.year, parts.month, parts.day)
+        
+        talks = XRegExp.exec(details, XRegExp('Terminbeschreibung: (.*)'))
+        
+
         if (talks && talks[1])
           [talk1, talk2] = talks[1].split('---')
         else
           [talk1, talk2] = ['', '']
+
+        
 
         try
           markdown_talk1 = markdown(talk1)
@@ -53,8 +62,8 @@ getEvents = (callback) ->
         events.push
           date: date.format(foo, "%b %%o, %Y")
           talk1: markdown_talk1
-          talk2: markdown_talk2
-
+          talk2: markdown_talk2                
+            
       callback null, events
     else
       callback new Error('Could not load events from Google Calendar')
