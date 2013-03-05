@@ -28,25 +28,17 @@ getEvents = (callback) ->
     if data && data.length
       events = []      
       for item in data      
-        details = S(item.details).stripTags().s
-        console.log details
-        regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\w+)\\.? (?<year>\\d{4})')
-        parts = XRegExp.exec(details, regex)
-        
-        console.log parts
-
-        foo = date.convert(parts.year, parts.month, parts.day)
-        
-        talks = XRegExp.exec(details, XRegExp('Terminbeschreibung: (.*)'))
-        
+        details = item.details
+        regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\p{L}+)\\.? (?<year>\\d{4})')
+        parts = XRegExp.exec(details, regex)              
+        foo = date.convert(parts.year, parts.month, parts.day)      
+        talks = XRegExp.exec(details, XRegExp('Terminbeschreibung: (.*)', 's'))
 
         if (talks && talks[1])
           [talk1, talk2] = talks[1].split('---')
         else
           [talk1, talk2] = ['', '']
-
-        
-
+      
         try
           markdown_talk1 = markdown(talk1)
         catch error
