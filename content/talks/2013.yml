@@ -1,5 +1,20 @@
 ---
 -
+  month: February
+  talks:
+    -
+      title: "Talk To Me - Making web sites accessible"
+      description: "A computer that can talk to us has been part of science fiction for a long time. For those with limited or no sight at all it has been a reality for a while. It's this group that often benefits the most from the web, since it can give them a form of independence they might not have in their day to day life. This talk will cover: Arguments to convince your boss of the value of making web sites accessible; Software to work with and test against; Examples of the challenges and how to overcome them with JavaScript."
+      speaker:
+        name: "Jörn Zaefferer"
+        twitter: bassistance
+    -
+      title: "mashcloud.net - collaborative, loop-based audio editing & music creation tool"
+      description: "mashcloud.net is an open source audio web app. It basically enables you to select and layer loops from audiofiles hosted on soundcloud.com to create new audio material. It's also collaborative, multiple users can work together in realtime. A brief summary of my adventures fiddling with the web audio API, websockets and cross origin requests."
+      speaker:
+        name: "Max Girkens"
+        twitter: mgherkins
+-
   month: January
   talks:
     -
@@ -19,6 +34,6 @@
         "Slides": "https://docs.google.com/presentation/d/1qSuemd0FFjOkRheXkEX836mys_NZv0QgacCz5r7gowo/pub?start=false&loop=false&delayms=3000#slide=id.p"
     -
       title: "Experiences in HTML5 multiplayer game development"
-      description: "I show you my turn-based strategy game written in JavaScript on client and server side. See how i manage a complex client-server application and give me your ideas for different approaches. Let´s discuss all the challenges, solutions and problems still existing."
+      description: "I show you my turn-based strategy game written in JavaScript on client and server side. See how I manage a complex client-server application and give me your ideas for different approaches. Let´s discuss all the challenges, solutions and problems still existing."
       speaker:
         name: "Norman Wenk"
