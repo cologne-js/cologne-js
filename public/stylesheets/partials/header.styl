@@ -1,0 +1,84 @@
+header {
+  $logo-size = 120px
+  margin-bottom: 2em !important;
+
+  h1 {
+    float: left;
+    margin: 0;
+
+    a {
+      display: block;
+      text-indent: -99em;
+      overflow: hidden;
+      width: $logo-size;
+      height: $logo-size;
+      background: url('/images/colognejs-logo@2x.png') no-repeat;
+      background-size: $logo-size;
+      border-bottom: 0 none !important;
+    }
+  }
+
+  h2 {
+    font: bold 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+
+    margin-top: 1.5em;
+    margin-left: $logo-size + 20px;
+  }
+
+  nav {
+    margin-top: 2.5em;
+    margin-left: 20px;
+    float: left;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media screen and (max-width: 33em) {
+      margin-left: 0;
+      padding: 1em 0;
+      clear: both;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 37em) {
+      margin-top: 1.5em;
+    }
+
+    a:hover {
+      background-color: transparent;
+    }
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+
+    li {
+      // @include horizontal-list-item($padding: 0.5em);
+      display: block;
+      list-style-type: none;
+      white-space: nowrap;
+      float: left;
+      padding: 0 0.5em;
+
+      &:first-child, &.first { padding-left: 0; }
+      &:last-child { padding-right: 0; }
+      &.last { padding-right: 0; }
+    }
+
+    a,
+    a:link,
+    a:active,
+    a:hover,
+    a:visited {
+      text-decoration: none;
+      color: #666;
+    }
+
+    a:hover { border-bottom: 2px solid #666; }
+  }
+}

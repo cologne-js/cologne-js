@@ -1,0 +1,12 @@
+-
+  links:
+    Link: "http://cloud9ide.com"
+  speaker:
+    name: "Fabian Jakobs"
+    twitter: fjakobs
+  title: "Cloud9 IDE"
+-
+  speaker:
+    name: "Sebastian Cohnen"
+    twitter: tisba
+  title: "CouchApps: 2-tier Webapplikation mit CouchDB"

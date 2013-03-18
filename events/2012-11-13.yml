@@ -1,0 +1,20 @@
+-
+  title: "Animations with JavaScript and Canvas"
+  description: "A few months ago, Dushan presented his animation work for an interactive child book. After getting some feedback from the meetup's attendees, he shows us what has changed since then and tells us about releasing the framework as open source."
+  speaker:
+    name: "Dushan Wegner"
+    twitter: mehreinfach
+  links:
+    Website: "http://animation.io/"
+    GitHub: "https://github.com/mehreinfach/animationframework"
+
+-
+  title: "Solitaire with Backbone"
+  description: "Paul shows us his variant of the famous Solitaire game written in Backbone using Marionette and HTML5 drag & drop."
+  speaker:
+    name: "Paul Wittmann"
+    twitter: wakkahari
+  links:
+    Slides: "http://paulwittmann.github.com/colognejs-talk-2012-11/"
+    Game: "http://irmingard.herokuapp.com/"
+    Notes: "https://github.com/paulwittmann/colognejs-talk-2012-11"

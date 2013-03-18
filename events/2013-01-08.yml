@@ -1,0 +1,20 @@
+-
+  title: "ArangoDB"
+  description: "A JavaScript powered NoSQL database from Cologne"
+  speaker:
+    name: "Jan Steemann"
+    twitter: steemann
+  links:
+    Website: "http://www.arangodb.org/"
+-
+  title: "Writing jQuery plug-ins with Jasmine coverage"
+  speaker:
+    name: "Miguel Parramón"
+    twitter: mparramon
+  links:
+    "Slides": "https://docs.google.com/presentation/d/1qSuemd0FFjOkRheXkEX836mys_NZv0QgacCz5r7gowo/pub?start=false&loop=false&delayms=3000#slide=id.p"
+-
+  title: "Experiences in HTML5 multiplayer game development"
+  description: "I show you my turn-based strategy game written in JavaScript on client and server side. See how I manage a complex client-server application and give me your ideas for different approaches. Let´s discuss all the challenges, solutions and problems still existing."
+  speaker:
+    name: "Norman Wenk"

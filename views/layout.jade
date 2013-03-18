@@ -9,11 +9,10 @@ head
 
   title #{locals.title ? (title + " « ") : ''}Cologne.js | Cologne JavaScript user group
 
-  - var nextMeetupDescription = ''
-  - nextMeetupDescription = (locals.events && events[0] && events[0].date) ? ', next time on ' + events[0].date + ' at 19:30' : ''
-  meta(name="description", content="Your friendly JavaScript user group from Cologne. We meet every 2nd Tuesday#{nextMeetupDescription}. Just come over …")
+  meta(name="description", content="Your friendly JavaScript user group from Cologne. We meet every 2nd Tuesday. Just come over …")
   meta(name="robots",      content="index, follow")
 
+  link(rel="alternate", href="/atom.xml", title="Cologne.js – Past topics, talks and slides", type="application/atom+xml")
   link(rel='stylesheet', href='/stylesheets/screen.css')
   //if IE
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
@@ -21,17 +20,20 @@ head
     link(rel='stylesheet', href='/stylesheets/ie.css')
     script (function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();
 
-
 body
-  include includes/header
-
-  !{body}
+  #wrap
+    #main
+      include includes/header
+      block content
 
   footer(role="contentinfo")
-    .left
-      | Made with love in Cologne.<br>
-      | Hosted on GitHub. Go ahead, <a href="https://github.com/cologne-js/cologne-js">fork us</a>.
-    .right
+    .container
+      h3 Friends and family
+      .left
+        img(src="/images/friends.png", alt="Nerdhub, Railslove, O'Reilly, dpunkt Verlag")
+      .right
+        | Made with love in Cologne.<br>
+        | Code is on GitHub. Go ahead, <a href="https://github.com/cologne-js/cologne-js">fork us</a>.
 
   script
     if (location.host === "colognejs.de") {
@@ -45,3 +47,4 @@ body
 
     // Fix iOS orientationchange zoom bug (https://gist.github.com/901295/904de6b03dcfe1f9d2d100d1f5721c1ecb2746ed)
     (function(a){function g(){f.content="width=device-width,minimum-scale="+e[0]+",maximum-scale="+e[1];a.removeEventListener(c,g,true)}var b="addEventListener",c="gesturestart",d="querySelectorAll",e=[1,1],f=d in a?a[d]("meta[name=viewport]"):[];if((f=f[f.length-1])&&b in a){g();e=[.25,1.6];a[b](c,g,true)}})(document)
+| </html>

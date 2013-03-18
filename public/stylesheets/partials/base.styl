@@ -1,0 +1,78 @@
+* {
+  /* apply a natural box layout model to all elements */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font: unit($base-font-size-em, em)/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: #333;
+  background: $background-color url('../images/noise.png');
+}
+
+html, body, #wrap { height: 100%; }
+body > #wrap { height: auto; min-height: 100%; }
+#main { padding-bottom: 130px; }
+
+h2, h3 {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+h2 { font-size: 2.3em; }
+
+h3, h4 { font-size: 1.6em; }
+
+h4 { margin: 0.5em 0; }
+
+h4 + h5 { margin: 0; }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid darken($js-logo-color, 20%);
+}
+
+a:hover { background-color: darken($js-logo-color, 20%); }
+
+
+p { margin: 0; }
+p + p { margin-top: 1em; }
+
+iframe { border:1px solid #666; }
+
+footer {
+  position: relative;
+  margin-top: -130px;
+  height: 130px;
+
+  clear: both;
+  overflow: hidden;
+  padding: 0.5em 0 2em;
+
+  color: #ddd;
+  background: #19160a;
+  font-size: 0.85em;
+
+  .right { text-align:right; }
+
+  a,
+  a:link,
+  a:active,
+  a:hover   { color: darken($js-logo-color, 20%); }
+}

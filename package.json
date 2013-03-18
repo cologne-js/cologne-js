@@ -1,38 +1,19 @@
 {
   "name": "Cologne.js",
   "description": "Cologne.js website on Node",
-  "version": "0.0.3",
-  "author": "Timo Derstappen <teemow@gmail.com>",
-  "contributors": [
-    {
-      "name": "Timo Derstappen",
-      "email": "timo.derstappen@gmail.com"
-    },
-    {
-      "name": "Matthias Lübken",
-      "email": "matthias.luebken@gmail.com"
-    },
-    {
-      "name": "Frederic Hemberger",
-      "email": "mail@frederic-hemberger.de"
-    }
-  ],
+  "version": "0.4.0",
+  "author": "Frederic Hemberger",
   "private": true,
-  "main": "app.coffee",
+  "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=production coffee app.coffee"
+    "start": "NODE_ENV=production node app.js"
   },
   "dependencies": {
-    "coffee-script": ">= 1.1.1",
-    "express": "2.5.0",
-    "jade": ">= 0.16.4",
-    "node-markdown": ">= 0.1.0",
-    "request": ">= 2.1.1",
-    "strftime": ">=0.4.6",
-    "xregexp": "*",
-    "js-yaml": "*"
-  },
-  "devDependencies": {
-    "vows": ">=0.5.1"
+    "express": "3.1.0",
+    "jade": "~0.28.2",
+    "stylus": "~0.32.1",
+    "marked": "~0.2.8",
+    "js-yaml": "~2.0.3",
+    "strftime": "~0.5.1"
   }
 }

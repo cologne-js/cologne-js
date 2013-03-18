@@ -1,0 +1,14 @@
+-
+  title: "Infrastructure as Code"
+  speaker:
+    name: "Axel Quack"
+    twitter: guttertec
+  links:
+    Slides: "http://www.slideshare.net/guttertec/infrastructure-as-code-10499271"
+-
+  title: "Lightning-Talk: ClojureScript + Browser REPL"
+  speaker:
+    name: "Max Weber"
+    twitter: webermaximilian
+  links:
+    Code-Example: "https://github.com/maxweber/counter"

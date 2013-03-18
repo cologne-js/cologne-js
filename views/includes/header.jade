@@ -1,7 +1,8 @@
-header(role="banner")
+header.container(role="banner")
   h1: a(href="/", title="Home") Cologne.js
   h2 Welcome to Cologne’s JavaScript user group
-  - var view = locals.parentView.view
+  - var matches = filename.match(/^\/(.+\/)*(.+)\.(.+)$/);
+  - var view = (matches && matches[2]) ? matches[2] : undefined
   nav
     ul
       li
@@ -15,11 +16,11 @@ header(role="banner")
         - else
           a(href="/about") About
       li
-        - if (view === 'talks' && locals.selectedYear)
+        - if (view === 'talks' && selectedYear)
           strong Talks
           ul
             each year in years
-              - if (year === selectedYear)
+              - if (year == selectedYear)
                 li: strong #{year}
               - else
                 li: a(href="/talks/#{year}") #{year}

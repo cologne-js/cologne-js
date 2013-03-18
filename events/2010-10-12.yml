@@ -1,0 +1,24 @@
+-
+  links:
+    Slides: "http://www.slideshare.net/olegp/ringo-js-talk"
+  speaker:
+    name: "Oleg Podsechin"
+    twitter: olegpodsechin
+  title: RingoJS
+-
+  links:
+    "Functional Javascript": "http://osteele.com/sources/javascript/functional/"
+    JUnify: "http://www.bramstein.com/projects/junify/"
+    Slides: "http://github.com/luebken/Cologne.js/raw/master/talks/functional-js.pdf"
+    "Structure and Interpretation of Computer Programs": "http://mitpress.mit.edu/sicp/"
+  speaker:
+    name: "Manuel Odendahl"
+    twitter: wesen
+  title: "Funktionales Javascript"
+-
+  links:
+    Slides: "http://www.scribd.com/doc/39488472/Coffee-Script-Premiere"
+  speaker:
+    name: "Sebastian Deutsch"
+    twitter: sippndipp
+  title: CoffeeScript

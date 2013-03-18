@@ -1,0 +1,69 @@
+$background-color = #F8F8F8
+$js-logo-color    = #efd75b
+$contrast-color   = darken($js-logo-color, 90%);
+
+$base-font-size-px  = 14
+$base-font-size-em  = $base-font-size-px / 16
+
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/grid";
+@import "partials/header";
+
+@import "views/index";
+@import "views/talks";
+
+
+/* -- Media Queries -------------------------------------------------------- */
+@media screen and (min-width: 33em) {
+  *[role='main'] {
+    min-height: 15em;
+  }
+}
+
+@media screen and (max-width: 62em) {
+  #wrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #main { padding-bottom: 60px; }
+
+  footer {
+    padding-top: 1.2em;
+    margin-top: -60px;
+    height: 60px;
+
+    h3,
+    img {
+      display: none;
+    }
+
+    .right {
+      text-align: left;
+      float: none;
+    }
+  }
+}
+
+@media screen and (max-width: 42em) {
+  #wrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .grid-1-2,
+  .grid-1-3,
+  .grid-2-3 {
+    margin: 0 0 1em 0;
+    float: none;
+    width: 100%;
+  }
+
+  .talk-slots .grid-1-3 { min-height: 0; }
+}
+
+@media screen and (max-width: 32em) {
+  body > #wrap { min-height: auto; }
+}
+

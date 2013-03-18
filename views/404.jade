@@ -1,6 +1,9 @@
-article(role="main")
-  hgroup
-    h1 Uh-uhhh …
-    h2 Seems like the page you're looking for does not exist.
+extends layout
 
-  p Maybe a ninja stole it in the night. While we try to hunt him down, just visit our <a href="/">home page</a> in the mean time.
+block content
+  .container(role="main")
+    hgroup
+      h2 Uh-uhhh …
+      h3 Seems like the page you’re looking for does not exist.
+
+    p Maybe a ninja stole it in the night. While we try to hunt him down, just visit our <a href="/">home page</a> in the mean time.

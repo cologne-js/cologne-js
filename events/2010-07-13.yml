@@ -1,0 +1,15 @@
+-
+  links:
+    Code-Beispiele: "http://google.com"
+    Slides: "http://example.com"
+  speaker:
+    name: "Jörn Zaefferer"
+    twitter: bassistance
+  title: "jQuery UI"
+-
+  links:
+    Slides: "http://www.slideshare.net/jensarps/js-on-mobile-devices"
+  speaker:
+    name: "Jens Arps"
+    twitter: jensarps
+  title: "Mobile JavaScript"

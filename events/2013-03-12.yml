@@ -1,0 +1,17 @@
+-
+  title: "Code Metrics and Complexity Reports in JS (Lightning Talk)"
+  description: "An introduction to code metrics, complexity and refactoring tools."
+  speaker:
+    name: "Sebastian Golasch"
+    twitter: asciidisco
+  links:
+    jscomplexity.org: "http://jscomplexity.org"
+    grunt-complexity: "https://github.com/vigetlabs/grunt-complexity"
+    grunt-plato: "https://github.com/jsoverson/grunt-plato"
+-
+  title: "Nive CMS (Lightning Talk)"
+  description: "How JavaScript and jQuery UI help to improve the user experience in editor frontend for the Nive content management system."
+  speaker:
+    name: "Arndt Droullier"
+  links:
+    Nive CMS: "http://cms.nive.co/"

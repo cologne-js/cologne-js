@@ -1,0 +1,8 @@
+-
+  title: "Client-side Dependency Management with npm and ender"
+  video: "https://vimeo.com/44506562"
+  speaker:
+    name: "Tim Fischbach"
+    twitter: tfischbach
+  links:
+    Slides: "https://github.com/tf/clientside-npm-talk"

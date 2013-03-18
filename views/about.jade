@@ -1,23 +1,24 @@
-section(role="main")
-  h1 About Cologne.js
+extends layout
 
-  h3 Meetings
-  p
-  | The coworking space "Bottfabrik" is open all day. If you want to talk to people before the talks start, get there at 19:00.
-  | The first talk then starts at 19:30. We aim for 20 minute talks, with Q&A afterwards. We also have open discussion that can take a while longer.
+block content
+  .container(role="main")
+    h2 About Cologne.js
 
-  p
-  | Afterwards everyone is welcome to stay, have a beer (or whatever beverage you prefer,
-  | they're provided for a small fee in a big fridge) and talk to attendees. In short: beer.js!
+    .grid-row
+      .grid-1-2
+        :markdown
+          ### Meetings
+          
+          The coworking space "Bottfabrik" is open all day. If you want to talk to people before the talks start, get there at 19:00.
 
-  h3 Speakers
-  p
-  | We're looking for two talks every month, and while some speakers come back, new speakers are always needed and welcome.
-  | In general a small meetup like this is a great way to get started with doing conference talks.
-  | If you're looking for some resources on getting started with public speaking, check out <a href="http://weareallaweso.me/">weareallaweso.me</a>
+          The first talk then starts at 19:30. We aim for 20 minute talks, with Q&A afterwards. We also have open discussion that can take a while longer.
 
-  h3 Location
-  p
-  | We meet at the <a href="http://goo.gl/maps/is9rS">coworking space "Bottfabrik"</a> in the southern part of Cologne (Südstadt).
-  | It is best to get there with public transport, just hop onto Line 15, 16 or 18 and get off at "Ubierring".
-  | You can also get there by car (an underground parking is right across the street at Agrippinawerft), but it's quite expensive and not really recommended.
+      .grid-1-2
+        :markdown
+          ### Speakers
+          
+          We're looking for two talks every month, and while some speakers come back, new speakers are always needed and welcome.
+          
+          In general a small meetup like this is a great way to get started with doing conference talks.
+          
+          If you're looking for some resources on getting started with public speaking, check out <a href="http://weareallaweso.me/">weareallaweso.me</a>

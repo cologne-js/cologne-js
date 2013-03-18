@@ -1,0 +1,41 @@
+!!! xml
+feed(xmlns="http://www.w3.org/2005/Atom")
+  title
+    :cdata
+      Cologne.js
+  link(href="#{baseurl}/atom.xml", rel="self")
+  link(href="#{baseurl}/")
+  updated #{updated}
+  id #{baseurl}/
+  author
+    name
+      :cdata
+        Cologne.js
+  - if (events)
+    each event in events
+      entry
+        title(type="html")
+          :cdata
+            #{event.formattedDate}
+        link(href="#{baseurl}/talks/#{event.year}/##{event.date}")
+        updated #{event.isoDate}
+        id #{baseurl}/talks/#{event.year}/##{event.date}
+        content(type="html")
+          | <![CDATA[
+          - if (event.talks)
+            each talk in event.talks
+              h2
+                - if (talk.speaker.twitter)
+                  a(href="https://twitter.com/#{talk.speaker.twitter}") #{talk.speaker.name}
+                - else
+                  = talk.speaker.name
+                | : #{talk.title}
+
+              - if (talk.description)
+                p !{talk.description}
+
+              - if (talk.links)
+                ul
+                  each linkUrl, linkName in talk.links
+                    li: a(href="#{linkUrl}") #{linkName}
+          | ]]>

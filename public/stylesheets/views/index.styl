@@ -1,0 +1,44 @@
+.grid-row { margin-bottom: 3em; }
+
+.next-meetup {
+  margin-bottom: 1em;
+
+  h2 { margin-bottom: 0; }
+}
+
+
+.talk-slots {
+  h3, h4, h5, p {
+    padding: 0 8px;
+  }
+
+  p { margin-top: 1em; }
+
+  h3 {
+    background: #19160a;
+    color: #fff;
+    padding: 0 8px;
+  }
+}
+
+
+.slot-open {
+  color: #777;
+
+  h3 {
+    background: $js-logo-color;
+    color: #333;
+  }
+}
+
+
+.slot-beerjs {
+  background: url('../images/beer-js@2x.png') center 125px no-repeat;
+  background-size: 50%;
+  height: 380px;
+
+  @media screen and (max-width: 42em) {
+    background-image: none;
+    height: auto;
+  }
+}

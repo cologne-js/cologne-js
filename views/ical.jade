@@ -1,0 +1,20 @@
+|BEGIN:VCALENDAR
+|VERSION:2.0
+|PRODID:#{baseurl}
+|METHOD:PUBLISH
+- var nospace = ""
+- if (events)
+  each event in events
+    |#{nospace}
+    |BEGIN:VEVENT
+    |UID:#{event.icalDate}@colognejs.de
+    |LOCATION:Coworking-Space "Bottfabrik"\nAn der Bottmühle 5\n50678 Köln
+    |SUMMARY:Cologne.js #{event.formattedDate}
+    |URL:#{baseurl}
+    |CLASS:PUBLIC
+    |DTSTAMP:#{event.icalDate}T190000
+    |DTSTART:#{event.icalDate}T193000
+    |DTEND:#{event.icalDate}T220000
+    |END:VEVENT
+|#{nospace}
+|END:VCALENDAR

@@ -1,0 +1,23 @@
+-
+  title: "You want to do WHAT?! with JavaScript"
+  description: "Robotic JS (getUserMedia, Arduino & Kinect)"
+  video: "https://vimeo.com/43957346"
+  speaker:
+    name: "Sebastian Golasch"
+    twitter: asciidisco
+  links:
+    Slides: "http://btplay.asciidisco.com/"
+-
+  title: Bikeshed
+  video: "https://vimeo.com/44090302"
+  speaker:
+    name: "Jens Arps"
+    twitter: jensarps
+  links:
+    Slides: "http://jensarps.github.com/cgnjs-may-2012/"
+-
+  title: "Ascent - A Javascript WebGL Game Framework"
+  video: "https://vimeo.com/44092181"
+  speaker:
+    name: "Jens Arps"
+    twitter: jensarps

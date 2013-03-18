@@ -1,0 +1,8 @@
+-
+  title: "Javascript memory management"
+  description: "Held together with Vangelis Tsoumenis."
+  speaker:
+    name: "Tim Fischbach"
+    twitter: tfischbach
+  links:
+    Slides: "https://github.com/tf/javascript-memory-talk"

@@ -1,0 +1,12 @@
+-
+  title: "From zero to Cappuccino, jqMobile and Node in a year"
+  speaker:
+    name: "Matthias Luebken"
+    twitter: luebken
+-
+  title: "QUnit Session"
+  speaker:
+    name: "Jörn Zaefferer"
+    twitter: bassistance
+  links:
+    Article: "http://msdn.microsoft.com/en-us/scriptjunkie/gg749824.aspx"

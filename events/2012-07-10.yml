@@ -1,0 +1,15 @@
+-
+  title: "Functions in JavaScript"
+  description: "In this talk Norbert gives an introduction to functions in JavaScript, the most important part of the language. He presents details about scope and closures, context and whatever methods can be found on `Function.prototype`."
+  speaker:
+    name: "Norbert Hartl"
+  links:
+    Slides: "http://noha.github.com/slides-functions-in-js"
+-
+  title: "Getting started with Canvas"
+  description: "Dushan explains the basics by creating a simple clock in Canvas and presents his current project, an animated children's book."
+  speaker:
+    name: "Dushan Wegner"
+    twitter: mehreinfach
+  links:
+    Code-Example: "https://github.com/mehreinfach/uhr"

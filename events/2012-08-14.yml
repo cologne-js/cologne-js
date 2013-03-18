@@ -1,0 +1,15 @@
+-
+  title: "epublishing with Google Closure"
+  description: "Talking about our magazine framework and our experiences in developing a large JavaScript framework using Google Closure Tools."
+  speaker:
+    name: "Felix Lamouroux"
+  links:
+-
+  title: "Using Ruby for Integrated Javascript Development: Introducing Iridium"
+  description: "There are many problems doing modern javascript development. Its hard to get up and running, it's hard to organize code. It's hard to do a lot of things. I show you how we created an integrated solution using ruby to make developing complete JS applications so much easier."
+  speaker:
+    name: "Adam Hawkins"
+    twitter: adman65
+  links:
+    Slides: "https://speakerdeck.com/u/twinturbo/p/using-ruby-for-integrated-javascript-development-introducing-iridium"
+    GitHub: "https://github.com/radiumsoftware/iridium"
