@@ -1,0 +1,8 @@
+-
+  title: "ArangoDB Foxx - Building APIs for Single Page Web Applications"
+  description: "Foxx is a feature of the upcoming version of the free and open source NoSQL database ArangoDB. It allows you to build APIs directly on top of the database and therefore skip the middleman (Rails, Django or whatever your favorite web framework is). This can for example be used to build a backend for Single Page Web Applications. It is designed with simplicity and the specific use case of modern client-side MVC frameworks in mind featuring tools like an asset delivery system."
+  speaker:
+    name: "Lucas Dohmen"
+    twitter: moonbeamlabs
+  links:
+    ArangoDB: "http://www.arangodb.org/"
