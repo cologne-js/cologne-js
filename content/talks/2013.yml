@@ -1,5 +1,17 @@
 ---
 -
+  month: March
+  talks:
+    -
+      title: "The Other Maps"
+      description: "Tired of Google Maps? Try other technologies that will enable you to prototype and deliver map related stuff in a fast and effortless manner. [Leaflet.js](http://leafletjs.com/) + [MapBox](http://mapbox.com/) + [CartoDB](http://cartodb.com/)"
+      speaker:
+        name: "Petr Volny, Petr Beneš, GoodData"      
+    -
+      title: "Ember camp"
+      speaker:
+        name: "Standa Opíchal, GoodData" 
+-
   month: February
   talks:
     -
