@@ -8,7 +8,7 @@ module.exports = function(req, res) {
     item.icalDate      = strfdate('%Y%m%d', item.date);
   });
 
-  res.set('Content-Type', 'text/calendar');
+  res.set('Content-Type', 'text/calendar; charset=utf-8');
   res.render(
     'ical',
     {

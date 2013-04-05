@@ -9,7 +9,7 @@ module.exports = function(req, res) {
     item.isoDate       = (new Date(item.date)).toISOString();
   });
 
-  res.set('Content-Type', 'application/atom+xml');
+  res.set('Content-Type', 'application/atom+xml; charset=utf-8');
   res.render(
     'atom',
     {
