@@ -14,7 +14,9 @@ block content
           article(class="grid-1-3 slot-taken")
             h3 Talk ##{number+1}
             h4 !{talk.title}
-            h5 !{talk.speaker.name} (<a href="https://twitter.com/!{talk.speaker.twitter}">@!{talk.speaker.twitter}</a>)
+            h5 !{talk.speaker.name}
+              - if (talk.speaker.twitter)
+                |  (<a href="https://twitter.com/!{talk.speaker.twitter}">@!{talk.speaker.twitter}</a>)
             :markdown
               !{talk.description}
 
