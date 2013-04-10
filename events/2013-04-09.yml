@@ -5,11 +5,14 @@
     name: "Lucas Dohmen"
     twitter: moonbeamlabs
   links:
+    Slides: "https://speakerdeck.com/moonglum/arangodb-foxx"
     ArangoDB: "http://www.arangodb.org/"
 -
-  title: "Lightning Talk: Buster.js"
+  title: "Testing your code with Buster.js"
   description: "Buster.js is a flexible JavaScript testing toolkit for the browser and Node.js. It does browser automation (like JsTestDriver), headless testing (PhantomJS, jsdom), and more. We'll give you a short introduction to Buster.js and show a few demos how we use it in our projects."
   speaker:
     name: "Vangelis Tsoumenis/Tim Fischbach"
   links:
+    Slides: "http://articles.timfischbach.de/buster-js-testing-talk/slides/"
     "Buster.js": "http://docs.busterjs.org/en/latest/"
+    "JavaScript Tests on your Continous Integration Server": "http://blog.iterate.no/2012/12/19/javascript-tests-on-your-continous-integration-server/"
