@@ -7,6 +7,7 @@
   links:
     Slides: "https://speakerdeck.com/moonglum/arangodb-foxx"
     ArangoDB: "http://www.arangodb.org/"
+    "Live recording of the presentation": "https://www.youtube.com/watch?v=o2ZQK5TXah0"
 -
   title: "Testing your code with Buster.js"
   description: "Buster.js is a flexible JavaScript testing toolkit for the browser and Node.js. It does browser automation (like JsTestDriver), headless testing (PhantomJS, jsdom), and more. We'll give you a short introduction to Buster.js and show a few demos how we use it in our projects."
