@@ -1,0 +1,8 @@
+-
+  title: "Lightning Talk: Fugu – A client side error logger"
+  description: "After Lucas showed us the new Foxx application framework for ArangoDB last month, I tried to build a first little demo app for it. Fugu is a logger for client side error messages, which can be analyzed later and help you with debugging."
+  speaker:
+    name: "Frederic Hemberger"
+    twitter: fhemberger
+  links:
+    "Fugu": "https://github.com/fhemberger/arangodb-fugu"
