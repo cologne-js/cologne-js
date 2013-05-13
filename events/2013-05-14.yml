@@ -6,3 +6,10 @@
     twitter: fhemberger
   links:
     "Fugu": "https://github.com/fhemberger/arangodb-fugu"
+
+-
+  title: "Lightning Talk: Experimenting with physics and animation / Case-study: Bouncing"
+  description: "Many JavaScript-programmers \"always wanted to\" play around with physics and animation. Dushan (@iDushan) will show us how to start experimenting with animation-physics right away and collaborate on animation-experiments with fellow hackers."
+  speaker:
+    name: "Dushan Wegner"
+    twitter: mehreinfach
