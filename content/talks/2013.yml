@@ -1,5 +1,18 @@
 ---
 -
+  month: April
+  talks:
+    -
+      title: "BDD tools v Express.js"
+      description: "Short introduction into BDD and show Mocha, Chai, Sinon-chai, Chai-as-promised tools."
+      speaker:
+        name: "Tomáš Brambora, Salsita"      
+    -
+      title: "Ember.js - The New Web Development Order!"
+      description: "Offers what other platforms UI developers normally expect to obtain however what they have never gotten in a browser-centric web framework."
+      speaker:
+        name: "Adam Kloboučník, GoodData" 
+-
   month: March
   talks:
     -
