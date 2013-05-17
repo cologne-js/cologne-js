@@ -135,7 +135,10 @@ exports.talks = (req, res) ->
 exports.ical = (req, res) ->
   res.redirect gcal.getICalUrl()
 
+exports.robots = (req, res) ->
+  res.send("User-agent: *\nDisallow: /");
 
 exports.e404 = (req, res) ->
   res.status 404
   res.render '404'
+
