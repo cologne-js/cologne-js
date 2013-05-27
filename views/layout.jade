@@ -36,15 +36,14 @@ body
     .right
 
   script
-    if (location.host === "jsconf.cz") {
+    if (location.host === "www.jsconf.cz") {
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-79221-52'], ['_trackPageview']);
       (function() {
         var ga = document.createElement('script'); ga.async = true; ga.src = 'http://www.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    }
-    if (location.host === "praguejs.cz") {
+    } else {
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-79221-53'], ['_trackPageview']);
       (function() {
