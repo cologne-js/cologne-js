@@ -1,17 +1,17 @@
 ---
-  -
-    month: May
-    talks:
-      -
-        title: "RequireJS"
-        description: "Modular JavaScript with RequireJS. How to write modular JavaScript applications with RequireJS and what it takes to compile your application using RequireJS Optimizer."
-        speaker:
-          name: "František Hába, Apiary.io"      
-      -
-        title: "Autonomous web apps with Sockethub"
-        description: "As the major social network vendors increase their customer lock-in, and the open social web platform alternatives continue to be dispersed and re-invent the wheel, we're faced with many different, mostly non-interoperable platforms, protocols and APIs to choose from."
-        speaker:
-          name: "Nick Jennings" 
+-
+  month: May
+  talks:
+    -
+      title: "RequireJS"
+      description: "Modular JavaScript with RequireJS. How to write modular JavaScript applications with RequireJS and what it takes to compile your application using RequireJS Optimizer."
+      speaker:
+        name: "František Hába, Apiary.io"      
+    -
+      title: "Autonomous web apps with Sockethub"
+      description: "As the major social network vendors increase their customer lock-in, and the open social web platform alternatives continue to be dispersed and re-invent the wheel, we're faced with many different, mostly non-interoperable platforms, protocols and APIs to choose from."
+      speaker:
+        name: "Nick Jennings" 
 -
   month: April
   talks:
