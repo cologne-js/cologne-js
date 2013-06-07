@@ -1,6 +1,6 @@
 -
   title: "Hands On AngularJS - Let’s Teach HTML New Tricks"
-  description: "Tired of writing the same error-prone code again and again? Take a look at the AngularJS framework and see how to write modern web apps with breeze. Join our talk and discover how to write expressive, readable and testable JavaScript code."
+  description: '<strong>Sascha Brink (<a href="https://twitter.com/sascha_brink">@sascha_brink</a>)</strong><br><br>Tired of writing the same error-prone code again and again? Take a look at the AngularJS framework and see how to write modern web apps with breeze. Join our talk and discover how to write expressive, readable and testable JavaScript code.'
   speaker:
     name: "Robin Böhm"
     twitter: roobijn
