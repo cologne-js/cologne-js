@@ -25,7 +25,7 @@
 
   h1 {
     @include adjust-font-size-to(20px, 1);
-    margin-bottom: $base-line-height * 2;
+    margin-bottom: $base-line-height * 2.4;
 
     & + h2 {
       @include adjust-font-size-to(16px, 1);

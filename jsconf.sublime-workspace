@@ -43,7 +43,10 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -56,6 +59,7 @@
 	},
 	"file_history":
 	[
+		"/Users/prskavecl/Sites/cologne-js/content/talks/2013.yml",
 		"/Users/prskavecl/Sites/cologne-js/views/index.jade",
 		"/Users/prskavecl/Sites/cologne-js/wiki/meetups.markdown",
 		"/Users/prskavecl/Sites/cologne-js/views/includes/partners.jade",
@@ -172,6 +176,7 @@
 		]
 	},
 	"menu_visible": true,
+	"project": "jsconf.sublime-project",
 	"replace":
 	{
 		"height": 74.0
@@ -182,6 +187,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"201",
+				"content/talks/2013.yml"
+			],
 			[
 				"octopress_filters.rb",
 				"plugins/octopress_filters.rb"
@@ -197,10 +206,24 @@
 		],
 		"width": 380.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 250.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
