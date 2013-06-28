@@ -1,5 +1,18 @@
 ---
 -
+  month: June
+  talks:
+    -
+      title: "Design API"
+      description: "Trendy v návrhu APIs, jak souvisí API a UX a jak přizpůsobit API jeho uživatelům."
+      speaker:
+        name: "Jakub Nešetřil, Apiary.io"      
+    -
+      title: "HERA – API v Socialbakers"
+      speaker:
+        name: "Lukáš Weber a Lukáš Drba, SocialBakers" 
+  
+-
   month: May
   talks:
     -
