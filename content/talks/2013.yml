@@ -8,9 +8,10 @@
       speaker:
         name: "Jakub Nešetřil, Apiary.io"      
     -
-      title: "HERA – API v Socialbakers"
+      title: "Jak děláme API v Socialbakers"      
       speaker:
-        name: "Lukáš Weber a Lukáš Drba, SocialBakers" 
+        name: "Lukáš Beneš, Lukáš Drbal, Lukáš Weber - SocialBakers" 
+      video: "https://www.youtube.com/watch?v=sadb7eps1uA"
   
 -
   month: May
