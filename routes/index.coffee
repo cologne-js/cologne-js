@@ -86,20 +86,35 @@ getContent = (view, callback) ->
     callback(null, content)
 
 
+getSlots = (callback) ->
+  getContent 'talks', (err, data) ->
+    selectedYear = String( (new Date()).getFullYear() )
+    if (err) then callback(err)
+    content = {}
+    if data
+      content = data[selectedYear][0]
+    callback(null, content)
+
 exports.init = (app) =>
   cache = require('../lib/pico.coffee').Pico(app.settings.cacheInSeconds)
 
 
+
 # Routes
 exports.index = (req, res) ->
-  content = cache.get 'websiteContent'
+  content = undefined
   if content
     res.render 'index', content
   else
+    getSlots (err, data) ->
+      if data
+        res.locals.slots = data
+      else
+        console.log err
+
     getEvents (err, data) ->
       if data
         content = { 'events': data }
-
         # Store content in cache
         cache.set 'websiteContent', content
 
