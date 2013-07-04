@@ -32,10 +32,9 @@
   },
   "dependencies": {
     "coffee-script": "~1.6.0",
-    "express": "2.5.11",
-    "connect": "1.9.2",
+    "express": "~3.3.3",
+    "connect": "~2.8.3",
     "sitemap": ">= 0.6.0",
-    "jade": ">= 0.16.4",
     "request": ">= 2.1.1",
     "strftime": ">=0.4.6",
     "xregexp": "~2.0.0",
@@ -44,6 +43,7 @@
     "marked": "~0.2.9"
   },
   "devDependencies": {
-    "vows": ">=0.5.1"
+    "vows": ">=0.5.1",
+    "express-debug": "~1.0.3"
   }
 }

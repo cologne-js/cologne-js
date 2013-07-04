@@ -2,8 +2,16 @@
 
 express = require('express')
 routes  = require('./routes')
+app     = module.exports = express()
 
-app     = module.exports = express.createServer()
+logErrors = (err, req, res, next) ->
+  console.error err.stack
+  next err
+
+errorHandler = (err, req, res, next) ->
+  res.status 500
+  res.render 'error', { error: err }
+
 
 # Configuration
 app.configure () ->
@@ -15,14 +23,17 @@ app.configure () ->
   app.use app.router
 
 app.configure 'development', () ->
+  edt = require('express-debug')
+  edt app, {}
   app.set 'cacheInSeconds', 0
   app.set 'port', 3333
-  app.use express.errorHandler({ dumpExceptions: true, showStack: true })
+  app.use logErrors
+  app.use errorHandler
 
 app.configure 'production', () ->
   app.set 'cacheInSeconds', 60 * 60
   app.set 'port', process.env.PORT or 5000
-  app.use express.errorHandler()
+  app.use errorHandler
 
 # Routes
 routes.init app
@@ -33,6 +44,5 @@ app.get  '/praguejs.ics',           routes.ical
 app.get  '/robots.txt',             routes.robots
 app.get  '/*',                      routes.e404
 
-
-app.listen app.settings.port
-console.log "Express server listening in #{ app.settings.env } mode at http://localhost:#{ app.address().port }/"
+server = app.listen app.settings.port
+console.log "Express server listening in #{ app.settings.env } mode at http://localhost:#{ server.address().port }/"

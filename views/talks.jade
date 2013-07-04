@@ -1,48 +1,52 @@
-section.talk-list(role="main")
-  - var match
-  each meetup in content[selectedYear]
-    .grid-row
-      .grid-1-3
-        h1
-          a(class="anchor", name="#{meetup.month.toLowerCase()}-#{selectedYear}", href="##{meetup.month.toLowerCase()}-#{selectedYear}") ¶
-          | #{meetup.month} #{selectedYear}
-      .grid-2-3
-        each talk in meetup.talks
-          article
-            h2= talk.title
-            h3
-              = talk.speaker.name
-              - if (talk.speaker.twitter)
-                span
-                    |  (
-                    a(href="https://twitter.com/#{talk.speaker.twitter}") @#{talk.speaker.twitter}
-                    | )
+extends layout
 
-            - if (talk.description)
-              p !{talk.description}
+block content
+  section.talk-list(role="main")
+    - var match
+    each meetup in content[selectedYear]
+      .grid-row
+        .grid-1-3
+          h1
+            a(class="anchor", name="#{meetup.month.toLowerCase()}-#{selectedYear}", href="##{meetup.month.toLowerCase()}-#{selectedYear}") ¶
+            | #{meetup.month} #{selectedYear}
+        .grid-2-3
+          each talk in meetup.talks
+            article
+              h2= talk.title
+              h3
+                = talk.speaker.name
+                - if (talk.speaker.twitter)
+                  span
+                      |  (
+                      a(href="https://twitter.com/#{talk.speaker.twitter}") @#{talk.speaker.twitter}
+                      | )
 
-            - if (talk.links || talk.video)
-              ul
-                - if (talk.links)
-                  each linkUrl, linkName in talk.links
-                    li: a(href="#{linkUrl}") #{linkName}
-                - if (talk.video)
-                  - if (talk.video.indexOf("vimeo.com") !== -1)
-                    li: a(href="#{talk.video}", class="video-link") Video
-                  - else
-                    li: a(href="#{talk.video}") Video
+              - if (talk.description)
+                p !{talk.description}
 
-            - if ( talk.video && (match = talk.video.match(/vimeo\.com\/(\d+)$/)) && match[1] )
-              .video(style="display:none")
-                iframe(src="http://player.vimeo.com/video/#{match[1]}", width="500", height="281", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
-                  a(href="#{talk.video}") Watch talk on Vimeo
+              - if (talk.links || talk.video)
+                ul
+                  - if (talk.links)
+                    each linkUrl, linkName in talk.links
+                      li: a(href="#{linkUrl}") #{linkName}
+                  - if (talk.video)
+                    - if (talk.video.indexOf("vimeo.com") !== -1)
+                      li: a(href="#{talk.video}", class="video-link") Video
+                    - else
+                      li: a(href="#{talk.video}") Video
+
+              - if ( talk.video && (match = talk.video.match(/vimeo\.com\/(\d+)$/)) && match[1] )
+                .video(style="display:none")
+                  iframe(src="http://player.vimeo.com/video/#{match[1]}", width="500", height="281", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
+                    a(href="#{talk.video}") Watch talk on Vimeo
 
 
-script(src="//code.jquery.com/jquery-1.7.2.min.js")
-script.
-  $(function(){
-    $('.video-link').click(function(e){
-      $(this).parents('ul').next('.video').slideToggle();
-      e.preventDefault();
+  script(src="//code.jquery.com/jquery-1.7.2.min.js")
+  script.
+    $(function(){
+      $('.video-link').click(function(e){
+        $(this).parents('ul').next('.video').slideToggle();
+        e.preventDefault();
+      });
     });
-  });
+
