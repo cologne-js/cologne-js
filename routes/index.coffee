@@ -6,8 +6,8 @@ calendarId   = '6gg9b82umvrktnjsfvegq1tb24'
 gcal         = require('../lib/googlecalendar.coffee').GoogleCalendar(calendarId)
 
 date         = require('../lib/date.coffee')
-XRegExp      = require('xregexp').XRegExp;
-markdown     = require('node-markdown').Markdown
+XRegExp      = require('xregexp').XRegExp
+markdown     = require('marked')
 fs           = require('fs')
 yaml         = require('js-yaml')
 S            = require('string')

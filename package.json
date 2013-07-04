@@ -4,19 +4,31 @@
   "version": "0.0.5",
   "author": "Timo Derstappen <teemow@gmail.com>",
   "contributors": [
-    { "name": "Timo Derstappen", "email": "timo.derstappen@gmail.com" },
-    { "name": "Matthias Lübken", "email": "matthias.luebken@gmail.com" },
-    { "name": "Frederic Hemberger", "email": "mail@frederic-hemberger.de" },
-    { "name": "Ladislav Prskavec", "email": "ladislav@prskavec.net"}
+    {
+      "name": "Timo Derstappen",
+      "email": "timo.derstappen@gmail.com"
+    },
+    {
+      "name": "Matthias Lübken",
+      "email": "matthias.luebken@gmail.com"
+    },
+    {
+      "name": "Frederic Hemberger",
+      "email": "mail@frederic-hemberger.de"
+    },
+    {
+      "name": "Ladislav Prskavec",
+      "email": "ladislav@prskavec.net"
+    }
   ],
   "private": true,
-  "main" : "app.coffee",
+  "main": "app.coffee",
   "scripts": {
     "start": "NODE_ENV=production coffee app.coffee"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm":  "1.2.x"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   },
   "dependencies": {
     "coffee-script": "~1.6.0",
@@ -24,12 +36,12 @@
     "connect": "1.9.2",
     "sitemap": ">= 0.6.0",
     "jade": ">= 0.16.4",
-    "node-markdown": ">= 0.1.0",
     "request": ">= 2.1.1",
     "strftime": ">=0.4.6",
     "xregexp": "~2.0.0",
     "js-yaml": "~2.0.0",
-    "string": "~1.0.0"
+    "string": "~1.0.0",
+    "marked": "~0.2.9"
   },
   "devDependencies": {
     "vows": ">=0.5.1"

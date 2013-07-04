@@ -21,7 +21,7 @@ head
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
   //if lt IE 9
     link(rel='stylesheet', href='/stylesheets/ie.css')
-    script (function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();
+    script. (function(){var e='aside article hgroup footer header nav section'.split(' ');for (var i=0,l=e.length;i<l;i++){document.createElement(e[i])}})();
 
 
 body
@@ -35,7 +35,7 @@ body
       | Hosted on GitHub. Go ahead and <a href="https://github.com/abtris/cologne-js">fork us</a>!.
     .right
 
-  script
+  script(type='text/javascript').
     if (location.host === "www.jsconf.cz") {
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-79221-52'], ['_trackPageview']);
