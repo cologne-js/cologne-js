@@ -33,6 +33,7 @@
   "dependencies": {
     "coffee-script": "~1.6.0",
     "express": "~3.3.3",
+    "jade": "~0.32.0",
     "connect": "~2.8.3",
     "sitemap": ">= 0.6.0",
     "request": ">= 2.1.1",
