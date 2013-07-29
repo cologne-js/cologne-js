@@ -1,5 +1,20 @@
 ---
 -
+  month: July
+  talks:
+    -
+      title: "Intro do Google Closure Compiler a Library"
+      description: "Praktická ukázka skeletonu webové aplikace využívající Compiler a Library. Výhody a nástrahy Compileru. Ukázky práce s Closure Library od základních funkcí knihovny, OOP, lokalizace, šablon až po jednoduchou UI komponentu."
+      speaker:
+        name: "Miroslav Kuzmisin"            
+    -
+      title: "Cucumber.js"      
+      description: "Cucumber, the popular Behaviour-Driven Development tool, brought to your JavaScript stack. It runs on both Node.js and modern web browsers."
+      speaker:
+        name: "Adam Kliment, Apiary.io" 
+      links:
+        Gist with links: "https://gist.github.com/netmilk/6081659"        
+-
   month: June
   talks:
     -
@@ -13,7 +28,6 @@
       speaker:
         name: "Lukáš Beneš, Lukáš Drbal, Lukáš Weber - SocialBakers" 
       video: "https://www.youtube.com/watch?v=sadb7eps1uA"
-  
 -
   month: May
   talks:

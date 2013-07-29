@@ -6,7 +6,9 @@
       article(class="grid-1-3 slot-taken")
         h1 !{meetup.title}
         h2 !{meetup.speaker.name}
-        p
-          a(href=meetup.video) Video
-        p !{meetup.description}
+        - if (meetup.video)
+          p
+            a(href=meetup.video) Video
+        - if (meetup.description)    
+          p !{meetup.description}
 
