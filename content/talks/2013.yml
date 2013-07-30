@@ -13,6 +13,7 @@
       description: "Cucumber, the popular Behaviour-Driven Development tool, brought to your JavaScript stack. It runs on both Node.js and modern web browsers."
       speaker:
         name: "Adam Kliment, Apiary.io" 
+      video: "http://www.youtube.com/watch?v=nxsewc3rKMg"      
       links:
         Gist with links: "https://gist.github.com/netmilk/6081659"        
 -
