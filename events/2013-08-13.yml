@@ -4,3 +4,9 @@
   speaker:
     name: "Sebastian Golasch"
     twitter: asciidisco
+-
+  title: "Having fun with graphs"
+  description: "This talk is all about drawing on your webpage. We will have a short introduction to d3.js, a library to easily create SVGs in your webpage. Along the way we will render graphs using different layouting strategies. But what are the problems when displaying a graph? Just think of graphs having more vertices then you have pixels on your screen. Or what if you want a user to manupilate the graph and his changes being persistent? Michael will present his answers to this questions, ending up wit a GUI for a graph database."
+  speaker:
+    name: "Michael Hackstein"
+    twitter: mchacki
