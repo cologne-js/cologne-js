@@ -5,7 +5,7 @@ block content
     .next-meetup
       - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
       h1 Next Meetup: !{nextDate}
-      | Node5 doors are always open, join us at 17:40, talks start at 18:00:
+      | <br><a href="http://www.node5.cz/">Node5</a> doors are always open, join us at 17:40, talks start at 18:00:
 
     .talk-slots.grid-row
       - if (locals.events && events[0] && events[0].talk1)
@@ -22,8 +22,8 @@ block content
 
       article(class="grid-1-3 slot-beerjs")
         h1 beer.js
-        p After the talks, stick around, have a drink and a chat or two. A great opportunity to get to know fellow JavaScripters.<br><br>
-        p Usualy in <strong>Andělka</strong>, Radlická 112/22, 150 00 Praha 5 z Node5 směrem zpět na Anděl asi 200m
+        p After the talks, stick around, have a drink and a chat or two. A great opportunity to get to know fellow JavaScripters.<br>
+                
   - if (locals.slots)
     include includes/index/slots
 
