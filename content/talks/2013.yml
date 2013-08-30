@@ -1,5 +1,15 @@
 ---
 -
+  month: August
+  talks:
+    -
+      title: "Firebase and AngularJS"
+      description: "Dnešní většina aplikací v javascriptu má architekturu klient server. Pokud nechcete psát nějaký backend pro vaši aplikaci, můžete se tomu vyhnout pokud použijete nějaký druh úložiště (databáze), která vám k tomu přidá i funkce, které má nějaký backend napsaný např. v nodejs nebo php."
+      speaker:
+        name: "Ladislav Prskavec"            
+      links: 
+        Blog post: "http://blog.prskavec.net/2013/08/firebase-a-angularjs/"
+-
   month: July
   talks:
     -
@@ -15,7 +25,7 @@
         name: "Adam Kliment, Apiary.io" 
       video: "http://www.youtube.com/watch?v=nxsewc3rKMg"      
       links:
-        Gist with links: "https://gist.github.com/netmilk/6081659"        
+        Gist with links: "https://gist.github.com/netmilk/6081659"
 -
   month: June
   talks:
