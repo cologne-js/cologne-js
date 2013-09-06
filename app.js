@@ -51,5 +51,5 @@ app.get('/colognejs.ics',          routes.ical);
 app.get('/*',                      routes.error404);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server in \x1B[1m\x1B[31m' + app.get('env') + '\x1B[39m, listening on port \x1B[1m\x1B[31m' + app.get('port') + '\x1B[39m');
+  console.log('Express server in \x1B[1m\x1B[31m' + app.get('env') + '\x1B[39m: http://localhost:\x1B[1m\x1B[31m' + app.get('port') + '\x1B[39m');
 });
