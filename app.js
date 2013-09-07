@@ -22,8 +22,6 @@ app.configure(function(){
 
   app.use(express.favicon(__dirname + '/public/favicon.ico', { maxAge: 2592000000 }));
   app.use(express.logger('dev'));
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
 
   app.use(require('stylus').middleware({
     src: __dirname + '/public',
