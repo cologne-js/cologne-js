@@ -1,0 +1,12 @@
+-
+  title: "Leap Motion and the Chrome Serial API"
+  description: "With Chrome's Serial API it becomes possible to access USB or serial hardware and interact with it in the browser. The new Leap Motion controller can also be controlled with JavaScript. So let's put these parts together to build a Chrome app, which takes input from a Leap Motion device and controls an Arduio connected via USB."
+  speaker:
+    name: "Maik Schmidt"
+    twitter: maik_schmidt
+-
+  title: "Ligntning Talk: JS styleguides and esformatter"
+  description: "Jörn shows us, how to keep your code in shape."
+  speaker:
+    name: "Jörn Zaefferer"
+    twitter: bassistance
