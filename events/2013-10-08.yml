@@ -5,8 +5,8 @@
     name: "Maik Schmidt"
     twitter: maik_schmidt
 -
-  title: "Ligntning Talk: JS styleguides and esformatter"
-  description: "Jörn shows us, how to keep your code in shape."
+  title: "Ligntning Talk: Formatting Javascript: Of guides and parsers"
+  description: "Why bother with style guides, which ones are there to pick from, what tools can help enforce them. Followed by a very brief look under the cover of esformatter."
   speaker:
     name: "Jörn Zaefferer"
     twitter: bassistance
