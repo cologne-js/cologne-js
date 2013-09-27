@@ -1,5 +1,21 @@
 ---
 -
+  month: September
+  talks:
+    -
+      title: "MVC Performance, Ember.js"
+      description: "About how a core runtime and overall principles design influences the frontend framework performance."
+      speaker:
+        name: "Standa Opichal, GoodData"            
+        twitter: opichals
+      links: 
+        Slides: "http://www.slideshare.net/opichals/mvc-performance-emberjs-26607445"  
+    -
+      title: "Cesta do USA, jak pracovat bez víza legalně?"
+      speaker:
+        name: "Daniel Steigerwald"            
+        twitter: steida
+-
   month: August
   talks:
     -
@@ -7,6 +23,7 @@
       description: "Dnešní většina aplikací v javascriptu má architekturu klient server. Pokud nechcete psát nějaký backend pro vaši aplikaci, můžete se tomu vyhnout pokud použijete nějaký druh úložiště (databáze), která vám k tomu přidá i funkce, které má nějaký backend napsaný např. v nodejs nebo php."
       speaker:
         name: "Ladislav Prskavec"            
+        twitter: abtris        
       links: 
         Blog post: "http://blog.prskavec.net/2013/08/firebase-a-angularjs/"
 -
