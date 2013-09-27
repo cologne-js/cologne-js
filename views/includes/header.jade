@@ -5,17 +5,17 @@ header(role="banner")
   nav
     ul
       li
-        - if (view === 'index')
+        - if (selectedView === 'index')
           strong Home
         - else
           a(href="/") Home
       li
-        - if (view === 'about')
+        - if (selectedView === 'about')
           strong About
         - else
           a(href="/about") About
       li
-        - if (view === 'talks' && locals.selectedYear)
+        - if (selectedView === 'talks' && locals.selectedYear)
           strong Talks
           ul
             each year in years
