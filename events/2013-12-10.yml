@@ -5,3 +5,13 @@
     name: "Christian Görgen"
   links:
     Website: "http://www.wakanda.org/"
+-
+  title: "NoSSL - An alternative to using no SSL"
+  description: "NoSSL is a JavaScript/PHP library that can be easily integrated into any website to provide an asymmetric encryption between client and server using RSA/AES algorithms. NoSSL was developed for people running websites with login or contact forms, who shy away from the costs and the installation/configuration hassle of SSL-certificates."
+  speaker:
+    name: "Martin Weihrauch"
+-
+  title: "Glühwein.js"
+  description: "As every year, stay after the talks, have a drink and chat with your fellows at Cologne.js. We'll also have a little book raffle as a Christmas gift."
+  speaker:
+    name: "Cologne.js team"
