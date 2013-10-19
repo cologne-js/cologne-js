@@ -27,7 +27,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 203.0,
+		"height": 27.0,
 		"selected_items":
 		[
 			[
@@ -39,7 +39,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 435.0
+		"width": 521.0
 	},
 	"console":
 	{
@@ -59,6 +59,8 @@
 	},
 	"file_history":
 	[
+		"/Users/prskavecl/Sites/cologne-js/config.rb",
+		"/Users/prskavecl/Sites/cologne-js/lib/pico.coffee",
 		"/Users/prskavecl/Sites/cologne-js/content/talks/2013.yml",
 		"/Users/prskavecl/Sites/cologne-js/views/index.jade",
 		"/Users/prskavecl/Sites/cologne-js/wiki/meetups.markdown",
