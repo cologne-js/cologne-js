@@ -1,5 +1,20 @@
 ---
 -
+  month: October
+  talks:
+    -
+      title: "Zajímavosti z JSConf.eu 2013"
+      description: "Reportáž a shrnutí z konference http://2013.jsconf.eu/."
+      speaker:
+        name: "Ondřej Žára, Seznam.cz"            
+        twitter: 0ndras
+    -
+      title: "Debugování Node.js aplikací"
+      description: "Jak na debugování v Node.js aplikacích. Krátká zmínka o alternativách - TDD, debug logging. Live demo práce s Node Inspector."
+      speaker:
+        name: "Miroslav Bajtoš, Strongloop"            
+        twitter: bajtos  
+-
   month: September
   talks:
     -
