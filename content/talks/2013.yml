@@ -8,6 +8,8 @@
       speaker:
         name: "Adam Kloboučník, GoodData"            
         twitter: akloboucnik‎
+      links:
+        Slides: https://speakerdeck.com/akloboucnik/ember-data-introduction  
     -
       title: "AngularJS a Restangular"
       description: "AngularJS aplikace s Node.js/MongoDB backendem s využitím Yeomana a Restangularu."
