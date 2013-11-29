@@ -1,5 +1,19 @@
 ---
 -
+  month: November
+  talks:
+    -
+      title: "Ember-data"
+      description: "Co jsou ember-data (pro ty co neví). Co se změnilo (pro ty co znali před beta.1). Hands-on příklady typických use cases (transakce, embedded models, merge verzí klient/server)"
+      speaker:
+        name: "Adam Kloboučník, GoodData"            
+        twitter: akloboucnik‎
+    -
+      title: "AngularJS a Restangular"
+      description: "AngularJS aplikace s Node.js/MongoDB backendem s využitím Yeomana a Restangularu."
+      speaker:
+        name: "Jan Killian a Tomáš Holas, Salsita"            
+-
   month: October
   talks:
     -
