@@ -15,6 +15,10 @@
       description: "AngularJS aplikace s Node.js/MongoDB backendem s využitím Yeomana a Restangularu."
       speaker:
         name: "Jan Killian a Tomáš Holas, Salsita"            
+      links:
+        Slides: https://dl.dropboxusercontent.com/u/738990/salsita-praguejs.pdf
+        Generator: https://github.com/salsita/generator-salsa
+        Sample App: https://github.com/tomaash/trackr
 -
   month: October
   talks:
