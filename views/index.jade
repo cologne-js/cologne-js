@@ -5,7 +5,7 @@ block content
     .next-meetup
       - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
       h1 Next Meetup: !{nextDate}
-      | <br><a href="http://www.node5.cz/">Node5</a> doors are always open, join us at 17:40, talks start at 18:00:
+      | <br><a href="http://www.node5.cz/">Node5</a> doors are always open, join us at 17:40, talks start at 19:00:
 
     .talk-slots.grid-row
       - if (locals.events && events[0] && events[0].talk1)
