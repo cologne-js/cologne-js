@@ -1,5 +1,13 @@
 ---
 -
+  month: December
+  talks:
+    -
+      title: "PragueJS 2014"
+      description: "Ideas for Prague JS meetups in 2014"
+      speaker:
+        name: "Aleš Rippl, Ladislav Prskavec"            
+-
   month: November
   talks:
     -
