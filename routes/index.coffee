@@ -91,8 +91,13 @@ getSlots = (callback) ->
     selectedYear = String( (new Date()).getFullYear() )
     if (err) then callback(err)
     content = {}
+
     if data
-      content = data[selectedYear][0]
+      if data[selectedYear]
+        content = data[selectedYear][0]
+      else
+        content = data[selectedYear - 1][0]
+
     callback(null, content)
 
 exports.init = (app) =>
@@ -131,6 +136,10 @@ exports.about = (req, res) ->
 exports.talks = (req, res) ->
   getContent 'talks', (err, data) ->
     selectedYear = String( req.params[0] || (new Date()).getFullYear() )
+
+    if not data.hasOwnProperty(selectedYear)
+      selectedYear = selectedYear - 1
+
     if err then console.log err
     if err or not data.hasOwnProperty(selectedYear)
       exports.e404(req, res)
