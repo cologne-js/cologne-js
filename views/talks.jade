@@ -3,7 +3,7 @@ extends layout
 block content
   div(class="container talk-list", role="main")
     - var match
-    - if (events)
+    - if (events && events.length)
       each event in events
         - if (event.talks)
           .grid-row
@@ -41,6 +41,9 @@ block content
                     .video(style="display:none")
                       iframe(src="http://player.vimeo.com/video/#{match[1]}", width="500", height="281", frameborder="0", webkitAllowFullScreen, mozallowfullscreen, allowFullScreen)
                         a(href="#{talk.video}") Watch talk on Vimeo
+    - else
+      h2 No talks were given in this year yet.
+      p You can browse past year's talks for slides and links.
 
 
   script(src="//code.jquery.com/jquery-1.7.2.min.js")
