@@ -5,8 +5,20 @@
     name: "Jens Arps"
     twitter: jensarps
 -
-  title: "A triangle is like a can of ravioli"
-  description: "WebGL ist völlig zu Unrecht eine viel zu wenig verbreitete Technologie. Als Teil des OpenGL ES 2.0 API hat es den Ruf, schwer zu erlernen und kompliziert in der Anwendung zu sein. \nDas soll in diesen Vortrag widerlegt werden. Als Dozent für OpenGL will Kai Niklas euch  in dieser Session die \"Programmable Pipeline\" und die \"Shader-Entwicklung\" näher bringen. \n\nIm Gegensatz zur Desktopentwicklung mit OpenGL oder Embedded-Anwendung mit OpenGL ES 2.0 sind die Entwicklungszeiten für 3-D-Anwendungen im Browser ungleich kürzer. Auch die Wiederverwendbarkeit von WebGL-Anwendung in allen aktuellen Systemen ( iOS, Android, Mac, Windows, Linux ) ist ein beachtenswerter Vorteil. Nur selten werden Webentwickler für ihre Arbeit mit so beeindruckenden visuellen Effekten belohnt wie beim Einsatz von WebGL."
+  title: "WebGL in Depth"
+  description: |
+    Kai Niklas will introduce you to the fantastic World of OpenGL's WebGL.
+    It's based on the OpenGL ES 2.0 API for embedded Systems.
+
+    OpenGL's WebGL API uses JavaScript and new HTML5 technology to bring 3D and of course as well 2D Graphics to your Browser.
+    3D visualization in Browsers is still not spread widely, but the possibilities with the new WegGL API are numerous.
+
+    Just think about a online Shop that you can walk though and take a look at every Article in 3D ...
+    Imagine a real Estate website where you can walk though every building on your own, taking a look at every corner ...
+    Games ... we can´t think of a limit ... all games you ever knew can be played in browsers with no downloading or installing anything ...
+    Visualize business processes in 3D. Everybody Process shown in 3D is easier to realize ....
+
+    So much more ... with 3D in modern Browsers there are so much options we have not even thought about ...
   speaker:
     name: "Kai Niklas"
     twitter: "kainiklas"
