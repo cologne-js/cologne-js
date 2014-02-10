@@ -20,22 +20,33 @@ feed(xmlns="http://www.w3.org/2005/Atom")
         link(href="#{baseurl}/talks/#{event.year}/##{event.date}")
         updated #{event.isoDate}
         id #{baseurl}/talks/#{event.year}/##{event.date}
+        summary
+          | <![CDATA[
+          - if (event.talks)
+            ul
+              - each talk in event.talks
+                li
+                  = talk.speaker.name
+                  | : #{talk.title}
+          | ]]>
         content(type="html")
           | <![CDATA[
           - if (event.talks)
-            each talk in event.talks
-              h2
-                - if (talk.speaker.twitter)
-                  a(href="https://twitter.com/#{talk.speaker.twitter}") #{talk.speaker.name}
-                - else
-                  = talk.speaker.name
-                | : #{talk.title}
+            ul
+              - each talk in event.talks
+                li
+                  h2
+                    - if (talk.speaker.twitter)
+                      a(href="https://twitter.com/#{talk.speaker.twitter}") #{talk.speaker.name}
+                    - else
+                      = talk.speaker.name
+                    | : #{talk.title}
 
-              - if (talk.description)
-                p !{talk.description}
+                  - if (talk.description)
+                    p !{talk.description}
 
-              - if (talk.links)
-                ul
-                  each linkUrl, linkName in talk.links
-                    li: a(href="#{linkUrl}") #{linkName}
+                  - if (talk.links)
+                    ul
+                      each linkUrl, linkName in talk.links
+                        li: a(href="#{linkUrl}") #{linkName}
           | ]]>
