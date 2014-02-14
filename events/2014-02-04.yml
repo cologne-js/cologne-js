@@ -4,21 +4,26 @@
   speaker:
     name: "Jens Arps"
     twitter: jensarps
+  links:
+    Slides: "http://slideshare.net/jensarps/a-webgl-scene-in-30-mins"
+    Code: "https://github.com/jensarps/cgnjs-feb-2014﻿"
 -
   title: "WebGL in Depth"
   description: |
-    Kai Niklas will introduce you to the fantastic World of OpenGL's WebGL.
+    Kai Niklas will introduce you to the fantastic World of OpenGL’s WebGL.
     It's based on the OpenGL ES 2.0 API for embedded Systems.
 
-    OpenGL's WebGL API uses JavaScript and new HTML5 technology to bring 3D and of course as well 2D Graphics to your Browser.
-    3D visualization in Browsers is still not spread widely, but the possibilities with the new WegGL API are numerous.
+    OpenGL’s WebGL API uses JavaScript and new HTML5 technology to bring 3D and and 2D graphics to your browser.
+    3D visualization in browsers is still not spread widely, but the possibilities with the new WegGL API are numerous.
 
-    Just think about a online Shop that you can walk though and take a look at every Article in 3D ...
-    Imagine a real Estate website where you can walk though every building on your own, taking a look at every corner ...
-    Games ... we can´t think of a limit ... all games you ever knew can be played in browsers with no downloading or installing anything ...
-    Visualize business processes in 3D. Everybody Process shown in 3D is easier to realize ....
+    Just think about an online shop that you can walk though and take a look at every Article in 3D.
+    Imagine a real estate website, where you can walk though every building on your own, taking a look at every corner.
+    All games you ever knew can be played in browsers with no downloading or installing anything.
+    Visualize business processes in 3D.
 
-    So much more ... with 3D in modern Browsers there are so much options we have not even thought about ...
+    So much more with 3D in modern browsers there are so much options we have not even thought about.
   speaker:
     name: "Kai Niklas"
     twitter: "kainiklas"
+  links:
+    Slides: "http://webgl-company.com/session/"
