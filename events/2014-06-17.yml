@@ -1,0 +1,20 @@
+-
+  title: "Warum Hoodie? Ein Talk über noBackend und offline-first."
+  description: |
+    Wir schreiben das Jahr 2014, das 69. Jahr seit Beginn der Software-Entwicklung. Immer noch implementieren wir Dinge wie Nutzerkonten, Daten-Persistenz, Offline-Synchronisierung, E-Mailsund Zahlungen stets von Neuem für unsere Apps. Unsere Nutzer kümmert das wenig. Dabei bringen diese Features noch nicht einmal zusätzlichen Wert, sondern werden von ihnen vorausgesetzt. Was unsere Apps besonders macht ist die User Experience. Darauf sollten wir uns fokussieren, denn das ist, was unsere Apps von anderen unterscheidet.
+
+    Hoodie ist für das Jahr 2014 (und alle folgenden Jahre) gemacht. Es ist eine Open Source JavaScript-Bibliothek für den Browser, die gängige Backend-Funktionalitäten wie die oben beschriebenen abstrahiert und es dank seiner extrem simplen API ermöglicht, vollständige Anwendungen zu entwickeln, ohne über das Backend auch nur nachdenken zu müssen.
+  speaker:
+    name: "Gregor"
+    twitter: gr2m
+  links:
+    Website: "http://hood.ie/"
+-
+  title: "Hoodie Live-Coding: Eine vollständige App in 30min"
+  description: |
+    Hoodie schön und gut. Aber wie funktioniert das jetzt? Das zeigen wir euch in diesem Talk. Euch erwarten 30 Minuten Live-Coding, ein Blick hinter die Kulissen von Hoodie, sowie die Beantwortung auf die Frage: "was wenn wir die Features von Hoodie nicht ausreichen?"
+  speaker:
+    name: "Ola"
+    twitter: misprintedtype
+  links:
+    Website: "http://hood.ie/"
