@@ -1,7 +1,7 @@
 -
   title: "Warum Hoodie? Ein Talk über noBackend und offline-first."
   description: |
-    Wir schreiben das Jahr 2014, das 69. Jahr seit Beginn der Software-Entwicklung. Immer noch implementieren wir Dinge wie Nutzerkonten, Daten-Persistenz, Offline-Synchronisierung, E-Mailsund Zahlungen stets von Neuem für unsere Apps. Unsere Nutzer kümmert das wenig. Dabei bringen diese Features noch nicht einmal zusätzlichen Wert, sondern werden von ihnen vorausgesetzt. Was unsere Apps besonders macht ist die User Experience. Darauf sollten wir uns fokussieren, denn das ist, was unsere Apps von anderen unterscheidet.
+    Wir schreiben das Jahr 2014, das 69. Jahr seit Beginn der Software-Entwicklung. Immer noch implementieren wir Dinge wie Nutzerkonten, Daten-Persistenz, Offline-Synchronisierung, E-Mails und Zahlungen stets von Neuem für unsere Apps. Unsere Nutzer kümmert das wenig. Dabei bringen diese Features noch nicht einmal zusätzlichen Wert, sondern werden von ihnen vorausgesetzt. Was unsere Apps besonders macht ist die User Experience. Darauf sollten wir uns fokussieren, denn das ist, was unsere Apps von anderen unterscheidet.
 
     Hoodie ist für das Jahr 2014 (und alle folgenden Jahre) gemacht. Es ist eine Open Source JavaScript-Bibliothek für den Browser, die gängige Backend-Funktionalitäten wie die oben beschriebenen abstrahiert und es dank seiner extrem simplen API ermöglicht, vollständige Anwendungen zu entwickeln, ohne über das Backend auch nur nachdenken zu müssen.
   speaker:
