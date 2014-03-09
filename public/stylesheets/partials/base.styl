@@ -50,6 +50,17 @@ a:active {
 
 a:hover { background-color: darken($js-logo-color, 20%); }
 
+a.image {
+  display: block;
+  border-bottom: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  img { max-width: 100%; }
+}
+
 
 p { margin: 0; }
 p + p { margin-top: 1em; }
