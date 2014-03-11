@@ -9,7 +9,7 @@
     twitter: bascht
   links:
 -
-  title: Running Node.js apps in productions
+  title: Running Node.js apps in production
   description: >
     Let's discuss some ideas and best practices: What is the best way to monitor
     your application, find bottlenecks and unexpected errors?
