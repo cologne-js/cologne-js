@@ -8,3 +8,25 @@
     name: Sebastian Schulze
     twitter: bascht
   links:
+-
+  title: Running Node.js apps in productions
+  description: >
+    Let's discuss some ideas and best practices: What is the best way to monitor
+    your application, find bottlenecks and unexpected errors?
+    How do you deploy with minimum downtime? What about scaling and security?
+  speaker:
+    name: Frederic Hemberger
+    twitter: fhemberger
+  links:
+-
+  title: enter.js Raffle
+  description: >
+    We're giving away 2 tickes for the upcoming enterJS conference in Cologne.
+    <a href="http://www.enterjs.de/" class="image" style="margin-top:2em;">
+      <img src="/images/enterjs-banner.png" alt="enterJS Conference">
+    </a>
+  speaker:
+    name: enter.js
+    twitter: enterjsconf
+  links:
+
