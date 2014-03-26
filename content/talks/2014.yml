@@ -1,0 +1,19 @@
+---
+-
+  month: February
+  talks:
+    -
+      title: "Co je v JavaScriptu špatně?"
+      speaker:
+        name: "Filip Zrůst"
+        twitter: frzng
+-        
+  month: January
+  talks:
+    -
+      title: "méně známé triky v JavaScriptu"
+      speaker:
+        name: "Ondřej Žára"
+        twitter: 0ndras
+      links:
+        Website: "http://ondras.zarovi.cz/"

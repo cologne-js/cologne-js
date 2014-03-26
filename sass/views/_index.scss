@@ -52,6 +52,10 @@
   border-radius: 4px;
 }
 
+p:first-child {
+    margin: 0;
+}
+
 .slot-open {
   border: 0.5em dashed darken($background-color, 10%);
   border-radius: 1em;
