@@ -1,5 +1,17 @@
 ---
 -
+  month: March
+  talks:
+    -
+      title: "Empower mobile web developers with JavaScript & WebAPI"
+      description: "HTML5 is a giant step in the right direction: it gives a lot more tools that developers need to create better experiences for users. The problem? It’s not there yet when it comes to web development for mobile devices. In this talk, Frédéric Harper will show you how you can use HTML, and JavaScript to build amazing mobile applications, and brush up what you published before. You’ll learn about the open web technologies, including WebAPIs, and tools designed to get you started developing HTML apps for Firefox OS, and the web."
+      speaker:
+        name: "Frédéric Harper"
+        twitter: fharper
+      links:
+        website: "http://outofcomfortzone.net/"
+        slides: "http://www.slideshare.net/fredericharper/empower-mobile-web-developers-with-javascript-webapi-praguejs-20140327"
+-
   month: February
   talks:
     -
@@ -16,4 +28,4 @@
         name: "Ondřej Žára"
         twitter: 0ndras
       links:
-        Website: "http://ondras.zarovi.cz/"
+        website: "http://ondras.zarovi.cz/"
