@@ -18,6 +18,8 @@
     name: Frederic Hemberger
     twitter: fhemberger
   links:
+    Slides: http://fhemberger.github.io/talks/nodejs-in-production/
+    "Links and Resouces": https://github.com/fhemberger/talks/blob/master/nodejs-in-production/README.md
 -
   title: enter.js Raffle
   description: >
