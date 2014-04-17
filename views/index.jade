@@ -4,14 +4,15 @@ block content
   .container(role="main")
 
     .next-meetup
-        h2 Next Meetup: !{nextDate}
-        p Join us at 19:00, talks start at 19:30
+      h2
+        | <a href="http://jscoderetreat.com/2/city/de-cologne.html">JavaScript CodeRetreat</a>:
+        | May 10th 2014
+      p A full day of practicing and improving your craft, organized by Cologne.js
 
-        br
-        h3
-          | <a href="http://jscoderetreat.com/2/city/de-cologne.html">JavaScript CodeRetreat</a>:
-          | May 10th 2014
-        p A full day of practicing and improving your craft, organized by Cologne.js
+      br
+
+      h2 Next Meetup: !{nextDate}
+      p Join us at 19:00, talks start at 19:30
 
     .talk-slots.grid-row
       - var numberOfTalks = talks ? talks.length : 0;
