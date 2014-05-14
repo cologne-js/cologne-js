@@ -5,13 +5,9 @@ block content
 
     .next-meetup
       h2
-        | <a href="http://jscoderetreat.com/2/city/de-cologne.html">JavaScript CodeRetreat</a>:
-        | May 10th 2014
-      p A full day of practicing and improving your craft, organized by Cologne.js
-
-      br
-
-      h2 Next Meetup: !{nextDate}
+        | Next Meetup: !{nextDate} &mdash;&nbsp;
+        a(href="#location") New location!
+        
       p Join us at 19:00, talks start at 19:30
 
     .talk-slots.grid-row
@@ -43,26 +39,28 @@ block content
           h3 beer.js
           p After the talks, stick around, have a drink and a chat or two. A great opportunity to get to know fellow JavaScripters.
 
-    h2 Join us in Cologne’s Südstadt …
+    h2(id="location") Join us …
 
     .grid-row
       .grid-2-3
-        iframe(width="100%", height="300", frameborder="0", scrolling="no", marginheight="0", marginwidth="0", src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.080930247957!2d6.9630234000000115!3d50.922219900000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf2448ff0dee8f%3A0x48a5eb9df6fd06e0!2sAn+der+Bottm%C3%BChle+5!5e0!3m2!1sde!2sde!4v1392044913297")
+        iframe(width="100%", height="300", frameborder="0", scrolling="no", marginheight="0", marginwidth="0", src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d628.6353485071322!2d6.939881999999992!3d50.93219999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25024b225833%3A0xd34c24043ba684b8!2striAGENS+GmbH!5e0!3m2!1sde!2sde!4v1400045620701")        
 
       .grid-1-3
         :markdown
-          **Coworking-Space "Bottfabrik"**  
-          **An der Bottmühle 5**  
-          **50678 Köln**
+          **triAGENS GmbH**  
+          **Hohenstaufenring 43-45**  
+          **50674 Köln**
 
           ##### Public transport
-          Hop onto line 15 or 16 or take the bus 106 and get off at Ubierring.
-          Or take bus 132, 133 or 142 and exit at Chlodwigsplatz.
+          Hop onto line 9, 12 or 15 and get off at Zülpicher Platz.
+          The location is around 80 m down the street.
 
+          <!--
           ##### By car (not really recommended)
           You can try the parking lot in front of the [University of Applied Sciences](http://goo.gl/maps/7TER4)
           at this time (4€ for the whole evening) or use the underground parking just around the corner at
           Agrippinawerft, but it's quite expensive. :(
+          -->
 
     .grid-row
       .grid-1-2
