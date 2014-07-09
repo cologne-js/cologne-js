@@ -1,0 +1,29 @@
+-
+  title: "Cologne.js Special"
+  description: |
+    We postpone our regular meeting for one week and run an all-day JavaScript
+    track at this year's <a href="http://froscon.de">FrOSCon</a>, the Free and Open Source
+    Conference in St. Augustin (halfway between Cologne and Bonn).
+    </p><p>
+    <strong>Come join us for a whole day of JavaScript goodness and a lot more.</strong>
+  speaker:
+    name:
+    twitter:
+  links:
+-
+  title: "FrOSCon 2014"
+  description: |
+    Our topics will cover (among other things):
+    </p>
+    <ul>
+    <li>Hoodie: NoBackend & Dreamcode</li>
+    <li>ArangoDB</li>
+    <li>HTTP/2's impact on web performance</li>
+    <li>Frontend-Ops</li>
+    <li>Angular.js</li>
+    </ul>
+    <p>
+  speaker:
+    name:
+    twitter:
+  links:

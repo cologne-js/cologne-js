@@ -11,35 +11,34 @@ var routes = {};
 
 var app = express();
 
-app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
-  app.set('env', process.env.NODE_ENV || 'development');
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
 
-  // Load all event data into memory
-  app.set('events', require('./lib/events'));
+app.set('port', process.env.PORT || 3000);
+app.set('env', process.env.NODE_ENV || 'development');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 
-  app.use(express.favicon(__dirname + '/public/favicon.ico', { maxAge: 2592000000 }));
-  app.use(express.logger('dev'));
+// Load all event data into memory
+app.set('events', require('./lib/events'));
 
-  app.use(require('stylus').middleware({
-    src: __dirname + '/public',
-    compress: (app.get('env') === 'production')
-  }));
+app.use(express.favicon(__dirname + '/public/favicon.ico', { maxAge: 2592000000 }));
+app.use(express.logger('dev'));
 
-  app.use(express.static(__dirname + '/public'));
-  app.use(app.router);
-});
+app.use(require('stylus').middleware({
+  src: __dirname + '/public',
+  compress: (app.get('env') === 'production')
+}));
 
-app.configure('development', function() {
+app.use(express.static(__dirname + '/public'));
+app.use(app.router);
+
+if (app.get('env') === 'development') {
   app.set('baseurl', 'http://localhost:' + app.get('port'));
   app.use(express.errorHandler());
-});
+}
 
-app.configure('production', function() {
+if (app.get('env') === 'production') {
   app.set('baseurl', 'http://colognejs.de');
-});
+}
 
 app.get('/',                       routes.index);
 app.get('/about',                  routes.about);
