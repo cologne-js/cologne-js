@@ -13,14 +13,16 @@
 -
   title: "FrOSCon 2014"
   description: |
-    Our topics will cover (among other things):
+    Our topics will cover:
     </p>
     <ul>
-    <li>Hoodie: NoBackend & Dreamcode</li>
-    <li>ArangoDB</li>
+    <li>Introduction to Angular.js</li>
     <li>HTTP/2's impact on web performance</li>
-    <li>Frontend-Ops</li>
-    <li>Angular.js</li>
+    <li>Hoodie: NoBackend & Dreamcode</li>
+    <li>Polyglot persistence and NoSQL</li>
+    <li>Remote control browsers with WebDriver</li>
+    <li>Property-based Testing</li>
+    <li>Introduction to WebGL - 3D in your browser</li>
     </ul>
     <p>
   speaker:
