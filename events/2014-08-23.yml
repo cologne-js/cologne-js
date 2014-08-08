@@ -1,11 +1,14 @@
 -
   title: "Cologne.js Special"
   description: |
-    We postpone our regular meeting for one week and run an all-day JavaScript
-    track at this year's <a href="http://froscon.de">FrOSCon</a>, the Free and Open Source
+    <strong>We postpone our regular meeting for one week and run an all-day JavaScript
+    track at this year's <a href="http://froscon.de">FrOSCon</a></strong>, the Free and Open Source
     Conference in St. Augustin (halfway between Cologne and Bonn).
     </p><p>
-    <strong>Come join us for a whole day of JavaScript goodness and a lot more.</strong>
+    <strong>Come join us for a whole day of JavaScript goodness and a lot more!</strong>
+    </p><p>
+    Special thanks to <a href="http://dpunkt.de">dpunkt.verlag</a> for sponsoring us:
+    We'll raffle some of their great JavaScript books. Come around and visit us!
   speaker:
     name:
     twitter:
