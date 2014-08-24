@@ -27,7 +27,7 @@ block content
                     p !{talk.description}
 
                   - if (talk.links || talk.video)
-                    ul
+                    ul.links
                       - if (talk.links)
                         each linkUrl, linkName in talk.links
                           li: a(href="#{linkUrl}") #{linkName}
