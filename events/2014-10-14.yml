@@ -1,0 +1,8 @@
+-
+  title: "Babylon.js - WebGL für Dummies"
+  description: |
+      Babylon.js ist eine relativ neue WebGL Javascript Engine und versucht insbesondere für Spiele eine leicht zugängliche Engine bereitzustellen, die von Haus aus schon alles bietet, was man zur Spieleentwicklung braucht. Vorgestellt werden die Features, ein paar Unterschiede zu Three.JS (dem Platzhirschen) und natürlich wird es auch ein bisschen Demo geben.
+  speaker:
+    name: Andreas Streichardt
+    twitter: m0ppers
+  links:
