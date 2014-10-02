@@ -1,0 +1,9 @@
+-
+  title: InfluxDB
+  description: |
+      I'd like to talk about time series data(bases) in general and InfluxDB in particular.
+      Since InfluxDB has a HTTP-based API and talks JSON, we can use it directly from
+      Browsers/JavaScript to track events, logs, … or to query data back out e.g. for visualization.
+  speaker:
+    name: "Sebastian Cohnen"
+    twitter: tisba
