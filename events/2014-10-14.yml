@@ -1,7 +1,27 @@
 -
   title: "Babylon.js - WebGL für Dummies"
   description: |
-      [DE] Babylon.js ist eine relativ neue WebGL Javascript Engine und versucht insbesondere für Spiele eine leicht zugängliche Engine bereitzustellen, die von Haus aus schon alles bietet, was man zur Spieleentwicklung braucht. Vorgestellt werden die Features, ein paar Unterschiede zu Three.JS (dem Platzhirschen) und natürlich wird es auch ein bisschen Demo geben.
+      [DE] Babylon.js ist eine relativ neue WebGL Javascript Engine und versucht
+      insbesondere für Spiele eine leicht zugängliche Engine bereitzustellen,
+      die von Haus aus schon alles bietet, was man zur Spieleentwicklung braucht.
+      <br><br>
+      Vorgestellt werden die Features, ein paar Unterschiede zu Three.js
+      (dem Platzhirschen) und natürlich wird es auch ein bisschen Demo geben.
   speaker:
     name: "Andreas Streichardt"
     twitter: m0ppers
+-
+  title: "React & Om"
+  description: |
+      Although Facebook's React only plays the part of "V" in JavaScript MVC,
+      it is making huge waves. Its virtual DOM offers a tremendous
+      simplification of view rendering along with significant performance
+      benefits.<br><br>
+      This talk will show how React's virtual DOM works, as well as
+      introduce Om, a ClojureScript interface for React. By harnessing
+      immutable persistent data structures, Om offers even faster performance
+      than React. Thanks to its global app state, implementing undo becomes
+      trivial.
+  speaker:
+    name: "Paul Wittmann"
+    twitter: wakkahari
