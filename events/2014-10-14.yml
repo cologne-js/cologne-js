@@ -10,6 +10,8 @@
   speaker:
     name: "Andreas Streichardt"
     twitter: m0ppers
+  links:
+    Slides: http://mop.koeln/babylonjs-presentation/
 -
   title: "React & Om"
   description: |
