@@ -27,3 +27,5 @@
   speaker:
     name: "Paul Wittmann"
     twitter: wakkahari
+  links:
+      Slides: http://paulwittmann.github.io/cgnjs-om/
