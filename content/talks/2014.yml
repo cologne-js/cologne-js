@@ -20,7 +20,7 @@
       speaker:
         name: "Filip Zrůst"
         twitter: frzng
--        
+-
   month: January
   talks:
     -
@@ -31,3 +31,27 @@
       links:
         website: "http://ondras.zarovi.cz/"
         video: "http://www.youtube.com/watch?v=YzdPfuKfcEo"
+-
+  month: October
+  talks:
+    -
+      title: "Tessel is a microcontroller that runs JavaScript."
+      speaker:
+        name: "Ladislav Prskavec"
+        twitter: abtris
+      links:
+        slides: "http://www.slideshare.net/ladislavprskavec/praguejs-tessel"
+    -
+      title: "Web app reloaded"
+      description: "Why everything you have learned from Angular/Backbone/Ember is probably wrong."
+      speaker:
+        name: "Daniel Steigerwald"
+        twitter: steida
+      links:
+        post: "https://medium.com/este-js-framework/whats-wrong-with-angular-js-97b0a787f903"
+    -
+      title: "Transferring application data efficiently with Transit."
+      description: "The new format and libraries on top of JSON with extensible types and caching."
+      speaker:
+        name: "Filip Zrůst"
+        twitter: frzng
