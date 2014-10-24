@@ -8,7 +8,7 @@
         name: "Ladislav Prskavec"
         twitter: abtris
       links:
-        slides: "http://www.slideshare.net/ladislavprskavec/praguejs-tessel"
+        Slides: "http://www.slideshare.net/ladislavprskavec/praguejs-tessel"
     -
       title: "Web app reloaded"
       description: "Why everything you have learned from Angular/Backbone/Ember is probably wrong."
@@ -16,13 +16,16 @@
         name: "Daniel Steigerwald"
         twitter: steida
       links:
-        post: "https://medium.com/este-js-framework/whats-wrong-with-angular-js-97b0a787f903"
+        Post: "https://medium.com/este-js-framework/whats-wrong-with-angular-js-97b0a787f903"
     -
       title: "Transferring application data efficiently with Transit."
       description: "The new format and libraries on top of JSON with extensible types and caching."
       speaker:
         name: "Filip Zrůst"
         twitter: frzng
+      links:
+        SpeakerDeck: https://speakerdeck.com/frzng/transferring-application-data-efficiently-with-transit
+        GitHub: https://github.com/frzng/attendees.js
 -
   month: March
   talks:
