@@ -9,6 +9,7 @@
         twitter: abtris
       links:
         Slides: "http://www.slideshare.net/ladislavprskavec/praguejs-tessel"
+        Video: "https://www.youtube.com/watch?v=XbtKnY4iECQ&list=PLvkBoi0G2JD6Hp5CTzn4KMigcuKXciXB6&index=9"
     -
       title: "Web app reloaded"
       description: "Why everything you have learned from Angular/Backbone/Ember is probably wrong."
@@ -17,6 +18,7 @@
         twitter: steida
       links:
         Post: "https://medium.com/este-js-framework/whats-wrong-with-angular-js-97b0a787f903"
+        Video: "https://www.youtube.com/watch?v=dPVoZX5jPvY&list=PLvkBoi0G2JD6Hp5CTzn4KMigcuKXciXB6&index=10"
     -
       title: "Transferring application data efficiently with Transit."
       description: "The new format and libraries on top of JSON with extensible types and caching."
@@ -26,6 +28,7 @@
       links:
         SpeakerDeck: https://speakerdeck.com/frzng/transferring-application-data-efficiently-with-transit
         GitHub: https://github.com/frzng/attendees.js
+        Video: "https://www.youtube.com/watch?v=GZ_I8TaEtB0&list=PLvkBoi0G2JD6Hp5CTzn4KMigcuKXciXB6&index=11"
 -
   month: March
   talks:
