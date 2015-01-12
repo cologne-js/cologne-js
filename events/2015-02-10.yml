@@ -1,0 +1,11 @@
+-
+  title: "hapi – Building apps and services in Node.js"
+  description: |
+    hapi is a framework for building web applications, services and RESTful APIs
+    in Node.js. Besides being the core building block for Walmart's mobile
+    platform, it also powers the new npm website and many others.</p><p>
+    Frederic gives a short introduction and explains the core concepts and
+    different approaches compared to other frameworks.
+  speaker:
+    name: "Frederic Hemberger"
+    twitter: fhemberger
