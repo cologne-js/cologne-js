@@ -5,15 +5,10 @@ block content
 
     .next-meetup
       h2
-        | Next Meetup: Tuesday, !{nextDate}
-        | &mdash;&nbsp;<br>
-        a(href="#location") New location at triAGENS
+        | Next Meetup: <br>
+        | Tuesday, !{nextDate} @ <a href="#location">triAGENS</a>
         
       h3 Join us at 19:00, talks start at 19:30
-
-      p(style="margin:20px 0 0;font-size:1.2em")
-        strong We need your participation for Cologne.js: 
-          a(href="http://colognejs.de/help-wanted") Help us running the meetup!
 
     .talk-slots.grid-row
       - var numberOfTalks = talks ? talks.length : 0;

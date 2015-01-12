@@ -4,7 +4,7 @@ var express = require('express'),
 
 // Load routes
 var routes = {};
-['index', 'about', 'help', 'talks', 'atom', 'ical', 'error404'].forEach(function(element) {
+['index', 'about', 'talks', 'atom', 'ical', 'error404'].forEach(function(element) {
   routes[element] = require('./routes/' + element);
 });
 
@@ -42,7 +42,6 @@ if (app.get('env') === 'production') {
 
 app.get('/',                       routes.index);
 app.get('/about',                  routes.about);
-app.get('/help-wanted',            routes.help);
 app.get(/^\/talks\/?(\d{4})?\/?$/, routes.talks);
 app.get('/atom.xml',               routes.atom);
 app.get('/colognejs.ics',          routes.ical);
