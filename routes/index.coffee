@@ -35,9 +35,9 @@ getEvents = (callback) ->
         talks = XRegExp.exec(details, XRegExp('Terminbeschreibung: (.*)', 's'))
 
         if (talks && talks[1])
-          [talk1, talk2] = talks[1].split('---')
+          [talk1, talk2, talk3] = talks[1].split('---')
         else
-          [talk1, talk2] = ['', '']
+          [talk1, talk2, talk3] = ['', '', '']
 
         try
           markdown_talk1 = markdown(talk1)
@@ -51,10 +51,18 @@ getEvents = (callback) ->
           console.log 'Error parsing talk 2 as Markdown: \n\t' + talk2
           markdown_talk2 = talk2
 
+        try
+          markdown_talk3 = markdown(talk3)
+        catch error
+          console.log 'Error parsing talk 3 as Markdown: \n\t' + talk3
+          markdown_talk3 = talk3
+
+
         events.push
           date: date.format(foo, "%b %%o, %Y")
           talk1: markdown_talk1
           talk2: markdown_talk2
+          talk3: markdown_talk3
 
       callback null, events
     else
@@ -66,7 +74,7 @@ getContentSnippets = (view, callback) ->
   dir = "#{__contentdir}/#{view}"
   fs.readdir dir, (err, list) ->
     if (err) then return callback(err)
-    pending = list.length;
+    pending = list.length
     if (!pending) then return callback null, results.sort()
     list.forEach (file) ->
       fileFullName = "#{dir}/#{file}"
@@ -100,7 +108,7 @@ getSlots = (callback) ->
 
     callback(null, content)
 
-exports.init = (app) =>
+exports.init = (app) ->
   cache = require('../lib/pico.coffee').Pico(app.settings.cacheInSeconds)
 
 
