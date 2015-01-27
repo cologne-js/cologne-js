@@ -27,10 +27,10 @@
     "start": "NODE_ENV=production coffee app.coffee"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.10.35"
   },
   "dependencies": {
-    "coffee-script": "~1.6.0",
+    "coffee-script": "~1.8.0",
     "express": "~3.3.3",
     "jade": "~0.32.0",
     "connect": "~2.8.3",

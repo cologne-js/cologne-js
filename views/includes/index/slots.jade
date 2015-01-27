@@ -1,6 +1,6 @@
+.next-meetup
+  h2 Last meetup in !{locals.slots.month}
 .talk-slots.grid-row
-    article(class="grid-1-3")
-      h1 Last meetup in !{locals.slots.month}
     each meetup in locals.slots.talks
       article(class="grid-1-3 slot-taken")
         h1 !{meetup.title}
@@ -8,6 +8,6 @@
         - if (meetup.video)
           p
             a(href=meetup.video) Video
-        - if (meetup.description)    
+        - if (meetup.description)
           p !{meetup.description}
 
