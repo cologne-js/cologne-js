@@ -5,7 +5,7 @@ block content
     .next-meetup
       - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
       h1 Next Meetup: !{nextDate}
-      | <br><a href="http://www.node5.cz/">Node5</a> doors are always open, join us at 17:50, talks start at 18:00:
+      | <br>Venue is open at 17:50, talks start at 18:00:
 
     .talk-slots.grid-row
       - if (locals.events && events[0] && events[0].talk1)
@@ -31,11 +31,11 @@ block content
 
   aside.grid-row(role="complementary")
     .grid-1-3
-      h3 Venue
+      h3#venue Venue
       p
-        | <strong>Node5</strong>,
-        | <a href="http://maps.google.com/maps?q=Radlická+50,+Sm%C3%ADchov,+Praha-Praha+5,+Česká+republika&hl=en&ie=UTF8&sll=50.066481,14.40271&sspn=0.011914,0.027874&oq=radlicka+50&hnear=Radlická+180%2F50,+150+00+Praha+5-Sm%C3%ADchov,+Czech+Republic&t=m&z=16">Radlická 50, Praha 5 - Smíchov</a><br />
-        | 350m z metra Anděl (linka B) - směr Na knížecí
+        | <strong>AVAST Software s.r.o.</strong>,
+        | <a href="https://www.google.cz/maps/place/Trianon+Office+Bldg,+Bud%C4%9Bjovick%C3%A1+1518%2F13a,+140+00+Praha+4/@50.0452494,14.4496416,17z/data=!3m1!4b1!4m2!3m1!1s0x470b93f2c57780c5:0xcf5ffaef00fa9778?hl=en">Trianon Office Building, Budejovicka 1518/13a</a><br />
+        | 50m z metra Budějovická (linka C)
 
     .grid-1-3
       h3 Got questions or talk proposals?
@@ -47,5 +47,5 @@ block content
         | You can follow us on <a href="https://twitter.com/jsconfcz">twitter</a>, join our <a href="https://www.facebook.com/groups/123334754348651/">group on facebook</a> and <a href="https://plus.google.com/112099402901298502632" rel="publisher">google+</a>.
 
     .grid-1-3
-      h3 Partners
-      <div class="center"><div class="partner"><a href="http://www.apiary.io"><img src="/partners/apiary-logotype.png" alt="apiary.io logotype"  /></a></div></div>
+      h3 Hosted by
+      <div class="center"><div class="partner"><a href="https://www.avast.com"><img src="http://files.avast.com/files/marketing/logos/logo-horiz-gray-rgb-30mm.png" alt="avast logotype"  /></a></div></div>
