@@ -1,0 +1,22 @@
+-
+  title: "SPECIAL: Mobile Application Development"
+  description: |
+    We're bringing you a whole evening especially about hybrid mobile app
+    development, together with our friends from the
+    <a href="http://mobile.cologne/">mobile.cologne</> usergroup
+  speaker:
+    name: "Cologne.js/mobile.cologne"
+-
+  title: "Introduction to hybrid mobile app development"
+  description: |
+    Development of mobile apps is not easy, and each target platform has its own
+    tools and requirements. This may be Java and Eclipse for Android, Objective-C
+    and XCode for iOS or the Microsoft tools for Windows Phone.
+    This talk will introduce you to developing apps for all major platforms with
+    only HTML5 and JavaScript. We're starting with Intel's free XDK and Apache
+    Cordova, then go into details concerning the most important frameworks and
+    development approaches to help you becoming a succesfull cross-platform
+    developer.
+  speaker:
+    name: "Gregor Biswanger"
+    twitter: BFreakout
