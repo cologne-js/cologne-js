@@ -24,19 +24,11 @@
     name: "Jörn Zaefferer"
     twitter: bassistance
 -
-  title: "Replacement: Microservice-based software architecture"
+  title: "Replacement: Progressive enhancement in practice"
   description: |
-    Following the classical software architecture patterns we tend to design large monolith of software applications.
-    These monoliths are typically quite difficult to scale as they often require powerful machines, making the option to scale out very expensive.
-    In most cases these monoliths of software are designed to run on a single machine only, hence scaling out is complicated or even impossible without refactoring large portions of the application.
-    Therefore a new design pattern called microservices arose.
-    The pattern of microservices keeps the need of a clustered server setup in mind and helps to keep the application very modular.
-    This allows to simplify a scale out of your application and even allows to scale the bottlenecks of your application only and hence reducing the total cost for a scale out approach.
-    In this talk I will introduce the concept of microservices, how they are defined and how to design an application with them.
-    Furthermore I will show how to scale the application properly and why this is only possible due to the use of microservices.
-    Also we will have a look at Node.js and why it is a perfect, though not the only, fit to this design strategy.
-    However scaling is not the only purpose of microservices, they also increase the flexibility and maintainability of applications, this will also be discussed in the talk.
+    The web is constantly growing. In terms of underlying technologies, variety of connected devices and last but not least its worldwide users. This growth is a real challenge when it comes to developing modern web applications. Common requirements in these projects are: Establish a codebase that is maintainable, modular and reusable; keep up with new technologies and standards; and deliver new features to a maximum of users without breaking the whole application.
+    This talk points out that these conflicting goals can actually be fulfilled with the help of progressive enhancement – a founding principle of the web in which base technologies like HTML, CSS and JavaScript are safely layered on top of each other. The given examples help to understand how this principle works in practice and show how to build robust but interactive and future-friendly web applications.
   speaker:
-    name: "Michael Hackstein"
-    twitter: mchacki
+    name: "Roman Stranghöner"
+    twitter: rstrangh
     
