@@ -9,6 +9,8 @@
   speaker:
     name: "Frederic Hemberger"
     twitter: fhemberger
+  links:
+    Slides: http://fhember.gr/cgnjs-hapi
 -
   title: "Effective jQuery (Speaker is ill)"
   description: |
@@ -31,4 +33,6 @@
   speaker:
     name: "Roman Stranghöner"
     twitter: rstrangh
+  links:
+    Slides: https://speakerdeck.com/rstrangh/progressive-enhancement-in-practice
     
