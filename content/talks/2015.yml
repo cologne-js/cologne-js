@@ -1,0 +1,22 @@
+---
+-
+  month: February
+  talks:
+    -
+      title: "ReactJS"
+      speaker:
+        name: "Aleš Roubíček"
+        twitter: alesroubicek
+    -
+      title: "React CSS"
+      speaker:
+        name: "Robin Pokorný"
+        twitter: robinpokorny
+    -
+      title: "Flux - Rethinking worst practices"
+      speaker:
+        name: "Daniel Steigerwald"
+        twitter: steida
+      links:
+        Slides: https://docs.google.com/presentation/d/18nmNQpJHdtujQf3Voyl2hSGFQmQERPJ2YAwh9Iu2jWc/edit#slide=id.p
+        GitHub: https://github.com/steida/este-todomvc
