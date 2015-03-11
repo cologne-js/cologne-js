@@ -1,0 +1,22 @@
+-
+  title: "Effective jQuery"
+  description: |
+    In this talk I'll cover several patterns for maintainability and performance,
+    giving some new perspectives on the library we all seem to know so well.</p>
+    <p>Topics include: how to use event delegation for just in time
+    initialization; how to structure your markup, CSS and JS for them to work
+    well together while promoting maintainability of all three; how to avoid
+    performance bottlenecks when using jQuery; how to use CSS3 transitions
+    with fallbacks; and finally, how to reuse existing widgets with unique
+    look and feel.
+  speaker:
+    name: "Jörn Zaefferer"
+    twitter: bassistance
+-
+  title: "Tales from the crypt: JavaScript & the Internet of Things"
+  description: |
+    coming soon
+  speaker:
+    name: "Sebastian Golasch"
+    twitter: asciidisco
+
