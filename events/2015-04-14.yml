@@ -15,7 +15,14 @@
 -
   title: "Tales from the crypt: JavaScript & the Internet of Things"
   description: |
-    coming soon
+    We reverse engineer one of the most used "closed source consumer electronics
+    homeautomation protocols" (say that 5 times in a row) and build a JavaScript
+    based open source module for it. Using that module we´re then able to control
+    the privacy of our data (because now we truly own it), combine these former
+    vendor locked in devices with DIY components, control that devices from our
+    own browser app (our goodbye to the world of "IPhone Apps of Things") and as
+    a byproduct explain why JavaScript should be the language of choice for this
+    "IoT" thingy.
   speaker:
     name: "Sebastian Golasch"
     twitter: asciidisco
