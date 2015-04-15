@@ -6,7 +6,7 @@ module.exports = function(req, res) {
   res.render(
     'index',
     {
-      nextDate: (nextEvent && nextEvent.date) ? strfdate('%B, %o %Y', new Date(nextEvent.date)) : 'tba.',
+      nextDate: (nextEvent && nextEvent.date) ? strfdate('%A, %B, %o %Y', new Date(nextEvent.date)) : 'tba.',
       talks: (nextEvent && nextEvent.talks) ? nextEvent.talks : undefined
     }
   );
