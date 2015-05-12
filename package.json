@@ -27,7 +27,8 @@
     "start": "NODE_ENV=production coffee app.coffee"
   },
   "engines": {
-    "node": "0.10.35"
+    "node": "0.10.37",
+    "npm": "2.9.0"
   },
   "dependencies": {
     "coffee-script": "~1.8.0",

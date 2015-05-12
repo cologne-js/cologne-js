@@ -26,7 +26,7 @@ app.configure 'development', () ->
   edt = require('express-debug')
   edt app, { depth: 6}
   app.set 'cacheInSeconds', 0
-  app.set 'port', 3333
+  app.set 'port', 3000
   app.use logErrors
   app.use errorHandler
 
