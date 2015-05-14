@@ -8,8 +8,15 @@ Built with [NodeJS](http://nodejs.org), [CoffeeScript](http://jashkenas.github.c
 
     $ npm install
     $ coffee app.coffee
-    
-## Heroku
 
+## Heroku - prerequsites
 
-   [http://gentle-journey-3646.herokuapp.com/](http://gentle-journey-3646.herokuapp.com/)    
+    $ boot2docker up
+    $ heroku plugins:install heroku-docker
+
+## Development
+
+    $ heroku docker:start
+
+## Deploy
+    $ heroku docker:release
