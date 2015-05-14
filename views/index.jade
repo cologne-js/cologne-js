@@ -5,7 +5,7 @@ block content
     .next-meetup
       - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
       h1 Next Meetup: !{nextDate}
-      | <br>Venue is open at 17:50, talks start at 18:00:
+      | <br>Venue is open at 18:20, talks start at 18:30:
 
     .talk-slots.grid-row
       - if (locals.events && events[0] && events[0].talk1)
@@ -33,9 +33,8 @@ block content
     .grid-1-3
       h3#venue Venue
       p
-        | <strong>AVAST Software s.r.o.</strong>,
-        | <a href="https://www.google.cz/maps/place/Trianon+Office+Bldg,+Bud%C4%9Bjovick%C3%A1+1518%2F13a,+140+00+Praha+4/@50.0452494,14.4496416,17z/data=!3m1!4b1!4m2!3m1!1s0x470b93f2c57780c5:0xcf5ffaef00fa9778?hl=en">Trianon Office Building, Budejovicka 1518/13a</a><br />
-        | 50m z metra Budějovická (linka C)
+        | <strong>Impact Hub Brno</strong>,
+        | <a href="https://www.google.com/maps/place/Cyrilsk%C3%A1+7,+602+00+Brno-st%C5%99ed,+Czech+Republic/@49.1893248,16.6197095,17z/data=!3m1!4b1!4m2!3m1!1s0x471294f952ae0c8f:0x5d1deb0751210bd6">Cyrilská 7, Brno 602 00</a><br />
 
     .grid-1-3
       h3 Got questions or talk proposals?
@@ -48,4 +47,4 @@ block content
 
     .grid-1-3
       h3 Hosted by
-      <div class="center"><div class="partner"><a href="https://www.avast.com"><img src="http://files.avast.com/files/marketing/logos/logo-horiz-gray-rgb-30mm.png" alt="avast logotype"  /></a></div></div>
+      <div class="center"><div class="partner"></div></div>
