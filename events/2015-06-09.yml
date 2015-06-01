@@ -1,0 +1,9 @@
+-
+  title: "Ember.js 2.0: Old hamster, new tricks"
+  description: |
+    In the ever evolving market of JavaScript frameworks it seems like Ember has somehow fallen out of favor. It's often accused of being slow, monolithic and inflexible.</p>
+    <p>But a lot has changed over the last year. Ember now offers among other things a new and improved rendering engine, a preconfigured build chain, as well as opinionated but flexible conventions for building applications based on ES6 module definitions.</p>
+    <p>In this talk you will learn what sets Ember.js apart from other JavaScript frameworks and why it's worth taking a closer look at it even if you don't plan on using it in production.</p>
+  speaker:
+    name: "Frederic Marx"
+    twitter: fredericmarx
