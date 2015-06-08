@@ -7,3 +7,14 @@
   speaker:
     name: "Frederic Marx"
     twitter: fredericmarx
+-
+  title: "Flexbox App"
+  description: |
+    The Flexbox App is an interactive cheat sheet built with React. It allows you to try out all the new Flexbox
+    attributes with instant visual feedback.</p>
+    <p>In this talk I'll give you some insights into the development process of the app,
+    and how it can help you understand how flexbox works.</p>
+  speaker:
+    name: "Philipp Brumm"
+    twitter: funkensturm
+
