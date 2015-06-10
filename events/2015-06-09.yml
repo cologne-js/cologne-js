@@ -8,7 +8,7 @@
     name: "Frederic Marx"
     twitter: fredericmarx
   links:
-      Slides: http://fmarx.com/slides/ember-cgnjs/
+    Slides: http://fmarx.com/slides/ember-cgnjs/
 -
   title: "Flexbox App"
   description: |
@@ -19,4 +19,6 @@
   speaker:
     name: "Philipp Brumm"
     twitter: funkensturm
+  links:
+    FlexboxApp: http://www.railslove.com/flexbox
 
