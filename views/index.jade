@@ -5,7 +5,7 @@ block content
     .next-meetup
       - var nextDate = (locals.events && events[0] && events[0].date) ? events[0].date : "(couldn’t retrieve calendar data)"
       h1 Next Meetup: !{nextDate}
-      | <br>Venue is open at 18:20, talks start at 18:30:
+      | <br>Venue is open at 17:50, talks start at 18:00:
 
     .talk-slots.grid-row
       - if (locals.events && events[0] && events[0].talk1)
@@ -33,8 +33,8 @@ block content
     .grid-1-3
       h3#venue Venue
       p
-        | <strong>Impact Hub Brno</strong>,
-        | <a href="https://www.google.com/maps/place/Cyrilsk%C3%A1+7,+602+00+Brno-st%C5%99ed,+Czech+Republic/@49.1893248,16.6197095,17z/data=!3m1!4b1!4m2!3m1!1s0x471294f952ae0c8f:0x5d1deb0751210bd6">Cyrilská 7, Brno 602 00</a><br />
+        | <strong>GoodData</strong>,
+        | <br />
 
     .grid-1-3
       h3 Got questions or talk proposals?
