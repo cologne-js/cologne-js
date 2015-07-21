@@ -17,11 +17,12 @@
     </p>
     <ul>
     <li>WebGL with Babylon.js</li>
-    <li>React</li>
+    <li>React/Om</li>
+    <li>Angular and Typescript</li>
     <li>ES6 Features</li>
     <li>Cross Site Scripting (XSS)</li>
+    <li>Hacking the Atom Editor</li>
     </ul>
-    … and more!
     <p>
   speaker:
     name:
