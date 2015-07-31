@@ -16,14 +16,15 @@
     Our topics will cover:
     </p>
     <ul>
-    <li>WebGL with Babylon.js</li>
-    <li>React/Om</li>
     <li>Angular and Typescript</li>
-    <li>ES6 Features</li>
+    <li>React Native</li>
+    <li>Frontend Middleware</li>
+    <li>WebGL with Babylon.js</li>
     <li>Cross Site Scripting (XSS)</li>
-    <li>Hacking the Atom Editor</li>
+    <li>ES6 Features</li>
     </ul>
     <p>
+    <a href="http://programm.froscon.de/2015/schedule/0.html#1">Complete schedule</a>
   speaker:
     name:
     twitter:
