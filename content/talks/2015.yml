@@ -1,5 +1,25 @@
 ---
 -
+  month: July
+  talks:
+    -
+      title: "RxJS"
+      speaker:
+        name: "Viliam Elischer"
+        twitter: vireliam
+      links:
+        Slides: http://www.slideshare.net/vireliam/rxjs-the-reactive-extensions-for-javascript
+    -
+      title: "Immutable data structures, undo/redo and advanced time travel"
+      speaker:
+        name: "Adam Kloboucnik"
+        twitter: akloboucnik
+    -
+      title: "Ember 2.0 - The Good, The Bad and The Ugly"
+      speaker:
+        name: "Vojtech Jasny"
+        twitter: voy
+-
   month: February
   talks:
     -
