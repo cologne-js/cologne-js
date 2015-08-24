@@ -29,3 +29,4 @@
     name:
     twitter:
   links:
+    "Slides: Don't cross the sites! Dealing with Cross Site Scripting (XSS)": "https://frederic-hemberger.de/talks/froscon-xss/"
