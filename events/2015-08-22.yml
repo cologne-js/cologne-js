@@ -17,10 +17,10 @@
     </p>
     <ul>
     <li>Angular and Typescript</li>
-    <li>React Native</li>
-    <li>Frontend Middleware</li>
-    <li>WebGL with Babylon.js</li>
-    <li>Cross Site Scripting (XSS)</li>
+    <li>React Native (<a href="/froscon-2015/FrOSCon_2015-Manuel_Kissling-React_Native.pdf">Slides</a>, <a href="https://github.com/cologne-js/cologne-js/tree/master/public/froscon-2015/BookBrowser/">Demo</a>)</li>
+    <li>Frontend Middleware (<a href="/froscon-2015/FrOScon_2015-Rico_Pfaus-Frontend_Middleware.pdf">Slides</a>)</li>
+    <li>WebGL with Babylon.js (<a href="http://mop.koeln/babylonjs-presentation/">Slides</a>, <a href="https://github.com/m0ppers/babylonjs-presentation-demo">Demo</a>)</li>
+    <li>Cross Site Scripting (<a href="https://frederic-hemberger.de/talks/froscon-xss/">Slides</a>)</li>
     <li>ES6 Features</li>
     </ul>
     <p>
@@ -29,4 +29,3 @@
     name:
     twitter:
   links:
-    "Slides: Don't cross the sites! Dealing with Cross Site Scripting (XSS)": "https://frederic-hemberger.de/talks/froscon-xss/"
