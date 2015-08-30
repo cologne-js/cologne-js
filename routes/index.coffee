@@ -66,6 +66,8 @@ getEvents = (callback) ->
 
       callback null, events
     else
+      if err
+        console.err "gcal.getJSON gcalOptions", gcalOptions, err, data
       callback new Error('Could not load events from Google Calendar')
 
 
