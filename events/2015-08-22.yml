@@ -16,7 +16,7 @@
     Our topics will cover:
     </p>
     <ul>
-    <li>Angular and Typescript</li>
+    <li>Angular and Typescript (<a href="http://romanroe.github.io/talk-angular-typescript">Slides</a>)</li>
     <li>React Native (<a href="/froscon-2015/FrOSCon_2015-Manuel_Kissling-React_Native.pdf">Slides</a>, <a href="https://github.com/cologne-js/cologne-js/tree/master/public/froscon-2015/BookBrowser/">Demo</a>)</li>
     <li>Frontend Middleware (<a href="/froscon-2015/FrOScon_2015-Rico_Pfaus-Frontend_Middleware.pdf">Slides</a>)</li>
     <li>WebGL with Babylon.js (<a href="http://mop.koeln/babylonjs-presentation/">Slides</a>, <a href="https://github.com/m0ppers/babylonjs-presentation-demo">Demo</a>)</li>
