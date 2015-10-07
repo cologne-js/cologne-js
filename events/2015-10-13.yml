@@ -2,9 +2,7 @@
   title: "Creating and documenting APIs with Hapi and Swagger"
   description: |
     When you start creating a new API, sooner or later the question arises,
-    how to document it for yourself and for your end users. A wiki?
-    This will probably forgotten very soon. JSDoc code comments?
-    This might help you during development, but you still need to generate a proper description for your users.
+    how to document it for yourself and for your end users.
     Wouldn't it be nice, if the documentation always stays in sync with your code automatically?
     And if your end users could use it as well to explore your API?
     </p><p>
