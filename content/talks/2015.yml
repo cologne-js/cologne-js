@@ -1,5 +1,18 @@
 ---
 -
+  month: September
+  talks:
+    -
+      title: "GraphQL - say goodbye to REST?"
+      speaker:
+        name: "Petr Bela"
+        twitter: petrbela
+    -
+      title: "Node.JS and ZeroMQ on steroids"
+      speaker:
+        name: "Jiří Knesl"
+        twitter: jiriknesl
+-
   month: July
   talks:
     -
