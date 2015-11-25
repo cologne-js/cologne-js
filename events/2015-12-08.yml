@@ -1,0 +1,20 @@
+-
+  title: "Professionelle AngularJS-Anwendungen mit TypeScript"
+  description: |
+    AngularJS ist eines der beliebtesten Frameworks, um komplexe Rich-Client
+    Anwendungen umzusetzen. Im Vergleich zu klassischen Web-Anwendungen wird
+    dafür deutlich mehr Code für Anwendungs- und Fachlogik mit JavaScript
+    entwickelt und im Browser ausgeführt. Für viele Programmierer bedeutet
+    dies ein Umdenken, besonders wenn bisher mit statisch typisierten
+    Sprachen wie Java oder C# gearbeitet wurde.
+
+    Die Sprache TypeScript verspricht nun, die Vorteile und Prinzipien
+    beider Welten zu kombinieren: Einerseits ist TypeScript statisch
+    typisiert, andererseits werden die bekannten Muster und Modul-Konzepte
+    der JavaScript-Welt geschickt aufgegriffen. Dieser Vortrag zeigt, wie
+    TypeScript für die Entwicklung von AngularJS (Version 1.x & 2.0)
+    Anwendungen genutzt werden kann, welche Vorteile sich daraus ergeben und
+    wie die typischen Probleme vermieden werden können.
+  speaker:
+    name: "Roman Roelofsen"
+    twitter: romanroe
