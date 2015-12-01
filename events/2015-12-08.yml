@@ -18,3 +18,22 @@
   speaker:
     name: "Roman Roelofsen"
     twitter: romanroe
+-
+  title: "How to develop and structure a react-native app"
+  description: |
+    [German talk] React is a JS library from Facebook for buildung interfaces,
+    introducted 2013 and currently one of the most famous libraries on GitHub
+    and the web. This spring they also published react-native which allow us to
+    develop mobile apps with JavaScript. - Hybrid apps? Again?
+
+    But react-native differs from Cordova and other existing Hybrid solutions.
+    It generates native UI elements and tries to create an better/smoother UX
+    than webview or hybrid solutions. On the otherside it also attempts to
+    improve the native developer experience (called DX) with live-reloading etc.
+
+    This talk gives an introduction into react-native. How to start a small
+    project, create a view hierarchy and show how to split an app into multiple
+    screens.
+  speaker:
+    name: "Christoph Jerolimov"
+    twitter: jerolimov
