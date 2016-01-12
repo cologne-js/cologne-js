@@ -1,34 +1,36 @@
-request  = require 'request'
+google = require 'googleapis'
+fs = require 'fs'
 
 class exports.GoogleCalendar
   constructor: (@calendarId) ->
     if not (this instanceof GoogleCalendar) then return new GoogleCalendar(@calendarId)
 
-  getUrl: (controller = 'ical')->
-    "https://www.google.com/calendar/#{ controller }/#{ @calendarId }%40group.calendar.google.com/public/basic"
+  getApiKey = ->
+    if fs.existsSync 'api_key.json'
+      data = fs.readFileSync __dirname + '/../api_key.json'
+      obj = JSON.parse data
+      return obj.api_key
+    else
+      throw 'Missing api_key.json'
 
-  getICalUrl: ->
-    "#{ @getUrl() }.ics"
 
-  getJSON: (parameters, callback) ->
-    url = "#{ @getUrl('feeds') }?#{ serializeObject(parameters) }&alt=jsonc&hl=de"
-
-    request { uri: url, timeout: 2000 }, (err, res, body) =>
-      if (res && res.statusCode isnt 200) then err = res.statusCode
+  getJSON: (callback) ->
+    calendar = google.calendar 'v3'
+    API_KEY = getApiKey()
+    calendar.events.list {
+      key: API_KEY
+      calendarId: "#{@calendarId}@group.calendar.google.com"
+      timeMin: (new Date).toISOString()
+      maxResults: 1
+      singleEvents: true
+      orderBy: 'startTime'
+    }, (err, response) ->
       if err
-        callback new Error 'Could not fetch dates from calendar: ' + err
-        return
+        console.log 'The API returned an error: ' + err
+        return callback err
+      events = response.items
+      if events.length == 0
+        callback null, null
       else
-        try
-          items = JSON.parse(body).data.items
-          callback null, items
-        catch err
-          callback new Error 'Could not fetch dates from calendar: ' + err
-        return
-
-
-serializeObject = (obj) ->
-  pairs = []
-  for own key, value of obj
-    pairs.push "#{encodeURIComponent( key )}=#{encodeURIComponent( value )}"
-  pairs.join '&'
+        event = events[0]
+        callback null, event

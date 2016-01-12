@@ -1,4 +1,4 @@
-strftime = require('strftime').strftime
+strftime = require('strftime')
 months   = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
 
 # Date formatting routines
