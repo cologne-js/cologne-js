@@ -17,59 +17,39 @@ cache      = undefined
 
 
 getEvents = (callback) ->
-  gcalOptions =
-    'futureevents': true
-    'orderby'     : 'starttime'
-    'sortorder'   : 'ascending'
-    'fields'      : 'items(details)'
-    'max-results' : 1
-
-  gcal.getJSON gcalOptions, (err, data) ->
-    if data && data.length
-      events = []
-      for item in data
-        details = item.details
-        regex = XRegExp('Wann:.*?(?<day>\\d{1,2})\\. (?<month>\\p{L}+)\\.? (?<year>\\d{4})')
-        parts = XRegExp.exec(details, regex)
-        foo = date.convert(parts.year, parts.month, parts.day)
-        talks = XRegExp.exec(details, XRegExp('Terminbeschreibung: (.*)', 's'))
-
-        if (talks && talks[1])
-          [talk1, talk2, talk3] = talks[1].split('---')
-        else
-          [talk1, talk2, talk3] = ['', '', '']
-
-        try
-          markdown_talk1 = markdown(talk1)
-        catch error
-          console.log 'Error parsing talk 1 as Markdown: \n\t' + talk1
-          markdown_talk1 = talk1
-
-        try
-          markdown_talk2 = markdown(talk2)
-        catch error
-          console.log 'Error parsing talk 2 as Markdown: \n\t' + talk2
-          markdown_talk2 = talk2
-
-        try
-          markdown_talk3 = markdown(talk3)
-        catch error
-          console.log 'Error parsing talk 3 as Markdown: \n\t' + talk3
-          markdown_talk3 = talk3
-
-
-        events.push
-          date: date.format(foo, "%b %%o, %Y")
-          talk1: markdown_talk1
-          talk2: markdown_talk2
-          talk3: markdown_talk3
-
-      callback null, events
+  gcal.getJSON (err, data) ->
+    events = []
+    if data
+      [talk1, talk2, talk3] = data.description.split('---')
     else
-      if err
-        console.error "gcal.getJSON gcalOptions", gcalOptions, err, data
-      callback new Error('Could not load events from Google Calendar')
+      [talk1, talk2, talk3] = ['', '', '']
 
+    try
+      markdown_talk1 = markdown(talk1)
+    catch error
+      console.log 'Error parsing talk 1 as Markdown: \n\t' + talk1
+      markdown_talk1 = talk1
+
+    try
+      markdown_talk2 = markdown(talk2)
+    catch error
+      console.log 'Error parsing talk 2 as Markdown: \n\t' + talk2
+      markdown_talk2 = talk2
+
+    try
+      markdown_talk3 = markdown(talk3)
+    catch error
+      console.log 'Error parsing talk 3 as Markdown: \n\t' + talk3
+      markdown_talk3 = talk3
+
+
+    events.push
+      date: new Date(data.start.dateTime)
+      talk1: markdown_talk1
+      talk2: markdown_talk2
+      talk3: markdown_talk3
+
+    callback null, events
 
 getContentSnippets = (view, callback) ->
   results = []
@@ -168,9 +148,6 @@ exports.talks = (req, res) ->
       'content'     : data
     }
 
-
-exports.ical = (req, res) ->
-  res.redirect gcal.getICalUrl()
 
 exports.robots = (req, res) ->
   res.send("User-agent: *\nDisallow: /");
