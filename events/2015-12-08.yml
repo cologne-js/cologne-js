@@ -18,6 +18,7 @@
   speaker:
     name: "Roman Roelofsen"
     twitter: romanroe
+  links:
 -
   title: "How to develop and structure a react-native app"
   description: |
