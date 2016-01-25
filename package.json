@@ -32,7 +32,7 @@
   "dependencies": {
     "coffee-script": "~1.8.0",
     "connect": "~2.8.3",
-    "express": "~3.3.3",
+    "express": "~4.13.4",
     "google-auth-library": "0.9.7",
     "googleapis": "2.1.7",
     "jade": "~0.32.0",
