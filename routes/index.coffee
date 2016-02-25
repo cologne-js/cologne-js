@@ -42,12 +42,12 @@ getEvents = (callback) ->
       console.log 'Error parsing talk 3 as Markdown: \n\t' + talk3
       markdown_talk3 = talk3
 
-
-    events.push
-      date: new Date(data.start.dateTime)
-      talk1: markdown_talk1
-      talk2: markdown_talk2
-      talk3: markdown_talk3
+    if data
+      events.push
+        date: new Date(data.start.dateTime)
+        talk1: markdown_talk1
+        talk2: markdown_talk2
+        talk3: markdown_talk3
 
     callback null, events
 
@@ -155,4 +155,3 @@ exports.robots = (req, res) ->
 exports.e404 = (req, res) ->
   res.status 404
   res.render '404'
-
