@@ -1,0 +1,19 @@
+---
+-
+  month: February
+  talks:
+    -
+      title: "Redux: re-thinking side effects"
+      speaker:
+        name: "Tomas Weiss, Salsita"
+        twitter: tomkisw
+    -
+      title: "ServiceWorkers - Supercharge your webapps"
+      speaker:
+        name: "Valentin Gosu, Mozilla"
+        twitter: ValentinGosu
+    -
+      title: "React Native"
+      speaker:
+        name: "Daniel Steigerwald"
+        twitter: steida
