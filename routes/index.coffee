@@ -19,7 +19,7 @@ cache      = undefined
 getEvents = (callback) ->
   gcal.getJSON (err, data) ->
     events = []
-    if data
+    if data and data.description
       [talk1, talk2, talk3] = data.description.split('---')
     else
       [talk1, talk2, talk3] = ['', '', '']
