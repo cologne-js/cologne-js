@@ -1,6 +1,8 @@
 "use strict"
 
 express = require('express')
+bodyParser = require('body-parser')
+methodOverride = require('method-override')
 routes  = require('./routes')
 app     = module.exports = express()
 
@@ -14,25 +16,23 @@ errorHandler = (err, req, res, next) ->
 
 
 # Configuration
-app.configure () ->
-  app.set 'views', __dirname + '/views'
-  app.set 'view engine', 'jade'
-  app.use express.bodyParser()
-  app.use express.methodOverride()
-  app.use express.static(__dirname + '/public')
-  app.use app.router
+app.set 'views', __dirname + '/views'
+app.set 'view engine', 'jade'
+app.use bodyParser.json()
+app.use bodyParser.urlencoded({ extended: true })
+app.use methodOverride()
+app.use express.static(__dirname + '/public')
 
-app.configure 'development', () ->
+if process.env.NODE_ENV is 'production'
+  app.set 'cacheInSeconds', 60 * 60
+  app.set 'port', process.env.PORT or 5000
+  app.use errorHandler
+else
   edt = require('express-debug')
   edt app, { depth: 6}
   app.set 'cacheInSeconds', 0
   app.set 'port', 3000
   app.use logErrors
-  app.use errorHandler
-
-app.configure 'production', () ->
-  app.set 'cacheInSeconds', 60 * 60
-  app.set 'port', process.env.PORT or 5000
   app.use errorHandler
 
 # Routes
