@@ -1,7 +1,7 @@
 {
   "name": "JsConfCz",
   "description": "JsConfCz website on Node",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Timo Derstappen <teemow@gmail.com>",
   "contributors": [
     {
@@ -27,7 +27,7 @@
     "start": "NODE_ENV=production coffee app.coffee"
   },
   "engines": {
-    "node": "4.2.3"
+    "node": "4.4.0"
   },
   "dependencies": {
     "coffee-script": "~1.8.0",
@@ -45,7 +45,6 @@
     "xregexp": "~3.1.0"
   },
   "devDependencies": {
-    "vows": ">=0.5.1",
-    "express-debug": "~1.0.3"
+    "express-debug": "~1.1.1"
   }
 }
