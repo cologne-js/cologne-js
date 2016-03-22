@@ -1,0 +1,11 @@
+-
+  title: "NativeScript"
+  description: |
+   NativeScript is a framework for building native iOS and Android apps using JavaScript and CSS.
+   NativeScript renders UIs with the native platform’s rendering engine, no WebViews, resulting in native-like
+   performance and UX. Join me if you're interested in understanding how it works and what differentiates NativeScript
+   from technologies with similar goals. The talk will be 40% conceptual and 60% live coding.
+  speaker:
+    name: "Julian Steiner"
+    twitter: steiner_j
+  links:
