@@ -9,3 +9,16 @@
     name: "Julian Steiner"
     twitter: steiner_j
   links:
+-
+  title: "Elm as an alternative for frontend development?"
+  description: |
+   Elm advertises itself as "the best of functional programming in your browser". It's a statically typed,
+   functional reactive language that compiles to JavaScript. As a frontend developer one can choose from a multitude
+   of JavaScript (or compile-to-JS) frameworks and libraries that offer a similar featureset. I'm going to give
+   a short introduction to the language itself, its development environment and the community to let you think about
+   if it could be a viable alternative or addition to your current stack.
+  speaker:
+    name: "Jonas Coch"
+    twitter: klaftertief
+  links:
+    "elm-lang.org": http://elm-lang.org/
