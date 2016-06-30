@@ -1,0 +1,10 @@
+-
+  title: "Localizing modern web apps with Globalize"
+  description: |
+    Have you ever seen text like "Edited 1 minutes ago" in a web app? Have you implemented your own solution for formatting the plural of "minute" properly? Then you've dealt with a part of internationalization. Extend that to dealing with numbers, currencies or dates, along with supporting more than one language, and you've also got localization. Doing this from scratch is a bad idea. Using Globalize is a good idea.
+    <br><br>
+    This talk will delve into the challenges and show how the implementation in Globalize will be a good choice even a few years later. We'll look at React+Webpack integration for a very effective sample setup.
+  speaker:
+    name: "Jörn Zaefferer"
+    twitter: bassistance
+  links:
