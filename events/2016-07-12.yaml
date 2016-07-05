@@ -11,10 +11,7 @@
 -
   title: "Eine Einführung in ReactiveX für Browser-Anwendungen"
   description: |
-    [DE] Netflix, Trello, Microsoft und viele weitere verwenden es: ReactiveX. Während wir sind es gewohnt sind, für
-    die DOM- und Datenmanipulation Bibliotheken wie jQuery und Lodash zu verwenden, wird der Datenfluss oft per
-    Spagetti-Code organisiert. Die ReactiveX Bibliothek verspricht, die ständigen Serveranfragen und Benutzer-Events
-    zu koordinieren und einen besser strukturierten Code zu ermöglichen. Die Vortrag führt in die ReactiveX-API ein und zeigt, wie die Bibliothek sinnvoll eingesetzt werden kann.
+    [DE] Netflix, Trello, Microsoft und viele weitere verwenden es: ReactiveX. Wir sind es gewohnt für  DOM- und Datenmanipulation Bibliotheken wie jQuery und Lodash zu verwenden. Der Datenfluss wird oft per Spagetti-Code organisiert. Die ReactiveX Bibliothek verspricht, die ständigen Serveranfragen und Benutzer-Events zu koordinieren und einen besser strukturierten Code zu ermöglichen. Die Vortrag führt in die ReactiveX-API ein und zeigt, wie die Bibliothek sinnvoll eingesetzt werden kann.
   speaker:
     name: "Roman Roelofsen"
     twitter: romanroe
