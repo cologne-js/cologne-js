@@ -12,6 +12,7 @@
   title: "Eine Einführung in ReactiveX für Browser-Anwendungen"
   description: |
     [DE] Netflix, Trello, Microsoft und viele weitere verwenden es: ReactiveX - das "Schweizer Taschenmesser" für die asynchrone Programmierung. Wir sind es gewohnt, für die DOM- und Datenmanipulation Bibliotheken wie jQuery und Lodash zu verwenden. Der asynchrone Datenfluss, z.B. Serveranfragen und Benutzer-Events, wird jedoch oft per Spagetti-Code organisiert. Die ReactiveX Bibliothek verspricht, den Datenfluss besser zu koordinieren und einen besser strukturierten Code zu ermöglichen.
+         <br><br>
          Dieser Vortrag führt in die ReactiveX-API ein und zeigt, wie die Bibliothek sinnvoll eingesetzt werden kann.
   speaker:
     name: "Roman Roelofsen"
