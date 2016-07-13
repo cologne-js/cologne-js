@@ -8,6 +8,7 @@
     name: "Jörn Zaefferer"
     twitter: bassistance
   links:
+    Slides: "https://jzaefferer.github.io/globalize-modern-apps/"
 -
   title: "Eine Einführung in ReactiveX für Browser-Anwendungen"
   description: |
@@ -18,3 +19,5 @@
     name: "Roman Roelofsen"
     twitter: romanroe
   links:
+    Slides: "https://github.com/romanroe/angular2-rx-slides"
+    PDF: "https://github.com/romanroe/angular2-rx-slides/raw/master/ReactiveX.pdf"
