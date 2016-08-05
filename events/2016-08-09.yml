@@ -1,0 +1,20 @@
+-
+  title: "Next Generation NoSQL: Multi Model Databases"
+  description: |
+    The recent progress in the database development has lead us a long and winding road:<br>
+    <ul>
+      <li>Using relational for everything</li>
+      <li>NoSQL and polyglot persistence: Introducing a ton of different technologies to learn</li>
+      <li>Next wave: Multi Model databases and polyglot data</li>
+    </ul>
+    In this talk we will see the pros and cons of each of these stations.
+    Also we will have a more in-depth introduction to Multi Model Databases and why they are the next step in database evolution.
+    Finally we will talk about big data requirements and how they fit into this landscape of database technologies.
+    How can we scale and run databases in production?
+    We are using a whole cluster of machines, collecting and mining terabytes of data with ease.
+  speaker:
+    name: "Michael Hackstein"
+    twitter: mchacki
+  links:
+
+
